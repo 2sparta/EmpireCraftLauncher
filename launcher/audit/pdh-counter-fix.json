@@ -1,0 +1,14 @@
+{
+  "launcher_version": "0.1.2",
+  "cause": "psutil.swap_memory() raises RuntimeError when the Windows PDH paging-file counter is unavailable",
+  "unavailable_metrics_are_nonfatal": true,
+  "failed_metric_retried_during_same_run": false,
+  "unknown_values_recorded_as": null,
+  "real_child_success_and_failure_exit_codes_preserved": true,
+  "unit_tests_passed": 47,
+  "ci_run": "https://github.com/2sparta/EmpireCraftLauncher/actions/runs/43714098149",
+  "windows_job": 132811779460,
+  "linux_job": 132811779059,
+  "fresh_java_forge_job": 132811779284,
+  "graphical_full_minecraft_tested": false
+}
