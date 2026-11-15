@@ -58,7 +58,9 @@ def main():
     shutil.copy2(ROOT / "LICENSE", folder / "LICENSE-launcher.txt")
     shutil.copy2(lock, folder / lock.name)
     (folder / "python-runtime-source.json").write_text(json.dumps(RUNTIME, indent=2) + "\n")
-    env = dict(os.environ, ZIG_GLOBAL_CACHE_DIR=str(ROOT / "build/zig-cache"), ZIG_LOCAL_CACHE_DIR=str(ROOT / "build/zig-local"))
+    env = dict(os.environ)
+    env.setdefault("ZIG_GLOBAL_CACHE_DIR", str(ROOT / "build/zig-cache"))
+    env.setdefault("ZIG_LOCAL_CACHE_DIR", str(ROOT / "build/zig-local"))
     subprocess.run([sys.executable, "-m", "ziglang", "cc", "-target", "x86_64-windows-gnu", "-municode", "-Wl,--subsystem,windows", "-Os", "-s", str(ROOT / "native/windows-bootstrap.c"), "-o", str(folder / "Empirecraft.exe"), "-luser32", "-lkernel32"], env=env, check=True)
     assert (folder / "Empirecraft.exe").read_bytes()[:2] == b"MZ"
     assert (folder / "python/DLLs/_tkinter.pyd").exists()
