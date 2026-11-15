@@ -28,6 +28,7 @@ def build(ref: str, repo=REPO, url_repository=None) -> dict:
     commit = git("rev-parse", ref + "^{commit}", repo=repo).decode().strip()
     common = {}
     tree = git("ls-tree", "-r", "-z", commit, "mods", "config", "defaultconfigs", "kubejs", "launcher/native/dist", repo=repo)
+    installed_native = {entry.split(b"\t", 1)[1].decode() for entry in tree.split(b"\0") if entry and entry.split(b"\t", 1)[1].startswith(b"mods/empirecraft-launcher-client-")}
     for entry in tree.split(b"\0"):
         if not entry:
             continue
@@ -42,6 +43,8 @@ def build(ref: str, repo=REPO, url_repository=None) -> dict:
             if not path.endswith(".jar"):
                 continue
             target = "mods/" + Path(path).name
+            if installed_native and target not in installed_native:
+                continue  # Archived build outputs must not add a second production addon.
         else:
             target = path
         body = git("cat-file", "blob", blob, repo=repo)
