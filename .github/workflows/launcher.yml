@@ -71,4 +71,8 @@ jobs:
         env:
           LIBGL_ALWAYS_SOFTWARE: '1'
           ALSOFT_DRIVERS: 'null'
-        run: xvfb-run -a python launcher/tools/runtime_smoke.py --boot-pack
+        run: |
+          smoke_result=0
+          xvfb-run -a python launcher/tools/runtime_smoke.py --boot-pack > launcher/full-pack-smoke.log 2>&1 || smoke_result=$?
+          tail -200 launcher/full-pack-smoke.log
+          exit "$smoke_result"
