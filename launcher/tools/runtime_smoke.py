@@ -31,6 +31,9 @@ with tempfile.TemporaryDirectory(prefix='empirecraft-runtime-') as folder:
         addon = Path(__file__).resolve().parents[1]/'native/dist/empirecraft-launcher-client-0.1.1.jar'
         shutil.copy2(addon, game/'mods'/addon.name)
         apply_options(game, 'potato', {})
+        # Unattended fixture: dismiss vanilla's first-run accessibility dialog.
+        with (game/'options.txt').open('a', encoding='utf-8') as settings:
+            settings.write('onboardAccessibility:false\n')
     command = make_command(root, game, java, 'LauncherSmoke', 'potato', 4096)
     assert command[-2:] == ['--quickPlayMultiplayer', 'p2.foxter.top:25628']
     assert (root/'runtime/.forge-complete.json').exists()
