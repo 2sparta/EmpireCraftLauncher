@@ -1,5 +1,5 @@
 {
-  "source_commit": "8402799dea14a90a1eebd5faa7c826385692234e",
+  "source_commit": "09cf5c77568c7c6b96c099bf3fabc96901bab63f",
   "files": [
     {
       "path": "config/empirecraft-ship-physics.json",
@@ -877,9 +877,9 @@
       "sha256": "474fda7e05c7ceabee99ec4e46381839edc68912bd74300c57dc052b6080d3f1"
     },
     {
-      "path": "mods/empirecraft-launcher-client-0.1.0.jar",
-      "size": 7024,
-      "sha256": "95fa4fbfd6d61f0dd28760ed17c744be29deaa88d5a41afcf9bcf9a956e76a8b"
+      "path": "mods/empirecraft-launcher-client-0.1.1.jar",
+      "size": 8262,
+      "sha256": "2dba0182e7b5df4fe0e6bbdf6f3a844c979e3f502e6428b08ba74b0be03c4622"
     },
     {
       "path": "mods/empirecraft-layered-armor-1.0.4.jar",
