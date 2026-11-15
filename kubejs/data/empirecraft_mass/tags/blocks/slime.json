@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "naturalist:glow_goop", "required": false},
+    {"id": "nirvana:thc", "required": false},
+    {"id": "spawn:ghostly_mucus_block", "required": false},
+    {"id": "spawn:mucus", "required": false},
+    {"id": "spawn:mucus_block", "required": false},
+    {"id": "supplementaries:bubble_block", "required": false},
+    {"id": "supplementaries:lumisene", "required": false}
+  ]
+}

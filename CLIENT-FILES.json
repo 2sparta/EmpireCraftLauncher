@@ -1,0 +1,1210 @@
+{
+  "source_commit": "8402799dea14a90a1eebd5faa7c826385692234e",
+  "files": [
+    {
+      "path": "config/empirecraft-ship-physics.json",
+      "size": 12354,
+      "sha256": "48f95113eaa4b6ddbc3af1e9688222adef35505f6d878483138c420bf12f1192"
+    },
+    {
+      "path": "config/empirecraft_equine-common.toml",
+      "size": 195,
+      "sha256": "27395f565209880b72be3a709f3ad8de6bdc09d40f2e17887eae645509b6b17c"
+    },
+    {
+      "path": "config/epicknights/general.json5",
+      "size": 1915,
+      "sha256": "dfebe4a5a6c91cca0974f9f0eaccc0712ed184fd1a050ba6c96afbd610fb90f6"
+    },
+    {
+      "path": "config/legendarysurvivaloverhaul/legendarysurvivaloverhaul-common.toml",
+      "size": 401,
+      "sha256": "3e99459983638558ad9dbe13c3b0cc65d662c0f145a3aee6830bd809dba38dfa"
+    },
+    {
+      "path": "config/overgeared-common.toml",
+      "size": 11169,
+      "sha256": "4b7906459a0705e03a8a8e93206d1eedd60cbe6b93afa94cf73d6a9fc3945258"
+    },
+    {
+      "path": "config/sereneseasons/fertility.toml",
+      "size": 470,
+      "sha256": "7e8e4dffb69e493670121cb6937f33cb59f1743f9d11d65d83770244453948cf"
+    },
+    {
+      "path": "config/sereneseasons/seasons.toml",
+      "size": 6577,
+      "sha256": "6b636fcb1e2309e8cd1f82e73bc7790e4313e6ae191aae0c64ce900dd25a5e5f"
+    },
+    {
+      "path": "config/valkyrienskies/valkyrienskies-client.toml",
+      "size": 133,
+      "sha256": "6fcb83837c24fa50308f3884c53c2ef5f7776bd122f63c19833502ae82777075"
+    },
+    {
+      "path": "defaultconfigs/valkyrienskies/vs-core-server.toml",
+      "size": 168,
+      "sha256": "ecb35e14de684a734b037c622f912006499403b05b8135128007d43842c2378d"
+    },
+    {
+      "path": "kubejs/assets/empirecraft_ship_physics/lang/en_us.json",
+      "size": 1931,
+      "sha256": "9d59a50bf2faffa43eed04aaf0801da7e680a80ceed38ad76470df9838aa24d5"
+    },
+    {
+      "path": "kubejs/assets/empirecraft_ship_physics/lang/ru_ru.json",
+      "size": 2467,
+      "sha256": "b582a6d3244fcda89c23e30cf1ac0de645623c110f5cbed8cfd44e34f64ffb32"
+    },
+    {
+      "path": "kubejs/assets/empirecraft_ship_physics/lang/uk_ua.json",
+      "size": 2456,
+      "sha256": "e2a7440f5ec09213f5c61cb84f08b091a996833602c9ed149e2dc517b8862025"
+    },
+    {
+      "path": "kubejs/client_scripts/empirecraft_content.js",
+      "size": 484,
+      "sha256": "9cd4046aeeb068661e77679e97c53d10e0c3b10b97c030e6981ae9f24f0e5bb7"
+    },
+    {
+      "path": "kubejs/client_scripts/empirecraft_metallurgy.js",
+      "size": 765,
+      "sha256": "4622b242be4959618068c72e41f3111166946cb54bf7d254603bd57ae217fc6d"
+    },
+    {
+      "path": "kubejs/client_scripts/empirecraft_metals.js",
+      "size": 565,
+      "sha256": "b7d6719ed7f2e64c85d823f8bb94024fc89d26989468eb4035422217044968a3"
+    },
+    {
+      "path": "kubejs/client_scripts/empirecraft_no_end.js",
+      "size": 7408,
+      "sha256": "399561a2c06bd6920847640319c784b7f31538a372463b4595e0225d5b4769e0"
+    },
+    {
+      "path": "kubejs/client_scripts/empirecraft_progression.js",
+      "size": 2038,
+      "sha256": "e2873c112b1eb198c69df6662cadd6f477210eb053e14d58048cc26295112cfb"
+    },
+    {
+      "path": "kubejs/data/createbigcannons/munition_properties/projectiles/shot.json",
+      "size": 401,
+      "sha256": "ff4b3d4b80f3295a04b00ac729ee4a62ab2addfdafb8ac17158b75f8a503f7ff"
+    },
+    {
+      "path": "kubejs/data/ecologics/worldgen/placed_feature/trees_beach.json",
+      "size": 969,
+      "sha256": "b49f380ca5a492c59f2f83e8fdbfd7a8d5408eb82ddabafe63b7c2505e61e252"
+    },
+    {
+      "path": "kubejs/data/ecologics/worldgen/placed_feature/trees_walnut.json",
+      "size": 964,
+      "sha256": "2eecd7a6a46983928e67ca9de742f99f920ddf8da21fcc58910ebaf557b48da3"
+    },
+    {
+      "path": "kubejs/data/empirecraft_guidebook/advancements/recipes/book.json",
+      "size": 607,
+      "sha256": "1280d356715d568e8f15020abe7a51acdb8789dded6ae301aaddf860bcade6d2"
+    },
+    {
+      "path": "kubejs/data/empirecraft_guidebook/advancements/recipes/handbook.json",
+      "size": 604,
+      "sha256": "fcbb31789b913729b1c2dea2269a60c4dbe1aaf5bcc25329d84d37ec617f64fd"
+    },
+    {
+      "path": "kubejs/data/empirecraft_guidebook/advancements/recipes/paper.json",
+      "size": 579,
+      "sha256": "2a313509ac334fbfebc6cef2f191bddb041b001cbf5b717ee38145fdf068c964"
+    },
+    {
+      "path": "kubejs/data/empirecraft_guidebook/advancements/recipes/paper_finishing.json",
+      "size": 632,
+      "sha256": "2bbb34832d771653c477682689224b6db355fea85d5de036bde61eaf116d6c26"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/andesite_alloy.json",
+      "size": 496,
+      "sha256": "acaf9703a556041e67904d04642e89585941346065ebb18bc4359a97e8041c30"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/andesite_machine.json",
+      "size": 4557,
+      "sha256": "33bcb256b4c73e42755750293a61148a7517949367d124cb9f2a1612fc67163b"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/bone.json",
+      "size": 2263,
+      "sha256": "7a2ddcf6837a93737fe9c7aa46b6727062642745f4c54055f6378ff25703eb05"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/bottled_drink.json",
+      "size": 2705,
+      "sha256": "ebcb080a6f2e27275ab6384173009234bd02ae26c2b4d698bb976c7278c5384f"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/brass.json",
+      "size": 332,
+      "sha256": "45c5ce5c776d55fc6d1b38adf9a83ef4eff1d868aaf9c23ff543934ee93f215f"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/brass_machine.json",
+      "size": 1027,
+      "sha256": "d2e6e1e9f6bda96564295770cce6ee05606acda219402ed1b9ba2cd2bf6c91cd"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/bronze.json",
+      "size": 1470,
+      "sha256": "d7977d983033ed49fabb6c171faa7b4258091a0d73f5d327fb0d4657cd0492dc"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/ceramic.json",
+      "size": 126922,
+      "sha256": "73992e7c8c7424301f7d37a7797beb3f31f00ac2a51ca08418aa41472e55b2d3"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/coal.json",
+      "size": 9774,
+      "sha256": "2d2bf7a262042aa0214dde961d3f07cead19141833b23fc793d9dbada8761eb2"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/copper.json",
+      "size": 16643,
+      "sha256": "0f5ac13a2b2dd6dae0a8cbceffeab3f798688a34947bc25ddc6808a3433e5a4e"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/copper_machine.json",
+      "size": 1789,
+      "sha256": "9cf0fcf014eb02b4e5d4b5661130b827517da5bfe25f06c18ece28dd11c68a98"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/daub.json",
+      "size": 1294,
+      "sha256": "9c437b20aaf9a60374f3ede0586a90f47c1bedf5bba67fed7069172dd6d7e447"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/diamond.json",
+      "size": 2432,
+      "sha256": "2df1e32392cdc9d08eab1ed5a2d56c8687ce48194e35deb8378bd54d220917b6"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/dirt.json",
+      "size": 56392,
+      "sha256": "2b1c57f338ab14bfb9fdda8fcdc15c6a79786aa806b790dd58c50e832eae4b83"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/fiber.json",
+      "size": 6796,
+      "sha256": "c534d83bf14b15f8b9666841429ea4473b8b7ae347ba4bbcd0d0a3b6c31e9d05"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/filled_barrel.json",
+      "size": 513,
+      "sha256": "b4fd5270e123f53b7ae5c92a7c9e08732c6788153976df3e6b4490dc8520c89b"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/filled_crate.json",
+      "size": 2319,
+      "sha256": "1f7efee0e1b2a5233becf4a608a0163f99dade2746c54aeb4d81a0baf04b1569"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/food.json",
+      "size": 20808,
+      "sha256": "074fc53f9898e13ff3846e976975747f99b853cac12afa0be3046f04d3d1ddb5"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/glass.json",
+      "size": 34600,
+      "sha256": "cd8e7c56749ed7c70f91fcef0a2704b6b69c49979118d437d50d27b737873a32"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/gold.json",
+      "size": 11363,
+      "sha256": "b2c3d5df708741aa27938438a909e6c6c377009471acab625e2b8fbf7eb5f66e"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/ice.json",
+      "size": 28055,
+      "sha256": "475eac934cbf68b00ddf9cd9ff5bf10b42348c8c1fd9c9e85350a1c919c93cee"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/iron.json",
+      "size": 19228,
+      "sha256": "44184d08661938f3816ce3aa38aec6b6699b510b0312ec621880df5a601e37e1"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/iron_sheet.json",
+      "size": 11365,
+      "sha256": "7ad25eb5d8f75727bab625c1ab881c99ecd9d52ff0281315d06e503598dbba86"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/lead.json",
+      "size": 42,
+      "sha256": "0846dbafb7268c471c5b7d8fec6459579a59ecf9a5184023b40b42a4706f3faf"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/leaves.json",
+      "size": 7973,
+      "sha256": "b0e51d2354ccda876cffe28c8a0355ddde980ef169b908ac4fce63303e8afa92"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/metal_glass.json",
+      "size": 430,
+      "sha256": "7a50dbfde2fd177371acb33c69bcc88db73c1d6900663e7edf75b7e29e2b1662"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/obsidian.json",
+      "size": 4219,
+      "sha256": "833457e65d77e78d94ec66ad8c7f4d9a9df8e48b6853908c3653a0b67a19d635"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/paper.json",
+      "size": 4540,
+      "sha256": "d68d49c31b254bd056fb73c225e60491c0cf5577a1be2f04ac44fcf026bcfda4"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/paper_frame.json",
+      "size": 771,
+      "sha256": "6dc9f33d046ddbddba933ee423173f49af1ab2260bd3e7fb869b2bd50b1f44f0"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/plant.json",
+      "size": 11104,
+      "sha256": "83a8da26035e244bf6cb0b6ab91d6f698d39665e4488fec4fda9cead5a6fb610"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/powder_bag.json",
+      "size": 174,
+      "sha256": "4da556c9b243e385e7acf758c78f0bf85b7cdb354b6fb15603e9e6248e805999"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/pumice.json",
+      "size": 42,
+      "sha256": "0846dbafb7268c471c5b7d8fec6459579a59ecf9a5184023b40b42a4706f3faf"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/rubber.json",
+      "size": 87,
+      "sha256": "df2c7c09303257f179b532a41e9cc9e95c819220a1a03c190965a17373c12d0a"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/slime.json",
+      "size": 422,
+      "sha256": "b4df55d033b5fd49e37890c8dce939ca38289e80b0a99475f72575b652d1d2a2"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/snow.json",
+      "size": 9714,
+      "sha256": "612ea42e82ecc4de40ca0d78c778a9742c662f32729c0ebb6bd7215a4d9cf8c7"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/sponge.json",
+      "size": 422,
+      "sha256": "37784f5ff5b7ae88a827633c7c88485615d48d20627bec5b3778ec636034dd78"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/steel.json",
+      "size": 2766,
+      "sha256": "aba376c31b0bbba78940b7810042a59b6307dc9fbd58c0fcab568f0ea1f3db8a"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/stone.json",
+      "size": 310293,
+      "sha256": "f7d36bdadadb8644265ef56b637b4ae0ed1792d12250275ec3cd233610ae50eb"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/stone_glass.json",
+      "size": 39,
+      "sha256": "0c615d27d6e7932dab70603593b0d4b2098f06e605c17c7e8549a677ec84ef94"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/timber_drive.json",
+      "size": 1595,
+      "sha256": "f1a4f37922c4b8ea9268aef9dd552bfa343f70ffa7dafab62a9136e329972e58"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/timber_glass.json",
+      "size": 1465,
+      "sha256": "1ef81c49567506230f2a102b136578301d420ad5f0b08e6a8fdc7b6f0f8700b9"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/upholstery.json",
+      "size": 3566,
+      "sha256": "5e1e580421c0a59a2022c133ca1f28fc18eae9e4882786b642bbd2684841743b"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/wax.json",
+      "size": 162,
+      "sha256": "45cb028b7204ba491ab856bc74ee05dfdacd4cfc1fbc220fc123860c2d43ab54"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/wood.json",
+      "size": 92207,
+      "sha256": "1627dfc6d7bd22f9b6c046c2ac00a3acee18a03a33c0c500af30578441522576"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/wood_container.json",
+      "size": 5823,
+      "sha256": "55507f6332f29c98accf2c9adacdfc44e9770d48f55661de1d08ed2c1ff58ca9"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/wood_furniture.json",
+      "size": 22248,
+      "sha256": "5407f97b3bcbd3624d6e59ba9672d8f089b5bfc564a5d5e9ef30b9fe40f51ea5"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/wool.json",
+      "size": 53104,
+      "sha256": "3c8cbc7fa7523af41ee4fa60fc6c0500a091081130ecd16279d92a6f287289ad"
+    },
+    {
+      "path": "kubejs/data/empirecraft_mass/tags/blocks/zinc.json",
+      "size": 149,
+      "sha256": "4c4284eaaaef2067bb4d69be03300d405c912194222b001ac985a2717e43f8ac"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/apple_tree.json",
+      "size": 988,
+      "sha256": "0aa3b955169d5bb129e7c448b0c3322140665a38ab2845fd73881003ee37f4a9"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/bayberry_tree.json",
+      "size": 994,
+      "sha256": "e219794aa71997364442935a38e443d5b393b8be4dcfa6bb5b3d45ff39510a52"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/durian_tree.json",
+      "size": 991,
+      "sha256": "0c99c1249f20f5b316a2ad043c335938effae23f27d4b61d612fa60070884449"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/fig_tree.json",
+      "size": 984,
+      "sha256": "8d8a7f69870ba512afd23ca1708f2f58006928216ce02bcf41a5e69393bf7829"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/hawberry_tree.json",
+      "size": 994,
+      "sha256": "6138c24d0ebc7e240973e2b144629bf5ca11c8af9e42f9bf850590d89fd2f51a"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/kiwi_tree.json",
+      "size": 986,
+      "sha256": "353ecd3d1cfaf305b94cbe47c115c9a882d4ff35199164be6b5a0f6379c8d1b4"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/lychee_tree.json",
+      "size": 989,
+      "sha256": "b51e8919809f10107a4c38f74d01c16933100774f23ee69c6eb2fd440cc88b8f"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/mango_tree.json",
+      "size": 987,
+      "sha256": "83942fa9780575e6096f19c8fe98cdcfcf307dfd0b1c543ea2cadcd05ff07717"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/mangosteen_tree.json",
+      "size": 998,
+      "sha256": "af6ef66f248eda58b29aaa055e0b68e5574f216864547d6ad9e872f1f525a392"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/orange_tree.json",
+      "size": 990,
+      "sha256": "c43bbe48fe802698818c464d7ed073a25a7eac5ac4a806b78243bd5ecb7f0268"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/peach_tree.json",
+      "size": 987,
+      "sha256": "8d168a7a3a648d9b153f159b1c29e8aa1fe70749a18f4fd5de69f342d32b744e"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/pear_tree.json",
+      "size": 986,
+      "sha256": "7f53750dd50c16c1d32c0ffd633de147cb73a5855749a6290e9720b8b34db2a2"
+    },
+    {
+      "path": "kubejs/data/fruitsdelight/worldgen/placed_feature/tree/persimmon_tree.json",
+      "size": 996,
+      "sha256": "6ce546c3c61ca93f62a26b15e905ffd500b0c94b44c4e1c0aafa6afe49ee1e14"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/cauldrons.json",
+      "size": 5878,
+      "sha256": "cad074b3bf2be6a8085205190fd5e62e306ce81ef86967fca43fe8720a8c0d40"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/dragon_immune.json",
+      "size": 5970,
+      "sha256": "9567606ac41f000ec3c5386c8d366f3cdde64a925e9f1fbf597b5ee32ccb081c"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/enderman_holdable.json",
+      "size": 12416,
+      "sha256": "096729e5ca385b75c8c1d02c327d22544bb0fcfefaa6cf9d6d316fd63608245a"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/features_cannot_replace.json",
+      "size": 151,
+      "sha256": "6dc5758fd8dae7257a5a8d4193d81ff72f3e6af4f31d9cb616a51091892f041f"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/fence_gates.json",
+      "size": 1174,
+      "sha256": "65341961833620826e2c0217cf4a9a7fae4159fb1dcac7fba83e026d72b61108"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/fences.json",
+      "size": 260,
+      "sha256": "2c273ce91305503eaa9583e3d8c03d9fb109b48866a47fddb5e22d8496d4fdbf"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/guarded_by_piglins.json",
+      "size": 552,
+      "sha256": "ee100a968688722e8916f687bbcbb8b457a1bdbc5b293c2684678c75e2bc207b"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/invalid_spawn_inside.json",
+      "size": 38,
+      "sha256": "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/lava_pool_stone_cannot_replace.json",
+      "size": 130,
+      "sha256": "4013b75398419d5bb5f5d4103fd54fa68bce85d3ba2128ab77f6439041e7a739"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/mineable/axe.json",
+      "size": 59956,
+      "sha256": "8f0a5620219ddaa4a9aee16600e86f91f457bc7a03829fd0d24bfa9e86430e63"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/mineable/pickaxe.json",
+      "size": 479812,
+      "sha256": "84ef422eb654a2d002847f3956839146a7a3500f2ed55f8ac605f64af374d179"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/portals.json",
+      "size": 71,
+      "sha256": "95360cf9599dfdec0b25e5b5197ddfa1b87d3338614bd3f6d0f42be59fba851d"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/sculk_replaceable.json",
+      "size": 556,
+      "sha256": "64c6ddfe0859058cc3214b9e35616c98fe4b1e4f628e278b9d1c5771120bcb86"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/sculk_replaceable_world_gen.json",
+      "size": 297,
+      "sha256": "d5a53b1ecb9613d97ff6bcbef193b9056acca2259696005ec4e8db1a55dfdc53"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/shulker_boxes.json",
+      "size": 38,
+      "sha256": "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/slabs.json",
+      "size": 133333,
+      "sha256": "c36e4934c39007ffa12984f10e9556c207e2311163ba431f8f053cb3a70044d8"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/stairs.json",
+      "size": 136289,
+      "sha256": "f8b5204e01cbb7cd9853bf3fdb9b55c0e4ae069797b1cbb0f0f89d2512d2daa3"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/sword_efficient.json",
+      "size": 5813,
+      "sha256": "b7a61ecef9872b3bc6656fedbec7ca8685bd4d499cfb34976f15807495223fcf"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/unstable_bottom_center.json",
+      "size": 150,
+      "sha256": "0146740cba9fb4d5711c6da3dc5950e19baa2f5c21d8d94c374441815f31b763"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/wall_post_override.json",
+      "size": 1305,
+      "sha256": "922fdd15ed0ecf4db433c132802c230b28e7f2c1d089f155431f3ac37a061ef6"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/walls.json",
+      "size": 131544,
+      "sha256": "88f51fba8dbadf9b907ae8bab048c7f301caf8d9425be1be40264491cb8ddaa0"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/blocks/wither_immune.json",
+      "size": 509,
+      "sha256": "86cc090e2285b8b674b8a1c4b4b9adbe8d71f17cdd609438ba7ac06697226dd1"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/entity_types/fall_damage_immune.json",
+      "size": 503,
+      "sha256": "c8fc5663f0f213f713016225289d18ff9e3df4eddd9dba20607648293d130820"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/entity_types/impact_projectiles.json",
+      "size": 554,
+      "sha256": "b8b19204c6f51efb939b7f2b021692677fc39f12e2832467b46d0f75dd0ad0b6"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json",
+      "size": 548,
+      "sha256": "c9eb23e6c108925e9f843229bccf0800e5749822c8e88f69843bd412baca579b"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/items/breaks_decorated_pots.json",
+      "size": 64,
+      "sha256": "5e3ff5bdce6ba5d994a7dfaaa7b69a8d80d3d9ae7ddef555cd7ee0421fe0d0dd"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/items/fence_gates.json",
+      "size": 757,
+      "sha256": "1fecc527f7e027a6e83c128925859e8bce7a9db22e3cb3defa5cfa215478e0d9"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/items/fences.json",
+      "size": 185,
+      "sha256": "effd5ccfef7b3810caebdc6d025a0672bde44901d846616bc9be3f36cc2a23f1"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/items/fishes.json",
+      "size": 7789,
+      "sha256": "c3af0d974f711d34fed744078de5185a505b060fbd4f9c4f9d6cdb9b4ff339aa"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/items/noteblock_top_instruments.json",
+      "size": 310,
+      "sha256": "5c2d08d1f5a6aea761bbbcd7c24038b08b04c9451414fb9a53be17857d6f010b"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/items/shulker_boxes.json",
+      "size": 38,
+      "sha256": "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/items/slabs.json",
+      "size": 9970,
+      "sha256": "799c7d8d8a54c9278a7dd8b32cc2f356945fbb942cbec89636316912cc6b4f86"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/items/stairs.json",
+      "size": 10102,
+      "sha256": "017e6633f352db5c2f784c79bff5a936eb8ebf29569b84e487422b5c02003780"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/items/tools.json",
+      "size": 660,
+      "sha256": "e5e85d2c58bd612b5af8d7051d55f0f55ad995e87269043ef1968b26bc6eaab1"
+    },
+    {
+      "path": "kubejs/data/minecraft/tags/items/walls.json",
+      "size": 8420,
+      "sha256": "f01af96a2cd30faead14dab60a490757af39150fff5479a453f3c73cac5971fe"
+    },
+    {
+      "path": "kubejs/data/vinery/worldgen/placed_feature/tree_apple.json",
+      "size": 964,
+      "sha256": "313b4efd2e5d2514c90f12b3af15c9cf2126881bba29184fa4fd6725f469b754"
+    },
+    {
+      "path": "kubejs/data/vinery/worldgen/placed_feature/tree_cherry.json",
+      "size": 971,
+      "sha256": "d95685915c309c9a7f35e0dfbc0ef98e0d72cc0d37c617840911dca2a61400f5"
+    },
+    {
+      "path": "kubejs/server_scripts/zzzzzzzz_empirecraft_stone_recipes.js",
+      "size": 1018,
+      "sha256": "e4ba0d5e2be9a0a5e72e6b3b3cc7918c14e9007485d7542cfa487d5f5c7872ba"
+    },
+    {
+      "path": "kubejs/server_scripts/zzzzzzzzz_empirecraft_paper_books.js",
+      "size": 1453,
+      "sha256": "6055a01da82a4e8d861d08e7837ba44750edcc12226ec9d73e09964ce44651fc"
+    },
+    {
+      "path": "kubejs/server_scripts/zzzzzzzzzz_empirecraft_sandpaper.js",
+      "size": 981,
+      "sha256": "b7f90293be9e1ac221c810247763fcc5a50e434bb275b05149ce560d3a105ee5"
+    },
+    {
+      "path": "kubejs/server_scripts/zzzzzzzzzzz_empirecraft_food.js",
+      "size": 965,
+      "sha256": "3bd31d8243e838af2a675e5cb6d93d6afc3ad4a7c71a6574c660f8217a8b476d"
+    },
+    {
+      "path": "kubejs/startup_scripts/empirecraft_progression_tabs.js",
+      "size": 2518,
+      "sha256": "7dd03a4a340db545febcb3bd8fa7b757e070a60b462f14262465a3c0ba7c6fae"
+    },
+    {
+      "path": "mods/AnvilRepairing-Forge-1.20.1-4.0.10.jar",
+      "size": 16293,
+      "sha256": "27d53b8f5572d74ae28395b21694e47284cb1c3aa286b1ce8c34002aba4be6d9"
+    },
+    {
+      "path": "mods/BrewinAndChewin-1.20.1-3.2.1-empirecraft-drinks.1.jar",
+      "size": 1126495,
+      "sha256": "82900e4925ec4273b9780816611933dbe1a29b75b2113d4f0b754acab73fad1c"
+    },
+    {
+      "path": "mods/Contact-forge-1.2.3-empirecraft.1.jar",
+      "size": 619024,
+      "sha256": "d6ea40d610eb1e026fbbbaa1bd63991fc723d88f6fbf6d91972675dc73710ea6"
+    },
+    {
+      "path": "mods/DragNs_Livestock_Overhaul-1.20.1-3.9.4.jar",
+      "size": 7881869,
+      "sha256": "ddaf0555154589796b02437db4e49a31ff3d00058fd56ea045651180c0c6da15"
+    },
+    {
+      "path": "mods/Dumplings Delight-1.20.1-Forge-1.3.2.jar",
+      "size": 305569,
+      "sha256": "c114680af33f5f54d96fa27a98b9f1df2dfa5af6749dbe01e9d99d9d99df9fa4"
+    },
+    {
+      "path": "mods/FarmersDelight-1.20.1-1.2.11a-empirecraft-no-end.1.jar",
+      "size": 2899222,
+      "sha256": "18625880df3ae7e8e1b3491112b2b739cccc48c44568f174a9adc0ed39bf4510"
+    },
+    {
+      "path": "mods/GlitchCore-forge-1.20.1-0.0.1.1 (1).jar",
+      "size": 87550,
+      "sha256": "e42a8b513da08a910c133caeafad9fc2fcc22fdaaa2eb3e2516e9112a5a0db61"
+    },
+    {
+      "path": "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+      "size": 532063,
+      "sha256": "82db19cc65b5c11a444498fb4b8cbcb0393c043e794cb5bf368631a0af765035"
+    },
+    {
+      "path": "mods/Jade-1.20.1-Forge-11.13.3.jar",
+      "size": 553487,
+      "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4"
+    },
+    {
+      "path": "mods/Medieval Decoration v.1.2 1.20.1.jar",
+      "size": 263637,
+      "sha256": "f8ceec57e9b5630b360056120b59fac239fd9e488a022f905e563404c543e30f"
+    },
+    {
+      "path": "mods/OELib-forge-1.20.1-0.2.4.1.jar",
+      "size": 873384,
+      "sha256": "c57dbccc22d0505ef623d5e52e644d9cadd3d52b495b2386f14a02db06fe1935"
+    },
+    {
+      "path": "mods/Patchouli-1.20.1-85-FORGE.jar",
+      "size": 642732,
+      "sha256": "05f7b5d52f6b8f0fd7f8b4822fa07a192d1394d83a264309c9d221d6d4fd21c5"
+    },
+    {
+      "path": "mods/Quick Skin - Forge - 1.20.1-3.1.1.jar",
+      "size": 5489545,
+      "sha256": "31bc672952eb2dd3f76ea48bab8ffcc2a845f8b17cda1f95c236349908a3d7be"
+    },
+    {
+      "path": "mods/SereneSeasons-forge-1.20.1-9.1.0.3.jar",
+      "size": 160886,
+      "sha256": "57c99eb15acce34bc768279faa3f1d5fbb29715fa507a7bd50944dc1b0d9e315"
+    },
+    {
+      "path": "mods/TerraFirmaCraft-Forge-1.20.1-3.2.30-empirecraft.1.jar",
+      "size": 45981419,
+      "sha256": "dd0305fbce9cce430fc8d9c17e5c44037df43c4631a38b025252ac04ccebe94c"
+    },
+    {
+      "path": "mods/TownyRecruits.jar",
+      "size": 672117,
+      "sha256": "3c2f7f3651de06156f61088c6fe4109a98e847b8da88547397d0ede068c0b276"
+    },
+    {
+      "path": "mods/TreeChop-1.20.1-forge-0.19.0-fixed.jar",
+      "size": 517225,
+      "sha256": "219fbe5bf8d862dc7b524ca5a0151f66bba4d53a01010858e136a9e8c4d55d4f"
+    },
+    {
+      "path": "mods/accuratehitboxes-neoforge-2.4.2-empirecraft.1-1.20.1.jar",
+      "size": 98631,
+      "sha256": "6d62f3442b184f64a14e3e8602db900baf68aed968314ddad288ba9202c90283"
+    },
+    {
+      "path": "mods/admanticheat-1.9.3-RELEASE.jar",
+      "size": 484230,
+      "sha256": "d5e86af7fe7554b464624ed5663de3b1047f4aea404ad32eb36f5686e5298ff6"
+    },
+    {
+      "path": "mods/amendments-1.20-2.2.6.jar",
+      "size": 1280554,
+      "sha256": "096b148de5cb75272735299ed4f5ef98c462dc5b870c2e074013a561c3cc66dd"
+    },
+    {
+      "path": "mods/architectury-9.2.14-forge.jar",
+      "size": 582965,
+      "sha256": "4f4bc11582522db74247b8d572fa058e10c36748693c66f56c426d7046cb78b6"
+    },
+    {
+      "path": "mods/astikorcarts-1.20.1-1.1.8 (1).jar",
+      "size": 231706,
+      "sha256": "6a83acd902d354535d0aba43a77aefcb80e3ec9fb27d6d0de035c44a77ec1fe1"
+    },
+    {
+      "path": "mods/athena-forge-1.20.1-3.1.2.jar",
+      "size": 91808,
+      "sha256": "64eec9cffb8847a459536096ac396b135ffb07c7d9d13c6a47d9cd7b251276ab"
+    },
+    {
+      "path": "mods/betsyross-2.1.2+mc.1.20.1-forge.jar",
+      "size": 355085,
+      "sha256": "8d48f33361ce8c36d477917a5976be8ddb6d994a973e8ec8a65f020d28dcc644"
+    },
+    {
+      "path": "mods/bettercombat-forge-1.9.0+1.20.1.jar",
+      "size": 1040303,
+      "sha256": "51942966b5e2c1580cd7cc717062a1bad131dfea7dc912b65b560393f475cf11"
+    },
+    {
+      "path": "mods/callablehorses-1.20.1-1.3.0.1.jar",
+      "size": 137704,
+      "sha256": "7f28c7d5255292c08cdf200295fd5c92689a5009a056e7a47c255e97d9de520b"
+    },
+    {
+      "path": "mods/chatplus-forge-2.8.1-empirecraft.3.jar",
+      "size": 27157001,
+      "sha256": "31246074de9ad48284c5c1f1236662a0c9ca00b31ba43828eee11673cf633a47"
+    },
+    {
+      "path": "mods/chipped-forge-1.20.1-3.0.7-empirecraft.3.jar",
+      "size": 12995558,
+      "sha256": "d82255cf1bf7d68889abda3f603a5b58a9273af5751ff442112cafc1fb2515fe"
+    },
+    {
+      "path": "mods/chippedexttras-1.4-empirecraft.2.jar",
+      "size": 10076119,
+      "sha256": "162ad38343df8f34bbb41f5b64759728402b957b3b777d93450307a8736098ad"
+    },
+    {
+      "path": "mods/cloth-config-11.1.136-forge.jar",
+      "size": 1181413,
+      "sha256": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2"
+    },
+    {
+      "path": "mods/coolrain-1.20.1-Forge-1.0.3.jar",
+      "size": 4154428,
+      "sha256": "a8183b429b7a15b876b83256ab7a5038175936f7074f0ff78535016f49b18a2e"
+    },
+    {
+      "path": "mods/copycats-3.0.10+mc.1.20.1-forge-empirecraft-recipes.1.jar",
+      "size": 1961898,
+      "sha256": "b3782dbe23c9475962f7a26e6cd176392b1eb2222cd891bce6c6e49d5f6fced7"
+    },
+    {
+      "path": "mods/coroutil-forge-1.20.1-1.3.7.jar",
+      "size": 64187,
+      "sha256": "11448808a42c17425cf2ea39701841008683d6ad6e2838a34eef0253251a870f"
+    },
+    {
+      "path": "mods/corpse-forge-1.20.1-1.0.23.jar",
+      "size": 245644,
+      "sha256": "8d77c5fc8dc981c750a8e66d4665f055457f748f0ce49a303d9bc50347bdbf7c"
+    },
+    {
+      "path": "mods/create-1.20.1-6.0.8-medieval.4.jar",
+      "size": 18065139,
+      "sha256": "da3834110fcc1868d365de1bc4bea4d78c00436b002c9b34c02e2f8635d98a23"
+    },
+    {
+      "path": "mods/create-drafting-posters-1.20.1-1.4.0.jar",
+      "size": 146698,
+      "sha256": "b417bbf10c77d628d970657b3810055a5cf82dc0a48ba38bfa1c84c5ef453a58"
+    },
+    {
+      "path": "mods/createbigcannons-5.11.4-mc.1.20.1-forge-medieval.2.jar",
+      "size": 3779321,
+      "sha256": "3a07c6cdedc027a08c0e8cf50e75e611cccb30bf545698e003b790f97d031570"
+    },
+    {
+      "path": "mods/dawnoftimebuilder-forge-1.20.1-1.5.42.jar",
+      "size": 2844717,
+      "sha256": "6ca9bee171821df0097b9a2db7e6dd664cc452b67f5ed05562ae3ded91c06a31"
+    },
+    {
+      "path": "mods/decorative_blocks-forge-1.20.1-4.1.3.jar",
+      "size": 535771,
+      "sha256": "86656a103556a9429e44f6cdb225ac449054cbb45fb56c96edcf1f9dc214e04b"
+    },
+    {
+      "path": "mods/dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar",
+      "size": 402345,
+      "sha256": "b0ecdf3a0619208441062ceeebce79256223ac4e341844a09a6859170d671920"
+    },
+    {
+      "path": "mods/ecologics-forge-1.20.1-2.2.7.jar",
+      "size": 1865435,
+      "sha256": "1d9f7d1f460c1550fc67687c71881f567e6e0f66bb852156e44580e880fe97f6"
+    },
+    {
+      "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
+      "size": 1320675,
+      "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"
+    },
+    {
+      "path": "mods/empirecraft-calendar-1.2.3.jar",
+      "size": 51398,
+      "sha256": "0278781c6ffc12c6a475e323e74e36b50bf7409af43cdc2648b0181eb8f0ddc8"
+    },
+    {
+      "path": "mods/empirecraft-casting-1.3.0.jar",
+      "size": 189146,
+      "sha256": "130da182ebaef96f74eb055e65035b3223e95444442d49c74834f1323ceb1db9"
+    },
+    {
+      "path": "mods/empirecraft-engagement-1.1.1.jar",
+      "size": 124624,
+      "sha256": "0b9393ba7a9240618038d816b23c53496ecccef66373ed2374c2cfb4a82d9eea"
+    },
+    {
+      "path": "mods/empirecraft-equine-genetics-1.0.0.jar",
+      "size": 25959,
+      "sha256": "8ac5e54319e82a7e2227b03527e3bdf05d12f76818b3fd3a47456640d52e5238"
+    },
+    {
+      "path": "mods/empirecraft-forging-1.1.4.jar",
+      "size": 75972,
+      "sha256": "baacc0957d7eef091b571d3b71e8ed208674c5960cdab9b55cf9bda688f0eb5e"
+    },
+    {
+      "path": "mods/empirecraft-handbook-1.0.5.jar",
+      "size": 661052,
+      "sha256": "474fda7e05c7ceabee99ec4e46381839edc68912bd74300c57dc052b6080d3f1"
+    },
+    {
+      "path": "mods/empirecraft-launcher-client-0.1.0.jar",
+      "size": 7024,
+      "sha256": "95fa4fbfd6d61f0dd28760ed17c744be29deaa88d5a41afcf9bcf9a956e76a8b"
+    },
+    {
+      "path": "mods/empirecraft-layered-armor-1.0.4.jar",
+      "size": 41223,
+      "sha256": "c88216333b8f173c474c22dbf16116d27150c54b50f1a8fb2c205b4909dea747"
+    },
+    {
+      "path": "mods/empirecraft-no-end-1.0.1.jar",
+      "size": 202606,
+      "sha256": "1ca441c6a8d65403adff7c01156edbb67bd7b55eec0f1bf2485680a05a589b25"
+    },
+    {
+      "path": "mods/empirecraft-pack-fixes-1.0.2.jar",
+      "size": 823625,
+      "sha256": "bfee580f826c903798139d9fc638d20175b4628da7d6043cde00f31b3f373414"
+    },
+    {
+      "path": "mods/empirecraft-seasonal-leaves-1.3.4.jar",
+      "size": 74606,
+      "sha256": "a1c0a17d0bbcfb0aa16496e4b05f09c4319deb3c43d8a0949c0e4abbb79ee64c"
+    },
+    {
+      "path": "mods/empirecraft-ship-cannons-1.2.1.jar",
+      "size": 54963,
+      "sha256": "779f86e3c22954ecba99cc45cd79671c471a2b1439a024165b9883ef30b4d1c2"
+    },
+    {
+      "path": "mods/empirecraft-ship-physics-1.2.2.jar",
+      "size": 141784,
+      "sha256": "6ffb4825e245a581f61f5248cdd80580343161df441622cea63fe45b28e312c6"
+    },
+    {
+      "path": "mods/empirecraft-tfc-integration-1.0.3.jar",
+      "size": 217707,
+      "sha256": "0869a0acad11a217e3fb3fcb0cb1634422a5a6e0053a44cfb3f7a61242b6fb1f"
+    },
+    {
+      "path": "mods/empirecraft-titles-resources-1.0.0.jar",
+      "size": 100856,
+      "sha256": "01a95c3182872e92d89fb46f2f84253aad1991ea7fab4b9be89c6d65fa1ac904"
+    },
+    {
+      "path": "mods/empirecraft-towny-journeymap-1.11.2.jar",
+      "size": 219358,
+      "sha256": "c40e8ff6b6acb7124aaad73ee5f612ca3ee0e039e9fff1de826104dbccec3bb0"
+    },
+    {
+      "path": "mods/entityculling-forge-1.11.3-mc1.20.1.jar",
+      "size": 1515076,
+      "sha256": "86de2a9fc6538bc26e71e5393ae72018eb9bb349a5dbaa0645fd194da5654b66"
+    },
+    {
+      "path": "mods/epic-knights-all-in-one-1_20_1-forge-empirecraft.1.jar",
+      "size": 12461898,
+      "sha256": "05dfa96e886f030eb69bd600c426c1c73ec797bb445b96d42024b2153bfcff66"
+    },
+    {
+      "path": "mods/epicdeathscreen-forge-1.20.1-1.1.0-beta.2-empirecraft.1.jar",
+      "size": 1850917,
+      "sha256": "4610422ca6981e34a5fc1f127a12083e7e66d19396d6e5ce44a9b1c58611036e"
+    },
+    {
+      "path": "mods/etched-3.0.4.jar",
+      "size": 611496,
+      "sha256": "18fa648a887eb8ae284e278b1c361c8bffe73947336761d8b1787052dd34fe69"
+    },
+    {
+      "path": "mods/fancytabsections-6.2.3-FORGE-1.20.1.jar",
+      "size": 102680,
+      "sha256": "6e23b6f9d59dcff95373b1593b5418c80986f83f6587983d65016082b5996aa7"
+    },
+    {
+      "path": "mods/farmersrespite-1.20.1-2.1.2-empirecraft-recipes.1.jar",
+      "size": 500526,
+      "sha256": "cbf08c75874fa027f5a057347a46b0474a0bd33be1d6a941cc2537df2228016b"
+    },
+    {
+      "path": "mods/ferritecore-6.0.1-forge.jar",
+      "size": 123034,
+      "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54"
+    },
+    {
+      "path": "mods/fruitsdelight-1.1.3-empirecraft-recipes.1.jar",
+      "size": 1768316,
+      "sha256": "69d4a1bb4b4792400b06375476b8a497af5ecad0dfc81db2012de146c9d133ff"
+    },
+    {
+      "path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
+      "size": 1038209,
+      "sha256": "4518779a31b6c2abb92c98b5ad17ef3d60177df68626bfc86c44de2764913c2b"
+    },
+    {
+      "path": "mods/genshinstrument-1.20-1.20.1-5.0.jar",
+      "size": 7062280,
+      "sha256": "b026fa16597144ae68867c4dd8f6fbe030f884088ab34b3fcf67f4e3d9d8db61"
+    },
+    {
+      "path": "mods/handcrafted-forge-1.20.1-3.0.6.jar",
+      "size": 7111059,
+      "sha256": "1da3c7c524bfb656bb370757af55f08f1678e8e1cb934e1c4c04aa773ed64a79"
+    },
+    {
+      "path": "mods/hearth_and_home-forge-1.20.1-2.0.3.jar",
+      "size": 936576,
+      "sha256": "5749723c247a93a2dbe41d8cb46cb1809b2ddcfc2a924ddd4daeaaffea63e4ae"
+    },
+    {
+      "path": "mods/immersive_melodies-0.8.0+1.20.1-forge.jar",
+      "size": 5557511,
+      "sha256": "d6d795470c84f428a1aeff2523754f831b5b68c52f01bdab581a7c6014518318"
+    },
+    {
+      "path": "mods/immersive_paintings-0.6.13+1.20.1-forge.jar",
+      "size": 4856103,
+      "sha256": "069d5dffa4060d965899e607fad725c4d80a8086cef64f1d7563259b0a070633"
+    },
+    {
+      "path": "mods/jei-1.20.1-forge-15.56.0.205.jar",
+      "size": 1778129,
+      "sha256": "6b251e60a4719c874da89d750af97aa6498f6f4475e3ae79cb1288c7bf0cb65c"
+    },
+    {
+      "path": "mods/journeymap-forge-1.20.1-6.0.7.jar",
+      "size": 4282087,
+      "sha256": "8c042f4ef2a55a147ccba81f0fe520b98a408cff40c8c396129e39341ce1ec62"
+    },
+    {
+      "path": "mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+      "size": 625185,
+      "sha256": "e78686b92c3761ec26eb9d3c53efdd3d6ca77981cbd3723995e1163b7103ae0b"
+    },
+    {
+      "path": "mods/kotlinforforge-4.12.0-all (1).jar",
+      "size": 7433762,
+      "sha256": "9e381b4c7bed2d369140751e075da830037676040bc1169ce05f8904de46700a"
+    },
+    {
+      "path": "mods/kubejs-forge-2001.6.5-build.26.jar",
+      "size": 1658792,
+      "sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb"
+    },
+    {
+      "path": "mods/legendarysurvivaloverhaul-1.20.1-2.4.7-empirecraft.1.jar",
+      "size": 3419609,
+      "sha256": "c193247e02da92e18aba616ef8168afc5473c58066cc93428465b8b180126ecc"
+    },
+    {
+      "path": "mods/letsdo-API-forge-1.2.15-forge.jar",
+      "size": 1440591,
+      "sha256": "d08b99df112cfffb46e289635c79d4ac8397223320abd6469b47e202e23fa28c"
+    },
+    {
+      "path": "mods/letsdo-vinery-forge-1.4.41-empirecraft-drinks.1.jar",
+      "size": 2008392,
+      "sha256": "277a057be7ed6c40b364dc45147585a220d00d486b3d1c9d48f47c960cc830ee"
+    },
+    {
+      "path": "mods/libtooltips-2.3.2-FORGE-1.20.1.jar",
+      "size": 82621,
+      "sha256": "9d5876cd7f1ae1fec544a1801a6b8d1322b417074690116503fb966b59846560"
+    },
+    {
+      "path": "mods/locks-steel-only-1.20.1-1.2.4-empirecraft.1.jar",
+      "size": 595085,
+      "sha256": "2de77129dfebb14190d7dcc1eb9d7f22c8e6fcff1506436851da8e92676297a9"
+    },
+    {
+      "path": "mods/medieval_boomsticks-no_stars (8).jar",
+      "size": 321692,
+      "sha256": "b5ba292cde703946a18cd18c87c93ae970eef057dbbeff8c6b6243aa4397c3c9"
+    },
+    {
+      "path": "mods/medieval_paintings-1.20-7.0.jar",
+      "size": 906743,
+      "sha256": "b855f886a9e9a1c101d80f47b34f212ad0d0ef7764d549dd3544bd46de6c1e7e"
+    },
+    {
+      "path": "mods/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+      "size": 37178,
+      "sha256": "933e2a7e79c4594f965f7f7d00b1f28a98ec2a180ad8f9f90310a266fe5cf5d8"
+    },
+    {
+      "path": "mods/memoryleakfix-forge-1.17+-1.1.5.jar",
+      "size": 227925,
+      "sha256": "925c3db4e1d085a43c4d2beaa4eec18367c22abc90c2ce8594b8a129fd3f28dd"
+    },
+    {
+      "path": "mods/modernfix-forge-5.27.89+mc1.20.1.jar",
+      "size": 1010226,
+      "sha256": "96750ec3e12b581ee7a936ce2b7c2b35251e97b6f729b2db8bc0d5c9a2dc12fa"
+    },
+    {
+      "path": "mods/moonlight-1.20-2.16.37-forge.jar",
+      "size": 1412089,
+      "sha256": "ea2decbad9ccc2680a38db779baccdeb3f35d3525ade2dabb3674e8e523b6787"
+    },
+    {
+      "path": "mods/musketmod-1.20.1-forge-1.5.4.jar",
+      "size": 440495,
+      "sha256": "4e213daae42d92606639dd98c340e2274ffaa460a4832850d468900ee326a5ad"
+    },
+    {
+      "path": "mods/naturalist-5.0pre5+forge-1.20.1.jar",
+      "size": 3807415,
+      "sha256": "2cb0ec1143818a4827fb3b8a1d5fc7be627a0b72632c8a19cb0a5a363ecbfe5b"
+    },
+    {
+      "path": "mods/nirvana-forge-1.2.5 (1).jar",
+      "size": 2750842,
+      "sha256": "52bfc39d0e7365577e05c3930c1caa4b1919efdca0e1f94202fc023cccdfa232"
+    },
+    {
+      "path": "mods/ok_zoomer-forge-5.4.0-beta.9.jar",
+      "size": 530268,
+      "sha256": "b07bfb5673832577789b6c2ab160b5d80e0ef73ef229717ebbcea174fbdc36a7"
+    },
+    {
+      "path": "mods/overgeared-forge-1.20.1-1.6.36-empirecraft.1.jar",
+      "size": 1582118,
+      "sha256": "ed5ddf454a1b3f84dddbf9acc48f4ab4a892bc6ce41899336ad4af22d548e65d"
+    },
+    {
+      "path": "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "size": 181437,
+      "sha256": "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691"
+    },
+    {
+      "path": "mods/polytone-1.20-3.5.26.jar",
+      "size": 1169185,
+      "sha256": "3409f22a39a93eaa699f96561ea8830bf5f492db43a000be783f53ae59e00404"
+    },
+    {
+      "path": "mods/recruits-1.20.1-1.15.0.jar",
+      "size": 2562702,
+      "sha256": "5c0c9252b332babf7e7cf5fc9a5a6f08018df5b9f86827853db2cb3f39b127ce"
+    },
+    {
+      "path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "size": 427025,
+      "sha256": "8c30256fc6735ef180be972f1b03a280ea931367092d896472f2f77e52a3f737"
+    },
+    {
+      "path": "mods/rhino-forge-2001.2.3-build.10.jar",
+      "size": 1798244,
+      "sha256": "fed2211429301bf043864183cab9ab8e92d4cc4dbb9e488ce6c75217c54584a6"
+    },
+    {
+      "path": "mods/ritchiesprojectilelib-2.1.1+mc.1.20.1-forge.jar",
+      "size": 78625,
+      "sha256": "5531ec454792f98993fa29d55f8810444ba3e9ef8f04331c5811b84ec8d0c3dc"
+    },
+    {
+      "path": "mods/rusticdelight-forge-1.20.1-1.5.1.jar",
+      "size": 562461,
+      "sha256": "8cb08b1ec4a0ab333d88f3ed5cf9e0302316e6a343c651616ed5731f48ba0423"
+    },
+    {
+      "path": "mods/selling_bin-1.4.3-FORGE-1.20.1.jar",
+      "size": 2013025,
+      "sha256": "71c026910d3e7a2987840bcd78c83241d884616a2fc43664a92d30ec74d1584c"
+    },
+    {
+      "path": "mods/siege-machines-1.20.1-forge-1.39 (2).jar",
+      "size": 1959521,
+      "sha256": "acd8e84b4ce6bacebbc50036e4364b986e88214f38d0be526b8aef7aabe61210"
+    },
+    {
+      "path": "mods/sound-physics-remastered-forge-1.20.1-1.5.1.jar",
+      "size": 206984,
+      "sha256": "591fa317c4e462039dae01967bf370acb284d5118cf5839a33f1d01b6c0def3c"
+    },
+    {
+      "path": "mods/spawn-4.0.8-1.20.1-empirecraft.1.jar",
+      "size": 83410059,
+      "sha256": "430660492453d180f600cf03d7ad9471d0b1a0024d4e214cf015b73f53a355f8"
+    },
+    {
+      "path": "mods/starcatcher-3.3.10-FORGE-1.20.1.jar",
+      "size": 6837142,
+      "sha256": "bc8746e76d2e41a307f78e736159aaf85ace5cf0bf71d9c7187a4324223b850a"
+    },
+    {
+      "path": "mods/supplementaries-1.20-3.1.44-forge-empirecraft-recipes.1.jar",
+      "size": 13471199,
+      "sha256": "4df036412797de917aa41d2bb09bf51fd6645a378abfa48dbb8d36fda3a6176b"
+    },
+    {
+      "path": "mods/table_top_craft-1.20.1-6.1.2.jar",
+      "size": 1427717,
+      "sha256": "d08586bda0ec8ab6dc989d26577db599c34962c0ae04cff4ca5734b8cbaac074"
+    },
+    {
+      "path": "mods/tfc_muskets-1.20.1-forge-1.0.3-empirecraft.1.jar",
+      "size": 22831,
+      "sha256": "c00658853b509f019b450334994d844d6ac601bb76cbb6740a150843b6012270"
+    },
+    {
+      "path": "mods/timber_joinery-1.1.0.jar",
+      "size": 1812186,
+      "sha256": "102565d4dc1e1d2a027ea0d904fdfe3faa05802fa5be154aac06868cad1c275a"
+    },
+    {
+      "path": "mods/trmt-0.5.1b-1.20.1-forge.jar",
+      "size": 133648,
+      "sha256": "f93ce88322cfe4e1636d83e2a536ec9acd032f217b5ed9a3312acbe6ae804d5c"
+    },
+    {
+      "path": "mods/valkyrienskies-120-2.4.11-empirecraft.1.jar",
+      "size": 27518315,
+      "sha256": "13ce02839e00ab1870be451fbe53f31519ed94ddf76fd465a2746bd7f32d3d8c"
+    },
+    {
+      "path": "mods/voicechat-forge-1.20.1-2.6.22.jar",
+      "size": 4923439,
+      "sha256": "727d31c11905be6af05686c619dd62a1ed4e451c47670cf5e9804c1ac8871386"
+    },
+    {
+      "path": "mods/vs_sails-1.20.1-0.3.2-empirecraft.19.1-forge.jar",
+      "size": 1407351,
+      "sha256": "cc154f1316fa82b02deec6b8474ef9d59b00d8644974c9141fda861c4d8669c5"
+    },
+    {
+      "path": "mods/wonderoussea-1.0.4-empirecraft.2-forge-1.20.1.jar",
+      "size": 5716165,
+      "sha256": "933f30375180c27a70a94aa59757ced14175bb9155a83e92c8151f8db229d442"
+    }
+  ]
+}

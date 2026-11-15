@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "create:acacia_window", "required": false},
+    {"id": "create:acacia_window_pane", "required": false},
+    {"id": "create:bamboo_window", "required": false},
+    {"id": "create:bamboo_window_pane", "required": false},
+    {"id": "create:birch_window", "required": false},
+    {"id": "create:birch_window_pane", "required": false},
+    {"id": "create:cherry_window", "required": false},
+    {"id": "create:cherry_window_pane", "required": false},
+    {"id": "create:dark_oak_window", "required": false},
+    {"id": "create:dark_oak_window_pane", "required": false},
+    {"id": "create:jungle_window", "required": false},
+    {"id": "create:jungle_window_pane", "required": false},
+    {"id": "create:mangrove_window", "required": false},
+    {"id": "create:mangrove_window_pane", "required": false},
+    {"id": "create:oak_window", "required": false},
+    {"id": "create:oak_window_pane", "required": false},
+    {"id": "create:spruce_window", "required": false},
+    {"id": "create:spruce_window_pane", "required": false},
+    {"id": "dawnoftimebuilder:green_painted_decorated_window", "required": false},
+    {"id": "dawnoftimebuilder:green_painted_straight_window", "required": false},
+    {"id": "dawnoftimebuilder:green_painted_window", "required": false},
+    {"id": "spawn:ant_farm", "required": false},
+    {"id": "vinery:window", "required": false},
+    {"id": "vinery:window_block", "required": false}
+  ]
+}

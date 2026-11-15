@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "dawnoftimebuilder:paper_door", "required": false},
+    {"id": "dawnoftimebuilder:paper_folding_screen", "required": false},
+    {"id": "dawnoftimebuilder:paper_lamp", "required": false},
+    {"id": "dawnoftimebuilder:paper_wall", "required": false},
+    {"id": "dawnoftimebuilder:paper_wall_flat", "required": false},
+    {"id": "dawnoftimebuilder:paper_wall_flowery", "required": false},
+    {"id": "dawnoftimebuilder:paper_wall_squared", "required": false},
+    {"id": "dawnoftimebuilder:paper_wall_window", "required": false},
+    {"id": "dawnoftimebuilder:red_paper_lantern", "required": false},
+    {"id": "hearth_and_home:shoji", "required": false},
+    {"id": "hearth_and_home:shoji_panel", "required": false}
+  ]
+}
