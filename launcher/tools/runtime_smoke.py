@@ -55,6 +55,13 @@ with tempfile.TemporaryDirectory(prefix='empirecraft-runtime-') as folder:
                         raise RuntimeError('Client exited: '+str(child.returncode)+'\n'+output.read_text(errors='replace')[-14000:]+'\n'+text[-18000:])
                     if any(marker in text for marker in ['IllegalClassLoadError','Failed to initialize mod containers','Reported exception thrown!']):
                         raise RuntimeError(text[-18000:])
+                    if 'Empirecraft smoke screen: net.minecraftforge.client.gui.LoadingErrorScreen' in text:
+                        lines = output.read_text(errors='replace').splitlines()
+                        diagnostic = set()
+                        for index, line in enumerate(lines):
+                            if any(word in line.lower() for word in ['error', 'exception', 'loading warning', 'modloading', 'failure']):
+                                diagnostic.update(range(max(0,index-2),min(len(lines),index+12)))
+                        raise RuntimeError('Forge loading screen diagnostics\n'+'\n'.join(lines[i] for i in sorted(diagnostic)))
                     if 'Empirecraft home screen ready' in text:
                         ready = ready or time.monotonic()
                         if time.monotonic()-ready >= 10:
