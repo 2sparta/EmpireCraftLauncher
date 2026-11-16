@@ -17,7 +17,14 @@ jobs:
           python - <<'PY'
           import io,os,urllib.request,zipfile
           request=urllib.request.Request('https://api.github.com/repos/2sparta/EmpireCraftLauncher/actions/artifacts/14220908673/zip',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
-          with urllib.request.urlopen(request) as response: raw=response.read()
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self,*args): return None
+          try:
+              response=urllib.request.build_opener(NoRedirect).open(request)
+              raw=response.read()
+          except urllib.error.HTTPError as error:
+              if error.code!=302: raise
+              with urllib.request.urlopen(error.headers['Location']) as response: raw=response.read()
           with zipfile.ZipFile(io.BytesIO(raw)) as z:
               for name in z.namelist():
                   if '/crash-reports/' in name:
