@@ -16,7 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          sparse-checkout: launcher
+          sparse-checkout: |
+            launcher
+            mods
+            config
+            defaultconfigs
+            kubejs
       - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
         with:
           python-version: '3.12'
@@ -47,7 +52,7 @@ jobs:
           ALSOFT_DRIVERS: 'null'
         run: |
           result=0
-          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --profile balanced --gameplay-probe launcher/kitchen-captures --official-cache launcher/.official-kitchen-runtime --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- > launcher/kitchen-runtime.log 2>&1 || result=$?
+          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --profile balanced --seed-pack-cache . --gameplay-probe launcher/kitchen-captures --official-cache launcher/.official-kitchen-runtime --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- > launcher/kitchen-runtime.log 2>&1 || result=$?
           python - <<'PYTRACE'
           from pathlib import Path
           for p in Path('launcher/kitchen-captures/crash-reports').glob('*.txt'):

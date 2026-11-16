@@ -10,7 +10,7 @@ import sys
 import tempfile
 import time
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from empirecraft_launcher.security import verify_manifest
+from empirecraft_launcher.security import verify_manifest, digest, safe_path
 from empirecraft_launcher.game import install_runtime, make_command
 from empirecraft_launcher.updater import resources, install_pack
 from empirecraft_launcher.profiles import apply_options
@@ -21,6 +21,7 @@ args.add_argument('--profile', choices=['potato','balanced','high'], default='po
 args.add_argument('--menu-capture', type=Path, help='Capture and exercise the real X11 game menu')
 args.add_argument('--gameplay-probe', type=Path, help='Exercise the offline kitchen fixture and collect logs/screenshots')
 args.add_argument('--official-cache', type=Path, help='CI-only cache of a completed official runtime; no worlds or modpack data')
+args.add_argument('--seed-pack-cache', type=Path, help='Seed the regular SHA-256 download cache from a matching local client snapshot')
 args.add_argument('--overlay', type=Path, help='Trusted integration fixture copied only into the disposable game directory')
 args.add_argument('--replace-mod-prefix', action='append', default=[])
 options = args.parse_args()
@@ -41,6 +42,17 @@ with tempfile.TemporaryDirectory(prefix='empirecraft-runtime-') as folder:
     game = root/'instances'/options.profile
     game.mkdir(parents=True)
     if options.boot_pack:
+        if options.seed_pack_cache:
+            seed = options.seed_pack_cache.resolve()
+            cache = root/'cache'; cache.mkdir(exist_ok=True)
+            seeded = 0
+            for item in manifest['profiles'][options.profile]['files']:
+                source = seed/Path(str(safe_path(item['path'])))
+                if source.is_file() and not source.is_symlink() and source.resolve().is_relative_to(seed) and source.stat().st_size == item['size'] and digest(source) == item['sha256']:
+                    shutil.copy2(source, cache/item['sha256']); seeded += 1
+                elif item['url'].startswith('https://raw.githubusercontent.com/'):
+                    raise ValueError('Local CI snapshot differs from the signed file: '+item['path'])
+            print('SIGNED_PACK_CACHE_SEEDED', seeded, flush=True)
         game = install_pack(root, manifest, options.profile)
         for old in (game/'mods').glob('empirecraft-launcher-client-*.jar'):
             old.unlink()
