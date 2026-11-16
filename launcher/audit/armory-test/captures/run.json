@@ -1,9 +1,10 @@
 {
-  "source_commit": "3dda6290f71e5d3f3e9ef1b0fbb1d426c3dde8d6",
-  "run_id": "43941415275",
+  "source_commit": "6ac318a3a6189a0f5ffbeb49f1cb1e71693b1e57",
+  "run_id": "43946787451",
   "files": [
     "01-armorer-workbench.png",
     "02-portable-workpiece.png",
-    "03-assembled-armor.png"
+    "03-assembled-armor.png",
+    "03-ottoman-armor-models.png"
   ]
 }
