@@ -26,11 +26,14 @@ jobs:
               if error.code!=302: raise
               with urllib.request.urlopen(error.headers['Location']) as response: raw=response.read()
           with zipfile.ZipFile(io.BytesIO(raw)) as z:
+              print('ARTIFACT FILES',z.namelist())
+              for name in z.namelist():
+                  if name.endswith('kitchen-runtime.log') or name.endswith('client-startup.log'): print(name+'\n'+z.read(name).decode(errors='replace')[-8000:])
               for name in z.namelist():
                   if '/crash-reports/' in name:
                       print(name+'\n'+z.read(name).decode(errors='replace')[:18000])
               for name in z.namelist():
-                  if name.endswith('/logs/latest.log'):
+                  if name.endswith('logs/latest.log'):
                       lines=z.read(name).decode(errors='replace').splitlines()
                       print('LAST LOG LINES\n'+'\n'.join(lines[-60:]))
                       for i,line in enumerate(lines):
