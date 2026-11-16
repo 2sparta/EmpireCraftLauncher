@@ -1,7 +1,10 @@
 name: In-game court menu preview
 on:
+  pull_request:
+    paths: ['launcher/native/**', 'launcher/tools/menu_capture.py', 'launcher/tools/runtime_smoke.py', '.github/workflows/menu-preview.yml']
   push:
-    branches: [codex/in-game-court-menu-preview]
+    branches: [main, codex/in-game-court-menu-preview]
+    paths: ['launcher/native/**', 'launcher/tools/menu_capture.py', 'launcher/tools/runtime_smoke.py', '.github/workflows/menu-preview.yml']
   workflow_dispatch:
 permissions:
   contents: read
