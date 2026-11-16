@@ -1,0 +1,31 @@
+name: Read offline kitchen failure trace
+on:
+  push:
+    branches: [codex/kitchen-client-test]
+    paths: ['.github/workflows/kitchen-diagnostics.yml']
+permissions:
+  actions: read
+  contents: read
+jobs:
+  trace:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Read first synthetic gameplay crash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import io,os,urllib.request,zipfile
+          request=urllib.request.Request('https://api.github.com/repos/2sparta/EmpireCraftLauncher/actions/artifacts/14220908673/zip',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+          with urllib.request.urlopen(request) as response: raw=response.read()
+          with zipfile.ZipFile(io.BytesIO(raw)) as z:
+              for name in z.namelist():
+                  if '/crash-reports/' in name:
+                      print(name+'\n'+z.read(name).decode(errors='replace')[:18000])
+              for name in z.namelist():
+                  if name.endswith('/logs/latest.log'):
+                      lines=z.read(name).decode(errors='replace').splitlines()
+                      for i,line in enumerate(lines):
+                          if any(s in line for s in ['KITCHEN_CLIENT_', 'Exception in server tick', 'Caused by:', 'Failed to start']):
+                              print('\n'.join(lines[max(0,i-2):i+14]))
+          PY
