@@ -4,13 +4,30 @@ on:
     branches: [codex/kitchen-client-test]
     paths: ['launcher/audit/kitchen-test/**', 'launcher/tools/runtime_smoke.py', '.github/workflows/kitchen-preview.yml']
   workflow_dispatch:
+concurrency:
+  group: kitchen-render-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
+  actions: write
   contents: write
 jobs:
   client:
     runs-on: ubuntu-24.04
     timeout-minutes: 35
     steps:
+      - name: Cancel the superseded fixture without a world-load watchdog
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PYCANCEL'
+          import os,urllib.request,urllib.error
+          request=urllib.request.Request('https://api.github.com/repos/2sparta/EmpireCraftLauncher/actions/runs/43858355916/cancel',method='POST',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+          try:
+              with urllib.request.urlopen(request) as r: print('Superseded fixture cancellation:',r.status)
+          except urllib.error.HTTPError as e:
+              if e.code!=409: raise
+              print('Superseded fixture already finished')
+          PYCANCEL
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           sparse-checkout: launcher
