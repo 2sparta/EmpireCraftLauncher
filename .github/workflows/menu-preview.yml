@@ -1,10 +1,10 @@
 name: In-game court menu preview
 on:
   pull_request:
-    paths: ['launcher/native/**', 'launcher/tools/menu_capture.py', 'launcher/tools/runtime_smoke.py', '.github/workflows/menu-preview.yml']
+    paths: ['mods/**', 'config/**', 'defaultconfigs/**', 'kubejs/**', 'launcher/resources/bootstrap.json', 'launcher/tests/test_bootstrap.py', 'launcher/native/**', 'launcher/tools/menu_capture.py', 'launcher/tools/runtime_smoke.py', '.github/workflows/menu-preview.yml']
   push:
-    branches: [main, codex/in-game-court-menu-preview]
-    paths: ['launcher/native/**', 'launcher/tools/menu_capture.py', 'launcher/tools/runtime_smoke.py', '.github/workflows/menu-preview.yml']
+    branches: [main, codex/in-game-court-menu-preview, codex/current-pack-sync]
+    paths: ['mods/**', 'config/**', 'defaultconfigs/**', 'kubejs/**', 'launcher/resources/bootstrap.json', 'launcher/tests/test_bootstrap.py', 'launcher/native/**', 'launcher/tools/menu_capture.py', 'launcher/tools/runtime_smoke.py', '.github/workflows/menu-preview.yml']
   workflow_dispatch:
 permissions:
   contents: read
