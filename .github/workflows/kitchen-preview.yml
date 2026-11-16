@@ -5,7 +5,7 @@ on:
     paths: ['launcher/audit/kitchen-test/**', 'launcher/tools/runtime_smoke.py', '.github/workflows/kitchen-preview.yml']
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   client:
     runs-on: ubuntu-24.04
@@ -38,9 +38,25 @@ jobs:
           ALSOFT_DRIVERS: 'null'
         run: |
           result=0
-          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --gameplay-probe launcher/kitchen-captures --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- > launcher/kitchen-runtime.log 2>&1 || result=$?
+          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --gameplay-probe launcher/kitchen-captures --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- --replace-mod-prefix TownyRecruits --replace-mod-prefix empirecraft-engagement- > launcher/kitchen-runtime.log 2>&1 || result=$?
+          python - <<'PYTRACE'
+          from pathlib import Path
+          for p in Path('launcher/kitchen-captures/crash-reports').glob('*.txt'):
+              print(p.name+'\n'+p.read_text(errors='replace')[:14000])
+          p=Path('launcher/kitchen-captures/logs/latest.log')
+          if p.exists():
+              lines=p.read_text(errors='replace').splitlines()
+              for i,line in enumerate(lines):
+                  if any(s in line for s in ['KITCHEN_CLIENT_', 'Caused by:', 'Exception in server tick']):
+                      print('\n'.join(lines[max(0,i-1):i+10]))
+          PYTRACE
           tail -120 launcher/kitchen-runtime.log
           exit "$result"
+      - name: Preserve synthetic screenshots for inspection
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python launcher/tools/publish_test_captures.py
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
