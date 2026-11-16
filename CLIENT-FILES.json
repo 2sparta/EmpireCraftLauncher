@@ -1,8 +1,8 @@
 {
-  "source_commit": "a2a74064c5e986711fb23673dd5949361cedc168",
+  "source_commit": "d4bff358c4065c74f1ae76f2f3c38fdbc0f37187",
   "server_parity": {
     "server_snapshot_present": true,
-    "shared_mod_count": 109,
+    "shared_mod_count": 111,
     "shared_mods": {
       "accuratehitboxes": {
         "file": "accuratehitboxes-neoforge-2.4.2-empirecraft.1-1.20.1.jar",
@@ -159,6 +159,11 @@
         "sha256": "c88216333b8f173c474c22dbf16116d27150c54b50f1a8fb2c205b4909dea747",
         "version": "1.0.4"
       },
+      "empirecraft_armory": {
+        "file": "empirecraft-armory-1.0.0.jar",
+        "sha256": "d6741baf1781b970dfe34284a5733b9b6095bf68d1ffa1579b9f7988b6a89364",
+        "version": "1.0.0"
+      },
       "empirecraft_calendar": {
         "file": "empirecraft-calendar-1.2.3.jar",
         "sha256": "0278781c6ffc12c6a475e323e74e36b50bf7409af43cdc2648b0181eb8f0ddc8",
@@ -180,9 +185,9 @@
         "version": "1.0.0"
       },
       "empirecraft_forging": {
-        "file": "empirecraft-forging-1.1.4.jar",
-        "sha256": "baacc0957d7eef091b571d3b71e8ed208674c5960cdab9b55cf9bda688f0eb5e",
-        "version": "1.1.4"
+        "file": "empirecraft-forging-1.1.5.jar",
+        "sha256": "f83ee693694d9b5f810bb63e8e1c5cb644acb87abd4afc02a7a609fa4c3a9f45",
+        "version": "1.1.5"
       },
       "empirecraft_guidebook": {
         "file": "empirecraft-handbook-1.0.5.jar",
@@ -278,6 +283,11 @@
         "file": "GlitchCore-forge-1.20.1-0.0.1.1 (1).jar",
         "sha256": "e42a8b513da08a910c133caeafad9fc2fcc22fdaaa2eb3e2516e9112a5a0db61",
         "version": "0.0.1.1"
+      },
+      "hamzabus_ottoman_mod": {
+        "file": "hamzabus_ottoman_mod-1.0.4-forge-empirecraft.1.jar",
+        "sha256": "91dda468b7f50fa5a3a68bed59d45080070a0eac7b927a70102a8b35d72493f1",
+        "version": "1.0.4-empirecraft.1"
       },
       "handcrafted": {
         "file": "handcrafted-forge-1.20.1-3.0.6.jar",
@@ -584,8 +594,8 @@
     },
     {
       "path": "config/overgeared-common.toml",
-      "size": 11169,
-      "sha256": "4b7906459a0705e03a8a8e93206d1eedd60cbe6b93afa94cf73d6a9fc3945258"
+      "size": 11170,
+      "sha256": "aa39e882014a7ad375875d2c2c8691744989876d35266b6d8415a6d4cd37d982"
     },
     {
       "path": "config/sereneseasons/fertility.toml",
@@ -1823,6 +1833,11 @@
       "sha256": "dd574ab15b3dc2b5abdd155baaed013051ea62dacb4e1e5af220ffcbdc6305b5"
     },
     {
+      "path": "kubejs/server_scripts/zzzzzzzzzzzzz_empirecraft_gunsmith.js",
+      "size": 7466,
+      "sha256": "7b7e6ff864819f5cdca26386746a4126f410935ef436165909a051f8db748d01"
+    },
+    {
       "path": "kubejs/server_scripts/zzzzzzzzzzzzz_empirecraft_kitchen.js",
       "size": 3378,
       "sha256": "1ed2ce5179e209c8dc4081ad9bedbd18daad1b79163042b978e0adb20a0d6d8f"
@@ -2053,6 +2068,11 @@
       "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"
     },
     {
+      "path": "mods/empirecraft-armory-1.0.0.jar",
+      "size": 351681,
+      "sha256": "d6741baf1781b970dfe34284a5733b9b6095bf68d1ffa1579b9f7988b6a89364"
+    },
+    {
       "path": "mods/empirecraft-calendar-1.2.3.jar",
       "size": 51398,
       "sha256": "0278781c6ffc12c6a475e323e74e36b50bf7409af43cdc2648b0181eb8f0ddc8"
@@ -2073,9 +2093,9 @@
       "sha256": "8ac5e54319e82a7e2227b03527e3bdf05d12f76818b3fd3a47456640d52e5238"
     },
     {
-      "path": "mods/empirecraft-forging-1.1.4.jar",
-      "size": 75972,
-      "sha256": "baacc0957d7eef091b571d3b71e8ed208674c5960cdab9b55cf9bda688f0eb5e"
+      "path": "mods/empirecraft-forging-1.1.5.jar",
+      "size": 93771,
+      "sha256": "f83ee693694d9b5f810bb63e8e1c5cb644acb87abd4afc02a7a609fa4c3a9f45"
     },
     {
       "path": "mods/empirecraft-handbook-1.0.5.jar",
@@ -2186,6 +2206,11 @@
       "path": "mods/genshinstrument-1.20-1.20.1-5.0.jar",
       "size": 7062280,
       "sha256": "b026fa16597144ae68867c4dd8f6fbe030f884088ab34b3fcf67f4e3d9d8db61"
+    },
+    {
+      "path": "mods/hamzabus_ottoman_mod-1.0.4-forge-empirecraft.1.jar",
+      "size": 6419898,
+      "sha256": "91dda468b7f50fa5a3a68bed59d45080070a0eac7b927a70102a8b35d72493f1"
     },
     {
       "path": "mods/handcrafted-forge-1.20.1-3.0.6.jar",
