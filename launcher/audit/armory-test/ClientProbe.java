@@ -18,7 +18,7 @@ import ua.empirecraft.armory.client.WorkshopScreen;
 @Mod("empirecraft_kitchen_client_probe")
 public final class ClientProbe {
     final BlockPos pos=new BlockPos(0,100,0);
-    boolean loaded,done,queued,exiting,transferred;int ticks,checks,stage=-1,wait,frames;volatile boolean ready;volatile Throwable error;
+    boolean loaded,done,queued,exiting,transferred,selectedByPacket,alternateRequested;int ticks,checks,stage=-1,wait,frames;volatile boolean ready;volatile Throwable error;
     public ClientProbe(){MinecraftForge.EVENT_BUS.addListener(this::tick);MinecraftForge.EVENT_BUS.addListener(this::frame);}
     void check(boolean ok,String message){checks++;if(!ok)throw new AssertionError(message);}
     void capture(String name){var mc=Minecraft.getInstance();Screenshot.grab(mc.gameDirectory,name+".png",mc.getMainRenderTarget(),c->{});}
@@ -46,6 +46,7 @@ public final class ClientProbe {
             ticks++;
             if(ticks<80)return;
             check(!AssemblyRecipe.all(mc.level).isEmpty(),"Custom recipes synchronized to client");check(menu.selected()>=0,"Server-selected workpiece synchronized");
+            if(!selectedByPacket){var list=AssemblyRecipe.all(mc.level);int last=list.size()-1;if(!alternateRequested){check(last>255,"Selection test exceeds the vanilla byte limit");ArmoryNetwork.select(menu.containerId,last);alternateRequested=true;wait=0;return;}if(menu.selected()!=last){if(++wait>180)throw new AssertionError("Large-index selection was not synchronized");return;}var target=list.stream().filter(r->r.result.is(Items.IRON_CHESTPLATE)&&r.base.isEmpty()).findFirst().orElseThrow();ArmoryNetwork.select(menu.containerId,list.indexOf(target));selectedByPacket=true;ticks=0;return;}
             if(stage==-1){capture("01-armorer-workbench");stage=0;mc.gameMode.handleInventoryButtonClick(menu.containerId,0);wait=0;return;}
             if(stage<4){
                 if(++wait>180)throw new AssertionError("Network assembly stalled stage="+stage+" client="+menu.stage()+" status="+menu.status());
