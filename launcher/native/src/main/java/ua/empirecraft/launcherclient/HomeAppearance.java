@@ -20,12 +20,14 @@ final class HomeAppearance {
         data.setModelType("classic");
         data.setCurrentAnimation("idle");
     }
+    void invalidate() { lastSkin = null; lastCape = null; }
     void refresh() {
         try {
             String skin = LocalLookPreview.skinHash(false);
             if (!java.util.Objects.equals(lastSkin, skin)) {
                 var assets = LocalAssetManager.getInstance();
                 var metadata = skin == null || skin.isEmpty() ? null : assets.getMetadata(skin);
+                if (skin != null && !skin.isEmpty() && metadata == null) return;
                 if (metadata != null) {
                     var texture = assets.getTextureLocation(skin, TextureQuality.FULL);
                     if (texture == null) return; // Retry after asynchronous texture loading.

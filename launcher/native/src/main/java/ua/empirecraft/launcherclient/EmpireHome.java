@@ -25,6 +25,7 @@ public final class EmpireHome extends Screen {
     @Override protected void init() {
         layout = HomeLayout.of(width, height);
         dragging = false;
+        appearance.invalidate();
         appearance.refresh();
         com.mojang.logging.LogUtils.getLogger().info("Empirecraft home screen ready: {}x{}", width, height);
         addRenderableWidget(new CourtButton(layout.buttonX(), layout.buttonY(0), layout.buttonWidth(), layout.buttonHeight(), text("play"), b -> {

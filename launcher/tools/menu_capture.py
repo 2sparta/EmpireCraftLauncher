@@ -13,6 +13,7 @@ def capture_menu(destination: Path, game: Path):
     windows = xdo('search', '--name', '^Minecraft').splitlines()
     window = windows[-1]
     xdo('windowfocus', window)
+    xdo('windowmove', '--sync', window, 0, 0)
     report = []
     def screen_marker(expected):
         deadline = time.monotonic() + 20
@@ -27,7 +28,7 @@ def capture_menu(destination: Path, game: Path):
         geometry = dict(line.split('=', 1) for line in xdo('getwindowgeometry', '--shell', window).splitlines())
         x,y,w,h = [int(geometry[key]) for key in ('X','Y','WIDTH','HEIGHT')]
         ImageGrab.grab().crop((x,y,x+w,y+h)).save(destination/(name+'.png'))
-        report.append({'capture':name, 'width':w, 'height':h})
+        report.append({'capture':name, 'x':x, 'y':y, 'width':w, 'height':h})
     def click(x,y):
         xdo('mousemove', '--window', window, x, y)
         xdo('click', '1')
@@ -58,6 +59,7 @@ def capture_menu(destination: Path, game: Path):
     xdo('key','r')
     for w,h in [(640,480),(1280,720),(1440,600)]:
         xdo('windowsize', '--sync', window, w,h)
+        xdo('windowmove', '--sync', window, 0,0)
         shot(f'home-{w}x{h}')
     (destination/'menu-flow.json').write_text(json.dumps(report, indent=2)+'\n')
     print('REAL_MENU_FLOW_PASS: home, skin, cape, settings, rotation, 4 window sizes',flush=True)
