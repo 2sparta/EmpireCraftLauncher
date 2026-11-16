@@ -1,0 +1,35 @@
+{
+  "commit": "155a5af05cc2f4246893e4d8700184ea42d4076c",
+  "signature_verified": true,
+  "live_channel_updated": false,
+  "profile_changes": {
+    "balanced": {
+      "added": [
+        "mods/empirecraft-launcher-client-0.2.0.jar"
+      ],
+      "removed": [
+        "mods/empirecraft-launcher-client-0.1.1.jar"
+      ],
+      "changed": []
+    },
+    "high": {
+      "added": [
+        "mods/empirecraft-launcher-client-0.2.0.jar"
+      ],
+      "removed": [
+        "mods/empirecraft-launcher-client-0.1.1.jar"
+      ],
+      "changed": []
+    },
+    "potato": {
+      "added": [
+        "mods/empirecraft-launcher-client-0.2.0.jar"
+      ],
+      "removed": [
+        "mods/empirecraft-launcher-client-0.1.1.jar"
+      ],
+      "changed": []
+    }
+  },
+  "remote_addon_sha256": "1ec494b5a81cfc66e59a50bfab4c12c13f36cc317d569e85a89497d01d64a4ed"
+}

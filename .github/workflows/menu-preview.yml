@@ -1,0 +1,42 @@
+name: In-game court menu preview
+on:
+  pull_request:
+    paths: ['launcher/native/**', 'launcher/tools/menu_capture.py', 'launcher/tools/runtime_smoke.py', '.github/workflows/menu-preview.yml']
+  push:
+    branches: [main, codex/in-game-court-menu-preview]
+    paths: ['launcher/native/**', 'launcher/tools/menu_capture.py', 'launcher/tools/runtime_smoke.py', '.github/workflows/menu-preview.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  client:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          sparse-checkout: launcher
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r launcher/requirements.txt pytest==9.0.2 pillow==13.0.0
+      - run: sudo apt-get update -qq && sudo apt-get install -y xdotool
+      - run: python -m pytest launcher/tests -q
+      - name: Boot real client and exercise in-game screens
+        env:
+          LIBGL_ALWAYS_SOFTWARE: '1'
+          ALSOFT_DRIVERS: 'null'
+        run: |
+          result=0
+          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --menu-capture launcher/menu-captures > launcher/menu-runtime.log 2>&1 || result=$?
+          tail -120 launcher/menu-runtime.log
+          exit "$result"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: actual-minecraft-menu
+          path: |
+            launcher/menu-captures/**
+            launcher/menu-runtime.log
+          if-no-files-found: error
+          retention-days: 14
