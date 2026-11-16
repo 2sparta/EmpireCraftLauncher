@@ -1,9 +1,9 @@
 {
-  "sha256": "20fe217b3c2fb4b09ac64d16dfaf4a472a63dfeb1503cf4e7a7db03c1b3e7819",
-  "probe_sha256": "a18c8f350ab7f03ff204486c4c9d2f312164337600db6f477088aad6a04db631",
+  "sha256": "ef9510253023f1162862008166ecdccdee5317842df1f2602399b2e6874691c6",
+  "probe_sha256": "9da2d1b521e2e1f6c4d5ee3f0a5632da274aabc3849b848c9e8805f11923b343",
   "scope": "Offline synthetic flat world, actual kitchen station hops and actual item placement of Siege Machines culverin/mortar; no hosting data or production channel changes.",
   "production_mod_exclusions": [],
   "fixture_only_guard": "OfflineTownyCommands denies Towny admin commands only on the synthetic integrated server, which has no Bukkit. All production client mods remain installed.",
   "guard_sha256": "ec0df886e02b4a979e080b37033a0c0bc37ca3718e7bc38346436d2b9636e947",
-  "scenario": "Legacy TFC cooked-egg registry and ItemStack count/NBT migration; clean exit after loading an older synthetic world. Full gameplay transitions and both cannon models already passed run 43863439368."
+  "scenario": "Balanced profile, old synthetic world, TFC egg count/NBT migration, forced native rock regrowth, both cannons, twelve station hops and clean registry exit."
 }

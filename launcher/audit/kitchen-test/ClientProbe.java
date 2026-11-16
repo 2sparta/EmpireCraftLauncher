@@ -60,9 +60,6 @@ public final class ClientProbe {
         ticks++;
         if(ticks<160)return;
         check(mc.getSingleplayerServer()!=null,"No remote server used");
-        if(ticks==160&&legacy){
-          capture("01-legacy-world-loaded");mc.clearLevel(new net.minecraft.client.gui.screens.TitleScreen());check(mc.level==null,"Legacy registry restores cleanly on exit");done=true;System.out.println("KITCHEN_CLIENT_PASS scenario=legacy-item-migration checks="+checks+" count=17 custom_nbt=preserved clean_exit=true");return;
-        }
         if(ticks==160){
           check(mc.level.getBlockEntity(KETTLE) instanceof KettleBlockEntity,"Client receives kettle");
           capture("01-cannons-before-focus");
@@ -78,7 +75,7 @@ public final class ClientProbe {
           check(frames>30,"World frames actually rendered");capture("03-after-twelve-hops");
           FocusController.get().requestExit();
           mc.clearLevel(new net.minecraft.client.gui.screens.TitleScreen());check(mc.level==null,"Clean world exit restores frozen registries");
-          done=true;System.out.println("KITCHEN_CLIENT_PASS checks="+checks+" frames="+frames+" hops="+steps+" cannons=culverin,mortar");
+          done=true;System.out.println("KITCHEN_CLIENT_PASS checks="+checks+" frames="+frames+" hops="+steps+" cannons=culverin,mortar legacy_migration="+legacy);
         }
       }catch(Throwable e){fail(e);}
     }
@@ -104,6 +101,7 @@ public final class ClientProbe {
         var nbt=new net.minecraft.nbt.CompoundTag();nbt.putString("id","tfc:food/cooked_egg");nbt.putByte("Count",(byte)17);var custom=new net.minecraft.nbt.CompoundTag();custom.putBoolean("empirecraft_legacy_fixture",true);nbt.put("tag",custom);
         var stack=ItemStack.of(nbt);check(stack.is(ForgeRegistries.ITEMS.getValue(new ResourceLocation("naturalist:cooked_egg"))),"Saved TFC egg migrates to Naturalist after legacy registry load");check(stack.getCount()==17&&stack.getTag()!=null&&stack.getTag().getBoolean("empirecraft_legacy_fixture"),"Saved count and custom NBT survive egg migration");
       }
+      net.dries007.tfc.config.TFCConfig.SERVER.grassSpawningRocksChance.set(1.0);
       player.setGameMode(GameType.CREATIVE);player.teleportTo(level,1.5,100,-4.5,0,10);
       level.setDayTime(6000);level.setWeatherParameters(6000,0,false,false);
       for(int x=-8;x<=12;x++)for(int z=-8;z<=12;z++)level.setBlockAndUpdate(new BlockPos(x,99,z),Blocks.STONE_BRICKS.defaultBlockState());
