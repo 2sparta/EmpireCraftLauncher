@@ -38,7 +38,7 @@ def test_ram_and_offline_identity():
     assert offline_uuid("Notch") == "b50ad385-829d-3141-a216-7e7d7539ba7f"
     assert offline_uuid("notch") != offline_uuid("Notch")
 
-def test_command_has_fixed_server_and_no_shell_arguments(tmp_path, monkeypatch):
+def test_command_opens_home_without_shell_arguments(tmp_path, monkeypatch):
     import minecraft_launcher_lib as mll
     observed = {}
     def fake(version, path, options):

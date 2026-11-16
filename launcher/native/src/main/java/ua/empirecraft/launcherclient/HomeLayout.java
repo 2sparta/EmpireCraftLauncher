@@ -25,7 +25,7 @@ public record HomeLayout(int width, int height, int margin, int panelWidth,
         int bottom = height - (cape ? 43 : 122);
         int fittedFeet = Math.max(76, Math.min(feet, bottom));
         float fittedScale = Math.max(20, Math.min(scale,
-            Math.min((fittedFeet - 28) / 2.2f, (width / 4f - 16) / 1.3f)));
+            Math.min((fittedFeet - (cape ? 28 : 52)) / 2.2f, (width / 4f - 16) / 1.3f)));
         int half = (int) Math.ceil(fittedScale * .65f);
         int fittedX = Math.max(width * 3 / 4 + half / 4, Math.min(x, width - 8 - half));
         return new Preview(fittedX, fittedFeet, fittedScale);

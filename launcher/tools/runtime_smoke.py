@@ -89,12 +89,12 @@ with tempfile.TemporaryDirectory(prefix='empirecraft-runtime-') as folder:
                 else:
                     raise RuntimeError('Timed out waiting for main menu\n'+output.read_text(errors='replace')[-16000:])
             finally:
+                child.terminate()
+                try: child.wait(timeout=15)
+                except subprocess.TimeoutExpired:
+                    child.kill();child.wait()
                 if options.menu_capture:
                     options.menu_capture.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(output, options.menu_capture/'client-startup.log')
                     if (game/'logs/latest.log').exists():
                         shutil.copy2(game/'logs/latest.log', options.menu_capture/'latest.log')
-                child.terminate()
-                try: child.wait(timeout=15)
-                except subprocess.TimeoutExpired:
-                    child.kill();child.wait()

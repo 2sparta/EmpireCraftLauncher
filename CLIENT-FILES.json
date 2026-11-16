@@ -877,9 +877,9 @@
       "sha256": "474fda7e05c7ceabee99ec4e46381839edc68912bd74300c57dc052b6080d3f1"
     },
     {
-      "path": "mods/empirecraft-launcher-client-0.1.1.jar",
-      "size": 8262,
-      "sha256": "2dba0182e7b5df4fe0e6bbdf6f3a844c979e3f502e6428b08ba74b0be03c4622"
+      "path": "mods/empirecraft-launcher-client-0.2.0.jar",
+      "size": 1944616,
+      "sha256": "badf78320f79f74701868aedc7d9d5b76dd2b1aa5c98563582143cbc159dce7c"
     },
     {
       "path": "mods/empirecraft-layered-armor-1.0.4.jar",
