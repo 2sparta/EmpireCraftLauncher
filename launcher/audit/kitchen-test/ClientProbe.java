@@ -78,7 +78,8 @@ public final class ClientProbe {
           // End the tick/event dispatch before closing the integrated world.
           mc.tell(()->{try{
             System.out.println("KITCHEN_CLIENT_EXIT_STAGE focus");FocusController.get().requestExit();
-            System.out.println("KITCHEN_CLIENT_EXIT_STAGE clear_world");mc.clearLevel(new net.minecraft.client.gui.screens.TitleScreen());check(mc.level==null,"Clean world exit restores frozen registries");
+            System.out.println("KITCHEN_CLIENT_EXIT_STAGE disconnect");mc.level.disconnect();
+            System.out.println("KITCHEN_CLIENT_EXIT_STAGE clear_world");mc.clearLevel(new net.minecraft.client.gui.screens.GenericDirtMessageScreen(net.minecraft.network.chat.Component.translatable("menu.savingLevel")));mc.setScreen(new net.minecraft.client.gui.screens.TitleScreen());check(mc.level==null,"Clean world exit restores frozen registries");
             System.out.println("KITCHEN_CLIENT_PASS checks="+checks+" frames="+frames+" hops="+steps+" cannons=culverin,mortar legacy_migration="+legacy);
           }catch(Throwable error){System.out.println("KITCHEN_CLIENT_FAIL "+error);error.printStackTrace();}});
         }
