@@ -59,6 +59,16 @@ jobs:
                   if any(s in line for s in ['KITCHEN_CLIENT_', 'Caused by:', 'Exception in server tick']):
                       print('\n'.join(lines[max(0,i-1):i+10]))
           PYTRACE
+          python - <<'PYDUMP'
+          from pathlib import Path
+          p=Path('launcher/kitchen-captures/thread-dump.txt')
+          if p.exists():
+              text=p.read_text(errors='replace')
+              for name in ['"Render thread"','"Server thread"']:
+                  start=text.find(name)
+                  if start>=0: print(text[start:text.find('\n\n',start)])
+              if 'deadlock' in text.lower(): print(text[-12000:])
+          PYDUMP
           tail -120 launcher/kitchen-runtime.log
           exit "$result"
       - uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830

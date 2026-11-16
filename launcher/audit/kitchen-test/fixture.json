@@ -1,6 +1,6 @@
 {
-  "sha256": "ef9510253023f1162862008166ecdccdee5317842df1f2602399b2e6874691c6",
-  "probe_sha256": "9da2d1b521e2e1f6c4d5ee3f0a5632da274aabc3849b848c9e8805f11923b343",
+  "sha256": "fd871c98536737e5aaa458f8ece77d7669db7dac66da99b8e636edbad85c053a",
+  "probe_sha256": "03013ea28d759a6b832163cee9060e544acc2bdabecc7a1bd66ecd66f39225e9",
   "scope": "Offline synthetic flat world, actual kitchen station hops and actual item placement of Siege Machines culverin/mortar; no hosting data or production channel changes.",
   "production_mod_exclusions": [],
   "fixture_only_guard": "OfflineTownyCommands denies Towny admin commands only on the synthetic integrated server, which has no Bukkit. All production client mods remain installed.",

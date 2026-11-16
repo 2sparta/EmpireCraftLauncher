@@ -76,6 +76,7 @@ with tempfile.TemporaryDirectory(prefix='empirecraft-runtime-') as folder:
             try:
                 deadline = time.monotonic()+(1200 if options.gameplay_probe else 360)
                 ready = None
+                gameplay_finished = None
                 while time.monotonic() < deadline:
                     path = game/'logs/latest.log'
                     text = path.read_text(errors='replace') if path.exists() else ''
@@ -91,6 +92,13 @@ with tempfile.TemporaryDirectory(prefix='empirecraft-runtime-') as folder:
                                 diagnostic.update(range(max(0,index-2),min(len(lines),index+12)))
                         raise RuntimeError('Forge loading screen diagnostics\n'+'\n'.join(lines[i] for i in sorted(diagnostic) if not any(skip in lines[i] for skip in ['ModelBakery', 'ModelManager', 'Missing textures', 'minecraft:textures/'])))
                     if options.gameplay_probe:
+                        if 'KITCHEN_CLIENT_GAMEPLAY_PASS' in text:
+                            gameplay_finished = gameplay_finished or time.monotonic()
+                            if time.monotonic()-gameplay_finished > 120:
+                                options.gameplay_probe.mkdir(parents=True, exist_ok=True)
+                                dump = subprocess.run(['jstack', '-l', str(child.pid)], capture_output=True, text=True, timeout=20)
+                                (options.gameplay_probe/'thread-dump.txt').write_text(dump.stdout+'\n'+dump.stderr)
+                                raise RuntimeError('Offline gameplay completed; world exit stalled. See thread-dump.txt')
                         if 'KITCHEN_CLIENT_FAIL' in text:
                             raise RuntimeError(text[-22000:])
                         if 'KITCHEN_CLIENT_PASS' in text:
@@ -110,7 +118,7 @@ with tempfile.TemporaryDirectory(prefix='empirecraft-runtime-') as folder:
                             break
                     time.sleep(1)
                 else:
-                    raise RuntimeError('Timed out waiting for main menu\n'+output.read_text(errors='replace')[-16000:])
+                    raise RuntimeError(('Timed out waiting for offline gameplay' if options.gameplay_probe else 'Timed out waiting for main menu')+'\n'+output.read_text(errors='replace')[-16000:])
             finally:
                 child.terminate()
                 try: child.wait(timeout=15)
