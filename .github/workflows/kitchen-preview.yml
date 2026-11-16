@@ -8,26 +8,12 @@ concurrency:
   group: kitchen-render-${{ github.ref }}
   cancel-in-progress: true
 permissions:
-  actions: write
   contents: write
 jobs:
   client:
     runs-on: ubuntu-24.04
     timeout-minutes: 35
     steps:
-      - name: Cancel the superseded fixture without a world-load watchdog
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          python - <<'PYCANCEL'
-          import os,urllib.request,urllib.error
-          request=urllib.request.Request('https://api.github.com/repos/2sparta/EmpireCraftLauncher/actions/runs/43858355916/cancel',method='POST',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
-          try:
-              with urllib.request.urlopen(request) as r: print('Superseded fixture cancellation:',r.status)
-          except urllib.error.HTTPError as e:
-              if e.code!=409: raise
-              print('Superseded fixture already finished')
-          PYCANCEL
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           sparse-checkout: launcher
@@ -35,6 +21,11 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r launcher/requirements.txt pytest==9.0.2 pillow==13.0.0
+      - uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        id: official
+        with:
+          path: launcher/.official-kitchen-runtime
+          key: official-java17-forge47.4.23-${{ runner.os }}-75cfcb11-v1
       - name: Verify and unpack synthetic fixture
         run: |
           python - <<'PY'
@@ -44,6 +35,7 @@ jobs:
           report=json.loads((root/'fixture.json').read_text())
           assert hashlib.sha256((root/'fixture.zip').read_bytes()).hexdigest()==report['sha256']
           assert hashlib.sha256((root/'ClientProbe.java').read_bytes()).hexdigest()==report['probe_sha256']
+          assert hashlib.sha256((root/'OfflineTownyCommands.java').read_bytes()).hexdigest()==report['guard_sha256']
           with zipfile.ZipFile(root/'fixture.zip') as z:
               assert all(not Path(n).is_absolute() and '..' not in Path(n).parts for n in z.namelist())
               assert all(n.startswith(('mods/','kubejs/','saves/KITCHEN-TEST/')) for n in z.namelist())
@@ -55,7 +47,7 @@ jobs:
           ALSOFT_DRIVERS: 'null'
         run: |
           result=0
-          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --gameplay-probe launcher/kitchen-captures --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- --replace-mod-prefix TownyRecruits --replace-mod-prefix empirecraft-engagement- > launcher/kitchen-runtime.log 2>&1 || result=$?
+          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --gameplay-probe launcher/kitchen-captures --official-cache launcher/.official-kitchen-runtime --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- > launcher/kitchen-runtime.log 2>&1 || result=$?
           python - <<'PYTRACE'
           from pathlib import Path
           for p in Path('launcher/kitchen-captures/crash-reports').glob('*.txt'):
@@ -69,6 +61,11 @@ jobs:
           PYTRACE
           tail -120 launcher/kitchen-runtime.log
           exit "$result"
+      - uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        if: always() && steps.official.outputs.cache-hit != 'true'
+        with:
+          path: launcher/.official-kitchen-runtime
+          key: official-java17-forge47.4.23-${{ runner.os }}-75cfcb11-v1
       - name: Preserve synthetic screenshots for inspection
         if: always()
         env:

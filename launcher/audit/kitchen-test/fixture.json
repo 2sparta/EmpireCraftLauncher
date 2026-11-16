@@ -1,9 +1,8 @@
 {
-  "sha256": "d5c5ecd6a49366cdf413bb2a034b79fb0709513e6ce2861f0dcc5e8b636910a8",
+  "sha256": "9ec25c9ea542dba36c9a6242a82a8d5a2d9ef4d902f79a573a7b71cbe09252ac",
   "probe_sha256": "2cfceb9a233955f2d9e42c7e16ec8bc4bd2042fc76fd5395e3c1f848e2b88e6f",
   "scope": "Offline synthetic flat world, actual kitchen station hops and actual item placement of Siege Machines culverin/mortar; no hosting data or production channel changes.",
-  "offline_only_exclusions": [
-    "TownyRecruits (Mohist/Bukkit server bridge)",
-    "empirecraft-engagement (requires TownyRecruits)"
-  ]
+  "production_mod_exclusions": [],
+  "fixture_only_guard": "OfflineTownyCommands denies Towny admin commands only on the synthetic integrated server, which has no Bukkit. All production client mods remain installed.",
+  "guard_sha256": "ec0df886e02b4a979e080b37033a0c0bc37ca3718e7bc38346436d2b9636e947"
 }
