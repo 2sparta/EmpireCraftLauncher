@@ -1,11 +1,7 @@
 {
-  "source_commit": "75349512e501ef870ee54b265d24c03f3b839e93",
-  "run_id": "43863439368",
+  "source_commit": "ab168e8d49562575734a6fdfc4a97dd8d9cefe49",
+  "run_id": "43866245573",
   "files": [
-    "01-cannons-before-focus.png",
-    "02-transition-265.png",
-    "02-transition-335.png",
-    "02-transition-440.png",
-    "03-after-twelve-hops.png"
+    "01-legacy-world-loaded.png"
   ]
 }
