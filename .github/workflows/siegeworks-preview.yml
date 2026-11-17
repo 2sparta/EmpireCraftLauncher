@@ -1,4 +1,4 @@
-name: Siegeworks engines and item rendering
+name: Siegeworks and Block & Board client
 on:
   push:
     branches: [codex/siegeworks-client-test]
@@ -46,13 +46,13 @@ jobs:
               assert all(n.startswith(('mods/','kubejs/','saves/KITCHEN-TEST/','config/')) for n in z.namelist())
               z.extractall('/tmp/empirecraft-kitchen-overlay')
           PY
-      - name: Real workbench GUI, network assembly and portable unfinished armor
+      - name: Real engines, board models and JEI
         env:
           LIBGL_ALWAYS_SOFTWARE: '1'
           ALSOFT_DRIVERS: 'null'
         run: |
           result=0
-          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --profile balanced --seed-pack-cache . --gameplay-probe launcher/kitchen-captures --official-cache launcher/.official-kitchen-runtime --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- --replace-mod-prefix empirecraft-forging- --replace-mod-prefix hamzabus_ottoman_mod- --replace-mod-prefix chineseweapons- --replace-mod-prefix empirecraft-armory- --replace-mod-prefix siege-machines- --replace-mod-prefix siegeworks- --replace-mod-prefix axiomata- --replace-mod-prefix recruits- --replace-mod-prefix TownyRecruits --replace-mod-prefix empirecraft-towny-journeymap- > launcher/kitchen-runtime.log 2>&1 || result=$?
+          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --profile balanced --seed-pack-cache . --gameplay-probe launcher/kitchen-captures --official-cache launcher/.official-kitchen-runtime --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- --replace-mod-prefix empirecraft-forging- --replace-mod-prefix hamzabus_ottoman_mod- --replace-mod-prefix chineseweapons- --replace-mod-prefix empirecraft-armory- --replace-mod-prefix siege-machines- --replace-mod-prefix siegeworks- --replace-mod-prefix axiomata- --replace-mod-prefix recruits- --replace-mod-prefix table_top_craft- --replace-mod-prefix blockandboard- --replace-mod-prefix TownyRecruits --replace-mod-prefix empirecraft-towny-journeymap- > launcher/kitchen-runtime.log 2>&1 || result=$?
           python - <<'PYTRACE'
           from pathlib import Path
           for p in Path('launcher/kitchen-captures/crash-reports').glob('*.txt'):

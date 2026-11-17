@@ -13,7 +13,7 @@ except urllib.error.HTTPError as error:
  parent=os.environ['GITHUB_SHA'];exists=False
 commit=api('git/commits/'+parent);tree=[]
 for file in files:
- assert file.name.startswith(('01-','02-','03-')) and file.stat().st_size<4000000
+ assert file.name.startswith(('01-','02-','03-','04-','05-')) and file.stat().st_size<4000000
  blob=api('git/blobs','POST',{'encoding':'base64','content':base64.b64encode(file.read_bytes()).decode()})
  tree.append({'path':'launcher/audit/siegeworks-test/captures/'+file.name,'mode':'100644','type':'blob','sha':blob['sha']})
 record={'source_commit':os.environ['GITHUB_SHA'],'run_id':os.environ['GITHUB_RUN_ID'],'files':[f.name for f in files]}
