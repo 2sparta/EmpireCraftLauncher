@@ -34,13 +34,14 @@ public final class ClientProbe {
     void click(int x,int y){var mc=Minecraft.getInstance();check(mc.screen instanceof WorkshopScreen,"Workbench remains open");mc.screen.mouseClicked((mc.screen.width-320)/2.0+x,(mc.screen.height-238)/2.0+y,0);}
     void assemble(){var mc=Minecraft.getInstance();var screen=(WorkshopScreen)mc.screen;check(screen.visiblePlan()!=null&&screen.visiblePlan().complete,"Visible requirements agree with prepared server supplies");click(205,124);}
     boolean interfaceTest(){var mc=Minecraft.getInstance();if(++uiWait<16)return false;uiWait=0;
-        if(uiStep==0){var screen=(WorkshopScreen)mc.screen;check(screen.width>=320&&screen.height>=238,"GUI fits minimum Minecraft viewport");check(screen.visiblePlan().complete,"Ready foundation count shown");click(187,69);check(!screen.visiblePlan().complete,"Future stage shows missing components");uiStep++;return false;}
+        if(uiStep==0){var screen=(WorkshopScreen)mc.screen;check(screen.width>=320&&screen.height>=238,"GUI fits minimum Minecraft viewport");check(screen.visiblePlan().complete,"Ready foundation count shown");var manuals=GunsmithManual.all();check(manuals.size()==7,"All six gunsmith products plus researched lock shown in JEI");var lock=manuals.stream().filter(r->r.selection()==3&&!r.researched()).findFirst().orElseThrow();check(lock.operations()==24,"Standard flintlock manual");check(manuals.stream().anyMatch(r->r.selection()==3&&r.researched()&&r.operations()==6),"Blueprint flintlock manual");click(187,69);check(!screen.visiblePlan().complete,"Future stage shows missing components");uiStep++;return false;}
         if(uiStep==1){capture("01-workbench-requirements");var screen=(WorkshopScreen)mc.screen;check(!screen.visiblePlan().needs.isEmpty(),"Counted requirement rows shown");click(123,85);check(mc.screen!=screen,"Clicking a component opens actual JEI recipes");uiStep++;return false;}
         if(uiStep==2){check(!(mc.screen instanceof WorkshopScreen),"JEI is open");capture("01-component-recipe-jei");mc.screen.onClose();uiStep++;return false;}
-        if(uiStep==3){check(mc.screen instanceof WorkshopScreen,"JEI returns to same table");click(160,31);uiStep++;return false;}
+        if(uiStep==3){check(mc.screen instanceof WorkshopScreen,"JEI returns to same table");click(160,31);server(()->{var table=(WorkshopEntity)mc.getSingleplayerServer().overworld().getBlockEntity(pos);var part=new ItemStack(Armory.part("steel","front"));net.dries007.tfc.common.capabilities.heat.HeatCapability.setTemperature(part,875);table.inventory.setStackInSlot(1,part);});uiStep++;return false;}
         if(uiStep==4){capture("01-workbench-treatment");click(260,31);uiStep++;return false;}
         if(uiStep==5){capture("01-workbench-repair");click(303,12);uiStep++;return false;}
-        if(uiStep==6){capture("01-workbench-help");check(mc.screen.keyPressed(256,0,0),"Esc dismisses help without closing table");click(50,31);click(138,69);uiDone=true;return true;}
+        if(uiStep==6){capture("01-workbench-help");check(mc.screen.keyPressed(256,0,0),"Esc dismisses help without closing table");click(50,31);click(138,69);check(ua.empirecraft.armory.client.ArmoryJei.showRecipe(new ItemStack(net.minecraftforge.registries.ForgeRegistries.ITEMS.getValue(new net.minecraft.resources.ResourceLocation("empirecraft_forging:flintlock")))),"Flintlock has an actual JEI recipe display");check(!(mc.screen instanceof WorkshopScreen),"Flintlock recipe UI opened");uiStep++;return false;}
+        if(uiStep==7){check(!(mc.screen instanceof WorkshopScreen),"Flintlock JEI remains open");capture("01-flintlock-jei");mc.screen.onClose();uiDone=true;return true;}
         return false;
     }
     void server(Runnable r){ready=false;Minecraft.getInstance().getSingleplayerServer().execute(()->{try{r.run();}catch(Throwable t){error=t;}finally{ready=true;}});}
@@ -62,7 +63,7 @@ public final class ClientProbe {
                 var table=(WorkshopEntity)level.getBlockEntity(pos);var all=AssemblyRecipe.all(level);var r=all.stream().filter(ClientProbe::target).findFirst().orElseThrow();table.select(all.indexOf(r));supply(table,r,0);
                 var player=srv.getPlayerList().getPlayer(mc.player.getUUID());player.setGameMode(GameType.CREATIVE);player.connection.teleport(.5,101,3.5,180,30);level.setDayTime(6000);level.setWeatherParameters(6000,0,false,false);NetworkHooks.openScreen(player,table,pos);
             });return;}
-            if(selectedByPacket&&!uiDone&&uiStep==2){interfaceTest();return;}
+            if(selectedByPacket&&!uiDone&&(uiStep==2||uiStep==7)){interfaceTest();return;}
             if(!ready||!(mc.player.containerMenu instanceof WorkshopMenu menu)||!(mc.screen instanceof WorkshopScreen))return;
             ticks++;
             if(ticks<80)return;
