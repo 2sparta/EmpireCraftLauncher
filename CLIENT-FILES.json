@@ -1,5 +1,5 @@
 {
-  "source_commit": "2191d3b5a01d947ff59505c712db1be43e37be17",
+  "source_commit": "d0afe5f31d6138324d48f0247e64e0f743824977",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 112,
@@ -165,9 +165,9 @@
         "version": "1.0.4"
       },
       "empirecraft_armory": {
-        "file": "empirecraft-armory-1.0.0.jar",
-        "sha256": "d6741baf1781b970dfe34284a5733b9b6095bf68d1ffa1579b9f7988b6a89364",
-        "version": "1.0.0"
+        "file": "empirecraft-armory-1.1.0.jar",
+        "sha256": "79bdd335fcd4a15a568e9415df03f981660c7ce643a8aec396a70189050ee2af",
+        "version": "1.1.0"
       },
       "empirecraft_calendar": {
         "file": "empirecraft-calendar-1.2.3.jar",
@@ -621,6 +621,11 @@
       "path": "defaultconfigs/valkyrienskies/vs-core-server.toml",
       "size": 168,
       "sha256": "ecb35e14de684a734b037c622f912006499403b05b8135128007d43842c2378d"
+    },
+    {
+      "path": "kubejs/assets/empirecraft_forging/models/item/lockwork.json",
+      "size": 104,
+      "sha256": "27e5d69c38522cf5cba2fa0c23ff251e21525333a376928d1994f23d7ed9a3a7"
     },
     {
       "path": "kubejs/assets/empirecraft_guidebook/patchouli_books/handbook/en_us/entries/drinks/tea_kitchen.json",
@@ -2078,9 +2083,9 @@
       "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"
     },
     {
-      "path": "mods/empirecraft-armory-1.0.0.jar",
-      "size": 351681,
-      "sha256": "d6741baf1781b970dfe34284a5733b9b6095bf68d1ffa1579b9f7988b6a89364"
+      "path": "mods/empirecraft-armory-1.1.0.jar",
+      "size": 376951,
+      "sha256": "79bdd335fcd4a15a568e9415df03f981660c7ce643a8aec396a70189050ee2af"
     },
     {
       "path": "mods/empirecraft-calendar-1.2.3.jar",
