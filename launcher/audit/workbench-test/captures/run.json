@@ -1,0 +1,15 @@
+{
+  "source_commit": "956a76067b123160ebc5fe536397c49d0e5cdc8e",
+  "run_id": "44051889030",
+  "files": [
+    "01-armorer-workbench.png",
+    "01-component-recipe-jei.png",
+    "01-workbench-help.png",
+    "01-workbench-repair.png",
+    "01-workbench-requirements.png",
+    "01-workbench-treatment.png",
+    "02-portable-workpiece.png",
+    "03-assembled-armor.png",
+    "03-workbench-block-model.png"
+  ]
+}
