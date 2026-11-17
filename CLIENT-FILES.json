@@ -1,5 +1,5 @@
 {
-  "source_commit": "a5dd2adcea7a71e11a9f51251181f3ddef1021e6",
+  "source_commit": "84b8facde9d752105389f68e029a15018150b23d",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 113,
@@ -364,6 +364,11 @@
         "sha256": "05dfa96e886f030eb69bd600c426c1c73ec797bb445b96d42024b2153bfcff66",
         "version": "2.6"
       },
+      "mctabletop": {
+        "file": "blockandboard-forge-1.20.1-0.6.0.jar",
+        "sha256": "878a9c2eb7aa532c7f83877348e3d7479b138595a3a94fc8c53ce8efe2c36540",
+        "version": "0.6.0"
+      },
       "medieval_boomsticks": {
         "file": "medieval_boomsticks-no_stars (8).jar",
         "sha256": "b5ba292cde703946a18cd18c87c93ae970eef057dbbeff8c6b6243aa4397c3c9",
@@ -493,11 +498,6 @@
         "file": "supplementaries-1.20-3.1.44-forge-empirecraft-recipes.1.jar",
         "sha256": "4df036412797de917aa41d2bb09bf51fd6645a378abfa48dbb8d36fda3a6176b",
         "version": "1.20-3.1.44"
-      },
-      "table_top_craft": {
-        "file": "table_top_craft-1.20.1-6.1.2.jar",
-        "sha256": "d08586bda0ec8ab6dc989d26577db599c34962c0ae04cff4ca5734b8cbaac074",
-        "version": "1.20.1-6.1.2"
       },
       "terraform": {
         "file": "letsdo-API-forge-1.2.15-forge.jar",
@@ -653,6 +653,11 @@
       "sha256": "a3617c988fe91bd2427fda6d207c6ff55f02464d3681f588551bccd31a5709b4"
     },
     {
+      "path": "kubejs/assets/empirecraft_guidebook/patchouli_books/handbook/uk_ua/entries/leisure/tabletop.json",
+      "size": 1264,
+      "sha256": "169434153ca7e874fd04ce85c5cbebc85ec6b61fe176740cae0bf4ed959af954"
+    },
+    {
       "path": "kubejs/assets/empirecraft_guidebook/patchouli_books/handbook/uk_ua/entries/metals/siegeworks.json",
       "size": 3645,
       "sha256": "d50f5a395f3937f2a0c819580f111fa7c72d6896467b9994a01d840377d28b46"
@@ -676,6 +681,11 @@
       "path": "kubejs/assets/empirecraft_ship_physics/lang/uk_ua.json",
       "size": 2456,
       "sha256": "e2a7440f5ec09213f5c61cb84f08b091a996833602c9ed149e2dc517b8862025"
+    },
+    {
+      "path": "kubejs/assets/mctabletop/lang/uk_ua.json",
+      "size": 2908,
+      "sha256": "c36e219f50fdf23a774c12e059e88ce1f1a1a48c79915cc9e4630de002b59802"
     },
     {
       "path": "kubejs/client_scripts/empirecraft_content.js",
@@ -989,8 +999,8 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/wood.json",
-      "size": 92207,
-      "sha256": "1627dfc6d7bd22f9b6c046c2ac00a3acee18a03a33c0c500af30578441522576"
+      "size": 90438,
+      "sha256": "aef645ed5be61de98f7b68480543afb3b65bc4e7435af2b8cd65c2bc6c7fe9aa"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/wood_container.json",
@@ -1166,6 +1176,11 @@
       "path": "kubejs/data/handson_delight/tags/items/workshop.json",
       "size": 581,
       "sha256": "ac7d18e151e42f1f6bd5d5a759f1992634f4f034c93be7a4d3d8e32aad4eb8a1"
+    },
+    {
+      "path": "kubejs/data/mctabletop/recipes/go_fish_board.json",
+      "size": 359,
+      "sha256": "684742b8765811d75b0688f9a002a58e9e0a540bd6524832c714f7a6d8ea60ea"
     },
     {
       "path": "kubejs/data/minecraft/tags/blocks/cauldrons.json",
@@ -2018,6 +2033,11 @@
       "sha256": "51942966b5e2c1580cd7cc717062a1bad131dfea7dc912b65b560393f475cf11"
     },
     {
+      "path": "mods/blockandboard-forge-1.20.1-0.6.0.jar",
+      "size": 2680513,
+      "sha256": "878a9c2eb7aa532c7f83877348e3d7479b138595a3a94fc8c53ce8efe2c36540"
+    },
+    {
       "path": "mods/callablehorses-1.20.1-1.3.0.1.jar",
       "size": 137704,
       "sha256": "7f28c7d5255292c08cdf200295fd5c92689a5009a056e7a47c255e97d9de520b"
@@ -2451,11 +2471,6 @@
       "path": "mods/supplementaries-1.20-3.1.44-forge-empirecraft-recipes.1.jar",
       "size": 13471199,
       "sha256": "4df036412797de917aa41d2bb09bf51fd6645a378abfa48dbb8d36fda3a6176b"
-    },
-    {
-      "path": "mods/table_top_craft-1.20.1-6.1.2.jar",
-      "size": 1427717,
-      "sha256": "d08586bda0ec8ab6dc989d26577db599c34962c0ae04cff4ca5734b8cbaac074"
     },
     {
       "path": "mods/tfc_muskets-1.20.1-forge-1.0.3-empirecraft.1.jar",
