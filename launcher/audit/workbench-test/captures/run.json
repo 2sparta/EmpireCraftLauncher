@@ -1,9 +1,10 @@
 {
-  "source_commit": "956a76067b123160ebc5fe536397c49d0e5cdc8e",
-  "run_id": "44051889030",
+  "source_commit": "9b9f190b8e257b9f81d9f003af67f3f914224b38",
+  "run_id": "44054714485",
   "files": [
     "01-armorer-workbench.png",
     "01-component-recipe-jei.png",
+    "01-flintlock-jei.png",
     "01-workbench-help.png",
     "01-workbench-repair.png",
     "01-workbench-requirements.png",
