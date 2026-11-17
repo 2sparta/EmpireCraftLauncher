@@ -30,7 +30,10 @@ public final class ClientProbe {
   if(mc.level==null||mc.player==null)return;if(++ticks<100)return;
   if(catalog==null){if(ForgeRegistries.ENTITY_TYPES.getKeys().stream().anyMatch(k->k.getNamespace().equals("siegemachines")))throw new AssertionError("Old Siege Machines still installed");catalog=new Catalog();if(catalog.engines.size()!=12)throw new AssertionError("Expected 12 engines, got "+catalog.engines.size());mc.setScreen(catalog);ticks=0;return;}
   if(step==0){capture("01-siegeworks-engines");catalog.showItems=true;step=1;ticks=0;return;}
+  if(step==2){if(++ticks<140)return;capture("03-siegeworks-jei");mc.screen.onClose();finish();return;}
   if(catalog.page<(catalog.items.size()-1)/50){capture("02-siegeworks-items-"+catalog.page);catalog.page++;ticks=0;return;}
-  capture("03-siegeworks-items-"+catalog.page);if(frames<60)throw new AssertionError("Models were not rendered");done=true;System.out.println("KITCHEN_CLIENT_GAMEPLAY_PASS SIEGE engines="+catalog.engines.size()+" items="+catalog.items.size()+" frames="+frames);mc.tell(()->{mc.level.disconnect();mc.clearLevel(new GenericDirtMessageScreen(Component.translatable("menu.savingLevel")));mc.setScreen(new TitleScreen());System.out.println("KITCHEN_CLIENT_PASS SIEGE engines="+catalog.engines.size()+" items="+catalog.items.size()+" frames="+frames);});
+  capture("03-siegeworks-items-"+catalog.page);if(frames<60)throw new AssertionError("Models were not rendered");var output=new ItemStack(ForgeRegistries.ITEMS.getValue(new net.minecraft.resources.ResourceLocation("siegeworks:culverin_spawner")));if(!ua.empirecraft.siegeworks.client.SiegeJei.show(output)||mc.screen==catalog)throw new AssertionError("Construction recipe not shown in actual JEI");step=2;ticks=0;
  }catch(Throwable t){done=true;System.out.println("KITCHEN_CLIENT_FAIL SIEGE "+t);t.printStackTrace();}}
+ void finish(){var mc=Minecraft.getInstance();done=true;System.out.println("KITCHEN_CLIENT_GAMEPLAY_PASS SIEGE engines="+catalog.engines.size()+" items="+catalog.items.size()+" frames="+frames+" jei=true");mc.tell(()->{mc.level.disconnect();mc.clearLevel(new GenericDirtMessageScreen(Component.translatable("menu.savingLevel")));mc.setScreen(new TitleScreen());System.out.println("KITCHEN_CLIENT_PASS SIEGE engines="+catalog.engines.size()+" items="+catalog.items.size()+" frames="+frames+" jei=true");});}
+
 }
