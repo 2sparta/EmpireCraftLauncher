@@ -41,7 +41,7 @@ public final class ClientProbe {
         if(uiStep==4){capture("01-workbench-treatment");click(260,31);uiStep++;return false;}
         if(uiStep==5){capture("01-workbench-repair");click(303,12);uiStep++;return false;}
         if(uiStep==6){capture("01-workbench-help");check(mc.screen.keyPressed(256,0,0),"Esc dismisses help without closing table");click(50,31);click(138,69);check(ua.empirecraft.armory.client.ArmoryJei.showRecipe(new ItemStack(net.minecraftforge.registries.ForgeRegistries.ITEMS.getValue(new net.minecraft.resources.ResourceLocation("empirecraft_forging:flintlock")))),"Flintlock has an actual JEI recipe display");check(!(mc.screen instanceof WorkshopScreen),"Flintlock recipe UI opened");uiStep++;return false;}
-        if(uiStep==7){check(!(mc.screen instanceof WorkshopScreen),"Flintlock JEI remains open");capture("01-flintlock-jei");mc.screen.onClose();uiDone=true;return true;}
+        if(uiStep==7){check(mc.font.split(net.minecraft.network.chat.Component.translatable("armory.gunsmith.instruction"),232).size()<=5,"JEI instructions fit the minimum viewport");var model=mc.getItemRenderer().getModel(new ItemStack(net.minecraftforge.registries.ForgeRegistries.ITEMS.getValue(new net.minecraft.resources.ResourceLocation("empirecraft_forging:lockwork"))),mc.level,mc.player,0);check(!model.getParticleIcon().contents().name().getPath().contains("missingno"),"Precision lockwork has a real texture");check(!(mc.screen instanceof WorkshopScreen),"Flintlock JEI remains open");capture("01-flintlock-jei");mc.screen.onClose();uiDone=true;return true;}
         return false;
     }
     void server(Runnable r){ready=false;Minecraft.getInstance().getSingleplayerServer().execute(()->{try{r.run();}catch(Throwable t){error=t;}finally{ready=true;}});}
