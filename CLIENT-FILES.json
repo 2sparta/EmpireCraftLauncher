@@ -1,5 +1,5 @@
 {
-  "source_commit": "84b8facde9d752105389f68e029a15018150b23d",
+  "source_commit": "7d20a9f4743fe807e0da421df9dc7d528d69fc59",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 113,
@@ -2176,6 +2176,11 @@
       "path": "mods/empirecraft-layered-armor-1.0.4.jar",
       "size": 41223,
       "sha256": "c88216333b8f173c474c22dbf16116d27150c54b50f1a8fb2c205b4909dea747"
+    },
+    {
+      "path": "mods/empirecraft-menu-art-1.0.0.jar",
+      "size": 47620,
+      "sha256": "7d3d84ee90ff19a7833ed681f0bdcf2d71ab0a5bc169d1964ef0b8e9cb109f0a"
     },
     {
       "path": "mods/empirecraft-no-end-1.0.1.jar",
