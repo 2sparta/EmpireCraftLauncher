@@ -1,8 +1,8 @@
 {
-  "source_commit": "7d20a9f4743fe807e0da421df9dc7d528d69fc59",
+  "source_commit": "dd272e4e2d175c1aede34a4129d00287003b18ef",
   "server_parity": {
     "server_snapshot_present": true,
-    "shared_mod_count": 113,
+    "shared_mod_count": 112,
     "shared_mods": {
       "accuratehitboxes": {
         "file": "accuratehitboxes-neoforge-2.4.2-empirecraft.1-1.20.1.jar",
@@ -73,11 +73,6 @@
         "file": "chipped-forge-1.20.1-3.0.7-empirecraft.3.jar",
         "sha256": "d82255cf1bf7d68889abda3f603a5b58a9273af5751ff442112cafc1fb2515fe",
         "version": "3.0.7"
-      },
-      "chippedexttras": {
-        "file": "chippedexttras-1.4-empirecraft.2.jar",
-        "sha256": "162ad38343df8f34bbb41f5b64759728402b957b3b777d93450307a8736098ad",
-        "version": "1.4"
       },
       "cloth_config": {
         "file": "cloth-config-11.1.136-forge.jar",
@@ -175,9 +170,9 @@
         "version": "1.1.0"
       },
       "empirecraft_calendar": {
-        "file": "empirecraft-calendar-1.2.3.jar",
-        "sha256": "0278781c6ffc12c6a475e323e74e36b50bf7409af43cdc2648b0181eb8f0ddc8",
-        "version": "1.2.3"
+        "file": "empirecraft-calendar-1.2.4.jar",
+        "sha256": "7835943a15d8d587c1fc111d3833aa213a13bdfb165a4f325bb03888b7f60542",
+        "version": "1.2.4"
       },
       "empirecraft_casting": {
         "file": "empirecraft-casting-1.3.2.jar",
@@ -230,9 +225,9 @@
         "version": "1.2.2"
       },
       "empirecraft_tfc": {
-        "file": "empirecraft-tfc-integration-1.0.3.jar",
-        "sha256": "0869a0acad11a217e3fb3fcb0cb1634422a5a6e0053a44cfb3f7a61242b6fb1f",
-        "version": "1.0.3"
+        "file": "empirecraft-tfc-integration-1.0.4.jar",
+        "sha256": "06b91a2e8cabbcae94d0817708884d66695311bfeb524e04c9d79d115d964fe9",
+        "version": "1.0.4"
       },
       "empirecraft_titles": {
         "file": "empirecraft-titles-resources-1.0.0.jar",
@@ -819,18 +814,18 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/ceramic.json",
-      "size": 126922,
-      "sha256": "73992e7c8c7424301f7d37a7797beb3f31f00ac2a51ca08418aa41472e55b2d3"
+      "size": 66943,
+      "sha256": "bf02d7ba8e4424448520fbec7c9eae3e37335af7192bc1522363c4753379b52c"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/coal.json",
-      "size": 9774,
-      "sha256": "2d2bf7a262042aa0214dde961d3f07cead19141833b23fc793d9dbada8761eb2"
+      "size": 4411,
+      "sha256": "30561bd86195fe82b68eb9365d8a806e466640f5562d7ab0e3df56b875161943"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/copper.json",
-      "size": 16643,
-      "sha256": "0f5ac13a2b2dd6dae0a8cbceffeab3f798688a34947bc25ddc6808a3433e5a4e"
+      "size": 10884,
+      "sha256": "5f1f30430c5d650636158d02aeea5329ce0df45b2308360f590c639a553a5269"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/copper_machine.json",
@@ -844,13 +839,13 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/diamond.json",
-      "size": 2432,
-      "sha256": "2df1e32392cdc9d08eab1ed5a2d56c8687ce48194e35deb8378bd54d220917b6"
+      "size": 1727,
+      "sha256": "57b0ac76dfda3f1a408397095120288a2ab8fe7c054dcde23955580c6a4280f4"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/dirt.json",
-      "size": 56392,
-      "sha256": "2b1c57f338ab14bfb9fdda8fcdc15c6a79786aa806b790dd58c50e832eae4b83"
+      "size": 24775,
+      "sha256": "14430734209a629f209fcce6ea16365e7c1cb2e5f88f2a1fbef3b8101957b728"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/fiber.json",
@@ -879,18 +874,18 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/gold.json",
-      "size": 11363,
-      "sha256": "b2c3d5df708741aa27938438a909e6c6c377009471acab625e2b8fbf7eb5f66e"
+      "size": 5736,
+      "sha256": "559f491fdc7e836d0e1a9d5e9729d97a81afe30db8e053f7a571798abeda7d84"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/ice.json",
-      "size": 28055,
-      "sha256": "475eac934cbf68b00ddf9cd9ff5bf10b42348c8c1fd9c9e85350a1c919c93cee"
+      "size": 12560,
+      "sha256": "5a9fb3bb09b6f2a03fc804237c0ef9895c94e7340ffc187deec21d214ea859ed"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/iron.json",
-      "size": 19228,
-      "sha256": "44184d08661938f3816ce3aa38aec6b6699b510b0312ec621880df5a601e37e1"
+      "size": 13601,
+      "sha256": "96cc29c19610b6add7c8a6a555086e70ef6b0291d10a729942a7bd982b16dadd"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/iron_sheet.json",
@@ -954,8 +949,8 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/snow.json",
-      "size": 9714,
-      "sha256": "612ea42e82ecc4de40ca0d78c778a9742c662f32729c0ebb6bd7215a4d9cf8c7"
+      "size": 4351,
+      "sha256": "fe3ecd112461c82f791a41d0ef799bb5495fc449a756ad7bc152373057b3c2f7"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/sponge.json",
@@ -969,8 +964,8 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/stone.json",
-      "size": 310293,
-      "sha256": "f7d36bdadadb8644265ef56b637b4ae0ed1792d12250275ec3cd233610ae50eb"
+      "size": 151897,
+      "sha256": "7c72de6392a6b2eba41c971bb085ab360a538d794153ecd0f3906003566d4095"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/stone_glass.json",
@@ -999,8 +994,8 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/wood.json",
-      "size": 90438,
-      "sha256": "aef645ed5be61de98f7b68480543afb3b65bc4e7435af2b8cd65c2bc6c7fe9aa"
+      "size": 86109,
+      "sha256": "f608d41a78d712aefb8d16e713fe1a8dc4f67eb70c0dbe74101beaeae7949c4a"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/wood_container.json",
@@ -1234,8 +1229,8 @@
     },
     {
       "path": "kubejs/data/minecraft/tags/blocks/mineable/pickaxe.json",
-      "size": 479812,
-      "sha256": "84ef422eb654a2d002847f3956839146a7a3500f2ed55f8ac605f64af374d179"
+      "size": 110705,
+      "sha256": "0a71c3785a047fd17760006cfb9a95204852cea04556f307546a2f174b6eae8d"
     },
     {
       "path": "kubejs/data/minecraft/tags/blocks/portals.json",
@@ -1259,13 +1254,13 @@
     },
     {
       "path": "kubejs/data/minecraft/tags/blocks/slabs.json",
-      "size": 133333,
-      "sha256": "c36e4934c39007ffa12984f10e9556c207e2311163ba431f8f053cb3a70044d8"
+      "size": 11136,
+      "sha256": "431d64398b1a808731475a9274b3a51eeba01f640d33b2dee3949a78624c64b5"
     },
     {
       "path": "kubejs/data/minecraft/tags/blocks/stairs.json",
-      "size": 136289,
-      "sha256": "f8b5204e01cbb7cd9853bf3fdb9b55c0e4ae069797b1cbb0f0f89d2512d2daa3"
+      "size": 11576,
+      "sha256": "e2b6c15d034f5b3f41de7b5a96591bb234624fa5f1bd2bdec8e80e1b6f512139"
     },
     {
       "path": "kubejs/data/minecraft/tags/blocks/sword_efficient.json",
@@ -1284,8 +1279,8 @@
     },
     {
       "path": "kubejs/data/minecraft/tags/blocks/walls.json",
-      "size": 131544,
-      "sha256": "88f51fba8dbadf9b907ae8bab048c7f301caf8d9425be1be40264491cb8ddaa0"
+      "size": 9347,
+      "sha256": "6c09acab2101cf3651d335cb45a9c01a04e583ba216fa6c0d2fe1b0e13797265"
     },
     {
       "path": "kubejs/data/minecraft/tags/blocks/wither_immune.json",
@@ -2058,11 +2053,6 @@
       "sha256": "d82255cf1bf7d68889abda3f603a5b58a9273af5751ff442112cafc1fb2515fe"
     },
     {
-      "path": "mods/chippedexttras-1.4-empirecraft.2.jar",
-      "size": 10076119,
-      "sha256": "162ad38343df8f34bbb41f5b64759728402b957b3b777d93450307a8736098ad"
-    },
-    {
       "path": "mods/cloth-config-11.1.136-forge.jar",
       "size": 1181413,
       "sha256": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2"
@@ -2138,9 +2128,9 @@
       "sha256": "79bdd335fcd4a15a568e9415df03f981660c7ce643a8aec396a70189050ee2af"
     },
     {
-      "path": "mods/empirecraft-calendar-1.2.3.jar",
-      "size": 51398,
-      "sha256": "0278781c6ffc12c6a475e323e74e36b50bf7409af43cdc2648b0181eb8f0ddc8"
+      "path": "mods/empirecraft-calendar-1.2.4.jar",
+      "size": 53461,
+      "sha256": "7835943a15d8d587c1fc111d3833aa213a13bdfb165a4f325bb03888b7f60542"
     },
     {
       "path": "mods/empirecraft-casting-1.3.2.jar",
@@ -2208,9 +2198,9 @@
       "sha256": "6ffb4825e245a581f61f5248cdd80580343161df441622cea63fe45b28e312c6"
     },
     {
-      "path": "mods/empirecraft-tfc-integration-1.0.3.jar",
-      "size": 217707,
-      "sha256": "0869a0acad11a217e3fb3fcb0cb1634422a5a6e0053a44cfb3f7a61242b6fb1f"
+      "path": "mods/empirecraft-tfc-integration-1.0.4.jar",
+      "size": 217932,
+      "sha256": "06b91a2e8cabbcae94d0817708884d66695311bfeb524e04c9d79d115d964fe9"
     },
     {
       "path": "mods/empirecraft-titles-resources-1.0.0.jar",
