@@ -1,0 +1,97 @@
+name: Siegeworks engines and item rendering
+on:
+  push:
+    branches: [codex/siegeworks-client-test]
+    paths: ['launcher/audit/siegeworks-test/**', 'launcher/tools/runtime_smoke.py', '.github/workflows/siegeworks-preview.yml']
+  workflow_dispatch:
+concurrency:
+  group: siegeworks-render-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  client:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          sparse-checkout: |
+            launcher
+            mods
+            config
+            defaultconfigs
+            kubejs
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r launcher/requirements.txt pytest==9.0.2 pillow==13.0.0
+      - uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        id: official
+        with:
+          path: launcher/.official-kitchen-runtime
+          key: official-java17-forge47.4.23-${{ runner.os }}-75cfcb11-v1
+      - name: Verify and unpack synthetic fixture
+        run: |
+          python - <<'PY'
+          import hashlib,json,zipfile
+          from pathlib import Path
+          root=Path('launcher/audit/siegeworks-test')
+          report=json.loads((root/'fixture.json').read_text())
+          assert hashlib.sha256((root/'fixture.zip').read_bytes()).hexdigest()==report['sha256']
+          assert hashlib.sha256((root/'ClientProbe.java').read_bytes()).hexdigest()==report['probe_sha256']
+          assert hashlib.sha256((root/'OfflineTownyCommands.java').read_bytes()).hexdigest()==report['guard_sha256']
+          with zipfile.ZipFile(root/'fixture.zip') as z:
+              assert all(not Path(n).is_absolute() and '..' not in Path(n).parts for n in z.namelist())
+              assert all(n.startswith(('mods/','kubejs/','saves/KITCHEN-TEST/','config/')) for n in z.namelist())
+              z.extractall('/tmp/empirecraft-kitchen-overlay')
+          PY
+      - name: Real workbench GUI, network assembly and portable unfinished armor
+        env:
+          LIBGL_ALWAYS_SOFTWARE: '1'
+          ALSOFT_DRIVERS: 'null'
+        run: |
+          result=0
+          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --profile balanced --seed-pack-cache . --gameplay-probe launcher/kitchen-captures --official-cache launcher/.official-kitchen-runtime --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- --replace-mod-prefix empirecraft-forging- --replace-mod-prefix hamzabus_ottoman_mod- --replace-mod-prefix chineseweapons- --replace-mod-prefix empirecraft-armory- --replace-mod-prefix siege-machines- --replace-mod-prefix siegeworks- --replace-mod-prefix axiomata- --replace-mod-prefix recruits- --replace-mod-prefix TownyRecruits --replace-mod-prefix empirecraft-towny-journeymap- > launcher/kitchen-runtime.log 2>&1 || result=$?
+          python - <<'PYTRACE'
+          from pathlib import Path
+          for p in Path('launcher/kitchen-captures/crash-reports').glob('*.txt'):
+              print(p.name+'\n'+p.read_text(errors='replace')[:14000])
+          p=Path('launcher/kitchen-captures/logs/latest.log')
+          if p.exists():
+              lines=p.read_text(errors='replace').splitlines()
+              for i,line in enumerate(lines):
+                  if any(s in line for s in ['KITCHEN_CLIENT_', 'Caused by:', 'Exception in server tick']):
+                      print('\n'.join(lines[max(0,i-1):i+10]))
+          PYTRACE
+          python - <<'PYDUMP'
+          from pathlib import Path
+          p=Path('launcher/kitchen-captures/thread-dump.txt')
+          if p.exists():
+              text=p.read_text(errors='replace')
+              for name in ['"Render thread"','"Server thread"']:
+                  start=text.find(name)
+                  if start>=0: print(text[start:text.find('\n\n',start)])
+              if 'deadlock' in text.lower(): print(text[-12000:])
+          PYDUMP
+          tail -120 launcher/kitchen-runtime.log
+          exit "$result"
+      - uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        if: always() && steps.official.outputs.cache-hit != 'true'
+        with:
+          path: launcher/.official-kitchen-runtime
+          key: official-java17-forge47.4.23-${{ runner.os }}-75cfcb11-v1
+      - name: Preserve synthetic screenshots for inspection
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python launcher/tools/publish_siegeworks_captures.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: actual-siegeworks-models
+          path: |
+            launcher/kitchen-captures/**
+            launcher/kitchen-runtime.log
+          if-no-files-found: error
+          retention-days: 14
