@@ -1,8 +1,8 @@
 {
-  "source_commit": "d0afe5f31d6138324d48f0247e64e0f743824977",
+  "source_commit": "57cc56228b5b885a8ee829cb27106557bf1e6181",
   "server_parity": {
     "server_snapshot_present": true,
-    "shared_mod_count": 112,
+    "shared_mod_count": 113,
     "shared_mods": {
       "accuratehitboxes": {
         "file": "accuratehitboxes-neoforge-2.4.2-empirecraft.1-1.20.1.jar",
@@ -38,6 +38,11 @@
         "file": "astikorcarts-1.20.1-1.1.8 (1).jar",
         "sha256": "6a83acd902d354535d0aba43a77aefcb80e3ec9fb27d6d0de035c44a77ec1fe1",
         "version": "${file.jarVersion}"
+      },
+      "axiomata": {
+        "file": "axiomata-forge-0.1.0-beta.10-1.20.1.jar",
+        "sha256": "2c319d18814d14e7a19f88ad6c89cd3bb57c0a9affbe232af054d011af7021f2",
+        "version": "0.1.0-beta.10"
       },
       "betsyross": {
         "file": "betsyross-2.1.2+mc.1.20.1-forge.jar",
@@ -430,9 +435,9 @@
         "version": "3.1.1"
       },
       "recruits": {
-        "file": "recruits-1.20.1-1.15.0.jar",
-        "sha256": "5c0c9252b332babf7e7cf5fc9a5a6f08018df5b9f86827853db2cb3f39b127ce",
-        "version": "1.15.0"
+        "file": "recruits-1.20.1-1.15.2.jar",
+        "sha256": "4b53c1b752e886ba10985aad2df30d668971810230eb77867e07428a21d1af7f",
+        "version": "1.15.2"
       },
       "resourcefullib": {
         "file": "resourcefullib-forge-1.20.1-2.1.29.jar",
@@ -464,10 +469,10 @@
         "sha256": "57c99eb15acce34bc768279faa3f1d5fbb29715fa507a7bd50944dc1b0d9e315",
         "version": "9.1.0.3"
       },
-      "siegemachines": {
-        "file": "siege-machines-1.20.1-forge-1.39 (2).jar",
-        "sha256": "acd8e84b4ce6bacebbc50036e4364b986e88214f38d0be526b8aef7aabe61210",
-        "version": "1.39"
+      "siegeworks": {
+        "file": "siegeworks-forge-0.1.0-beta.11-1.20.1-empirecraft.1.jar",
+        "sha256": "52a55c2f2ec5aeed42771ed4151ab0785985f11caaf11c727418ca23ded74500",
+        "version": "0.1.0-beta.11"
       },
       "slavicarmory": {
         "file": "epic-knights-all-in-one-1_20_1-forge-empirecraft.1.jar",
@@ -521,8 +526,8 @@
       },
       "townyrecruits": {
         "file": "TownyRecruits.jar",
-        "sha256": "d0f049e160f2aacde6d8de56c92471d3b46716eb63b4bccff16320ed9ccc5e80",
-        "version": "2.0.1"
+        "sha256": "5b6d73149b2ff1c3469d25a850e6d6fb4c41df14e963e9ff1f8376d13f2e07df",
+        "version": "2.0.2"
       },
       "treechop": {
         "file": "TreeChop-1.20.1-forge-0.19.0-fixed.jar",
@@ -633,6 +638,11 @@
       "sha256": "f421c61c756ac9777a018b723943cf4f28b0a728d7df64a408fe05bf95eba61c"
     },
     {
+      "path": "kubejs/assets/empirecraft_guidebook/patchouli_books/handbook/en_us/entries/metals/siegeworks.json",
+      "size": 2078,
+      "sha256": "9e397b00d9046adfe601ff8ca43346d0aa18fcaec815820674163ae06c442b88"
+    },
+    {
       "path": "kubejs/assets/empirecraft_guidebook/patchouli_books/handbook/en_us/entries/metals/thirtyyearswar.json",
       "size": 1807,
       "sha256": "e6bacca07e1f0bae832741d28350583acd314666cf1e3491df3de91dedab304c"
@@ -641,6 +651,11 @@
       "path": "kubejs/assets/empirecraft_guidebook/patchouli_books/handbook/uk_ua/entries/drinks/tea_kitchen.json",
       "size": 4223,
       "sha256": "a3617c988fe91bd2427fda6d207c6ff55f02464d3681f588551bccd31a5709b4"
+    },
+    {
+      "path": "kubejs/assets/empirecraft_guidebook/patchouli_books/handbook/uk_ua/entries/metals/siegeworks.json",
+      "size": 3645,
+      "sha256": "d50f5a395f3937f2a0c819580f111fa7c72d6896467b9994a01d840377d28b46"
     },
     {
       "path": "kubejs/assets/empirecraft_guidebook/patchouli_books/handbook/uk_ua/entries/metals/thirtyyearswar.json",
@@ -691,6 +706,16 @@
       "path": "kubejs/client_scripts/empirecraft_progression.js",
       "size": 2038,
       "sha256": "e2873c112b1eb198c69df6662cadd6f477210eb053e14d58048cc26295112cfb"
+    },
+    {
+      "path": "kubejs/data/axiomata/tags/items/construction_hammers.json",
+      "size": 140,
+      "sha256": "277580faca916ff2d9bc2fe9ccbc5b0debc73dc8a0a3a39f552a8a57d8f57e44"
+    },
+    {
+      "path": "kubejs/data/c/tags/items/ropes.json",
+      "size": 113,
+      "sha256": "cd03a5f7b75645fb381872506a5069b16c71d03f82879f12362d756566817f0e"
     },
     {
       "path": "kubejs/data/createbigcannons/munition_properties/projectiles/shot.json",
@@ -944,8 +969,8 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/timber_drive.json",
-      "size": 1595,
-      "sha256": "f1a4f37922c4b8ea9268aef9dd552bfa343f70ffa7dafab62a9136e329972e58"
+      "size": 1981,
+      "sha256": "e92b1d0a22bfc533e67ee9d04866764b2bd927385e13b9f4e8c5ccaf1472ded8"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/timber_glass.json",
@@ -1939,8 +1964,8 @@
     },
     {
       "path": "mods/TownyRecruits.jar",
-      "size": 696621,
-      "sha256": "d0f049e160f2aacde6d8de56c92471d3b46716eb63b4bccff16320ed9ccc5e80"
+      "size": 696548,
+      "sha256": "5b6d73149b2ff1c3469d25a850e6d6fb4c41df14e963e9ff1f8376d13f2e07df"
     },
     {
       "path": "mods/TreeChop-1.20.1-forge-0.19.0-fixed.jar",
@@ -1976,6 +2001,11 @@
       "path": "mods/athena-forge-1.20.1-3.1.2.jar",
       "size": 91808,
       "sha256": "64eec9cffb8847a459536096ac396b135ffb07c7d9d13c6a47d9cd7b251276ab"
+    },
+    {
+      "path": "mods/axiomata-forge-0.1.0-beta.10-1.20.1.jar",
+      "size": 921973,
+      "sha256": "2c319d18814d14e7a19f88ad6c89cd3bb57c0a9affbe232af054d011af7021f2"
     },
     {
       "path": "mods/betsyross-2.1.2+mc.1.20.1-forge.jar",
@@ -2368,9 +2398,9 @@
       "sha256": "3409f22a39a93eaa699f96561ea8830bf5f492db43a000be783f53ae59e00404"
     },
     {
-      "path": "mods/recruits-1.20.1-1.15.0.jar",
-      "size": 2562702,
-      "sha256": "5c0c9252b332babf7e7cf5fc9a5a6f08018df5b9f86827853db2cb3f39b127ce"
+      "path": "mods/recruits-1.20.1-1.15.2.jar",
+      "size": 2811101,
+      "sha256": "4b53c1b752e886ba10985aad2df30d668971810230eb77867e07428a21d1af7f"
     },
     {
       "path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
@@ -2398,9 +2428,9 @@
       "sha256": "71c026910d3e7a2987840bcd78c83241d884616a2fc43664a92d30ec74d1584c"
     },
     {
-      "path": "mods/siege-machines-1.20.1-forge-1.39 (2).jar",
-      "size": 1959521,
-      "sha256": "acd8e84b4ce6bacebbc50036e4364b986e88214f38d0be526b8aef7aabe61210"
+      "path": "mods/siegeworks-forge-0.1.0-beta.11-1.20.1-empirecraft.1.jar",
+      "size": 3448721,
+      "sha256": "52a55c2f2ec5aeed42771ed4151ab0785985f11caaf11c727418ca23ded74500"
     },
     {
       "path": "mods/sound-physics-remastered-forge-1.20.1-1.5.1.jar",
