@@ -1,0 +1,20 @@
+{
+  "source_commit": "fb8492b8f872f9089f7de77cd0f8393104a6becc",
+  "public_snapshot": "1a99f6800b06213ad6fe6c563b4a03401d89a3ac",
+  "signature_verified": true,
+  "all_profiles_match_source": true,
+  "profile_files": {
+    "balanced": 377,
+    "high": 378,
+    "potato": 375
+  },
+  "shared_mod_count": 111,
+  "shared_mods_identical": true,
+  "launcher_tests": {
+    "passed": 61,
+    "skipped": 0
+  },
+  "tfc_sha256": "a1f82645ecbad06c5ae70b9db2b4c5e39375d63ee9485e31ae04df273e279c04",
+  "includes_approved_armory_ottoman_and_kitchen": true,
+  "not_live_until_PR_merged": true
+}
