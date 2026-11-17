@@ -1,8 +1,8 @@
 {
-  "source_commit": "fb8492b8f872f9089f7de77cd0f8393104a6becc",
+  "source_commit": "2191d3b5a01d947ff59505c712db1be43e37be17",
   "server_parity": {
     "server_snapshot_present": true,
-    "shared_mod_count": 111,
+    "shared_mod_count": 112,
     "shared_mods": {
       "accuratehitboxes": {
         "file": "accuratehitboxes-neoforge-2.4.2-empirecraft.1-1.20.1.jar",
@@ -58,6 +58,11 @@
         "file": "callablehorses-1.20.1-1.3.0.1.jar",
         "sha256": "7f28c7d5255292c08cdf200295fd5c92689a5009a056e7a47c255e97d9de520b",
         "version": "${file.jarVersion}"
+      },
+      "chineseweapons": {
+        "file": "chineseweapons-forge-1.20.1-1.2.1.6-empirecraft.1.jar",
+        "sha256": "32c10e46935400cc10d4a408089fba1e80986e8505d225b3e7b0f680bb0bca14",
+        "version": "1.2.1.6-empirecraft.1"
       },
       "chipped": {
         "file": "chipped-forge-1.20.1-3.0.7-empirecraft.3.jar",
@@ -1986,6 +1991,11 @@
       "path": "mods/chatplus-forge-2.8.1-empirecraft.3.jar",
       "size": 27157001,
       "sha256": "31246074de9ad48284c5c1f1236662a0c9ca00b31ba43828eee11673cf633a47"
+    },
+    {
+      "path": "mods/chineseweapons-forge-1.20.1-1.2.1.6-empirecraft.1.jar",
+      "size": 1924959,
+      "sha256": "32c10e46935400cc10d4a408089fba1e80986e8505d225b3e7b0f680bb0bca14"
     },
     {
       "path": "mods/chipped-forge-1.20.1-3.0.7-empirecraft.3.jar",
