@@ -1,8 +1,8 @@
 {
-  "source_commit": "ad7ca368ffd7353872a44fc683d7d21cc1e21b50",
+  "source_commit": "d98333066fcce59e6b9c56d713464e70e15aa3b6",
   "server_parity": {
     "server_snapshot_present": true,
-    "shared_mod_count": 117,
+    "shared_mod_count": 118,
     "shared_mods": {
       "accuratehitboxes": {
         "file": "accuratehitboxes-neoforge-2.4.2-empirecraft.1-1.20.1.jar",
@@ -353,6 +353,11 @@
         "file": "journeymap-forge-1.20.1-6.0.7.jar",
         "sha256": "8c042f4ef2a55a147ccba81f0fe520b98a408cff40c8c396129e39341ce1ec62",
         "version": "1.20.1-6.0.7"
+      },
+      "knockedback": {
+        "file": "knockedback-1.6.2-empirecraft.1.jar",
+        "sha256": "bae17196ce79d571ad98da50f0b06373f07ed7c6a98161855ce98aa650594c55",
+        "version": "1.6.2-empirecraft.1"
       },
       "kubejs": {
         "file": "kubejs-forge-2001.6.5-build.26.jar",
@@ -2356,6 +2361,11 @@
       "path": "mods/journeymap-forge-1.20.1-6.0.7.jar",
       "size": 4282087,
       "sha256": "8c042f4ef2a55a147ccba81f0fe520b98a408cff40c8c396129e39341ce1ec62"
+    },
+    {
+      "path": "mods/knockedback-1.6.2-empirecraft.1.jar",
+      "size": 97588,
+      "sha256": "bae17196ce79d571ad98da50f0b06373f07ed7c6a98161855ce98aa650594c55"
     },
     {
       "path": "mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
