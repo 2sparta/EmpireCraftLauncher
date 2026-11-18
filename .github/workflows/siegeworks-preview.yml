@@ -75,6 +75,11 @@ jobs:
               if 'deadlock' in text.lower(): print(text[-12000:])
           PYDUMP
           tail -120 launcher/kitchen-runtime.log
+          python - <<'PYCHECK'
+          from pathlib import Path
+          text=Path("launcher/kitchen-captures/logs/latest.log").read_text(errors="replace")
+          assert "KITCHEN_CLIENT_PASS knocked=true" in text, "KnockedBack-specific probe did not pass"
+          PYCHECK
           exit "$result"
       - uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
         if: always() && steps.official.outputs.cache-hit != 'true'
