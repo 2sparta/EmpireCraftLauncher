@@ -1,5 +1,5 @@
 {
-  "source_commit": "595a389108af0cc96f448bc0703052e33268c932",
+  "source_commit": "1faaa7a7e4baf01378fa73db058575eaac3c4757",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 118,
@@ -356,7 +356,7 @@
       },
       "knockedback": {
         "file": "knockedback-1.6.2-empirecraft.2.jar",
-        "sha256": "dfd0e904b19cd1b20168d202d0ca06a1a7588c42e20cfa8e80155b0dcc3c0d53",
+        "sha256": "b306cc58187edf03d941b644b757e12117bafc51705d6c897de5aa0ffc7d1195",
         "version": "1.6.2-empirecraft.2"
       },
       "kubejs": {
@@ -2364,8 +2364,8 @@
     },
     {
       "path": "mods/knockedback-1.6.2-empirecraft.2.jar",
-      "size": 111808,
-      "sha256": "dfd0e904b19cd1b20168d202d0ca06a1a7588c42e20cfa8e80155b0dcc3c0d53"
+      "size": 111820,
+      "sha256": "b306cc58187edf03d941b644b757e12117bafc51705d6c897de5aa0ffc7d1195"
     },
     {
       "path": "mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
