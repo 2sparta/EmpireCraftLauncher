@@ -23,7 +23,7 @@ import ua.empirecraft.launcherclient.*;
  void press(String key){var mc=Minecraft.getInstance();String label=net.minecraft.network.chat.Component.translatable("empirecraft.home."+key).getString();for(var c:mc.screen.children())if(c instanceof Button b&&b.getMessage().getString().equals(label)){b.onPress();return;}throw new AssertionError("Missing button "+key);}
  void tick(TickEvent.ClientTickEvent e){if(e.phase!=TickEvent.Phase.END||done)return;try{
   var mc=Minecraft.getInstance();if(serverError!=null)throw new AssertionError(serverError);
-  if(phase==0){if(!(mc.screen instanceof EmpireHome)||++ticks<40)return;
+  if(phase==0){if(!(mc.screen instanceof EmpireHome)||mc.getOverlay()!=null||++ticks<40)return;
    check(mc.level==null,"First menu has no world");check(HomePreferences.closeUp(),"Waist up by default");check(!HomeEquipment.known(),"Fresh account has no invented equipment");capture("01-home-empty");loaded=true;mc.createWorldOpenFlows().loadLevel(mc.screen,"KITCHEN-TEST");phase=1;ticks=0;return;}
   if(loaded&&mc.level==null&&(mc.screen instanceof ConfirmScreen||mc.screen instanceof BackupConfirmScreen)){for(var w:mc.screen.children())if(w instanceof Button b){b.onPress();break;}}
   if(phase<=4&&(mc.level==null||mc.player==null))return;
