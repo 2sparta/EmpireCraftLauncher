@@ -19,7 +19,7 @@ import ua.empirecraft.launcherclient.*;
  void check(boolean ok,String message){if(!ok)throw new AssertionError(message);}
  void capture(String name){var mc=Minecraft.getInstance();Screenshot.grab(mc.gameDirectory,name+".png",mc.getMainRenderTarget(),c->{});}
  void server(Runnable task){ready=false;Minecraft.getInstance().getSingleplayerServer().execute(()->{try{task.run();}catch(Throwable t){serverError=t;}finally{ready=true;}});}
- Item epic(EquipmentSlot slot){return ForgeRegistries.ITEMS.getEntries().stream().filter(e->e.getKey().location().getNamespace().equals("magistuarmory")&&e.getKey().location().getPath().contains("steel")&&e.getValue() instanceof ArmorItem a&&a.getEquipmentSlot()==slot).sorted(java.util.Comparator.comparing(e->e.getKey().location().toString())).map(Map.Entry::getValue).findFirst().orElseThrow();}
+ Item epic(EquipmentSlot slot){return ForgeRegistries.ITEMS.getEntries().stream().filter(e->e.getKey().location().getNamespace().equals("magistuarmory")&&e.getValue() instanceof ArmorItem a&&a.getEquipmentSlot()==slot).sorted(java.util.Comparator.comparing(e->e.getKey().location().toString())).map(Map.Entry::getValue).findFirst().orElseThrow();}
  void press(String key){var mc=Minecraft.getInstance();String label=net.minecraft.network.chat.Component.translatable("empirecraft.home."+key).getString();for(var c:mc.screen.children())if(c instanceof Button b&&b.getMessage().getString().equals(label)){b.onPress();return;}throw new AssertionError("Missing button "+key);}
  void tick(TickEvent.ClientTickEvent e){if(e.phase!=TickEvent.Phase.END||done)return;try{
   var mc=Minecraft.getInstance();if(serverError!=null)throw new AssertionError(serverError);
