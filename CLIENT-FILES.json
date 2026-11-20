@@ -1,5 +1,5 @@
 {
-  "source_commit": "b6a5b3762c24179a11b63420c55ca120e2b6cf5e",
+  "source_commit": "b9ef44d5f8c9d0bf82581109beb82798c70a1929",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 119,
@@ -195,9 +195,9 @@
         "version": "0.1.1"
       },
       "empirecraft_engagement": {
-        "file": "empirecraft-engagement-1.1.1.jar",
-        "sha256": "0b9393ba7a9240618038d816b23c53496ecccef66373ed2374c2cfb4a82d9eea",
-        "version": "1.1.1"
+        "file": "empirecraft-engagement-1.1.2.jar",
+        "sha256": "8feb72a97509148d753897b74eb26c649b02c161f52d5367b76809ffc7aaa135",
+        "version": "1.1.2"
       },
       "empirecraft_equine": {
         "file": "empirecraft-equine-genetics-1.0.0.jar",
@@ -2198,9 +2198,9 @@
       "sha256": "c44b09699857b7c72c7dfb3b2248dec8ed342a86532fd34652740349389659cf"
     },
     {
-      "path": "mods/empirecraft-engagement-1.1.1.jar",
-      "size": 124624,
-      "sha256": "0b9393ba7a9240618038d816b23c53496ecccef66373ed2374c2cfb4a82d9eea"
+      "path": "mods/empirecraft-engagement-1.1.2.jar",
+      "size": 124626,
+      "sha256": "8feb72a97509148d753897b74eb26c649b02c161f52d5367b76809ffc7aaa135"
     },
     {
       "path": "mods/empirecraft-equine-genetics-1.0.0.jar",
