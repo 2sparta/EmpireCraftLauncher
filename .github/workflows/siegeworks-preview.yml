@@ -52,7 +52,7 @@ jobs:
           ALSOFT_DRIVERS: 'null'
         run: |
           result=0
-          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --profile balanced --seed-pack-cache . --gameplay-probe launcher/kitchen-captures --official-cache launcher/.official-kitchen-runtime --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix knockedback- --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- --replace-mod-prefix empirecraft-forging- --replace-mod-prefix hamzabus_ottoman_mod- --replace-mod-prefix chineseweapons- --replace-mod-prefix empirecraft-armory- --replace-mod-prefix siege-machines- --replace-mod-prefix siegeworks- --replace-mod-prefix axiomata- --replace-mod-prefix recruits- --replace-mod-prefix table_top_craft- --replace-mod-prefix blockandboard- --replace-mod-prefix empirecraft-menu-art- --replace-mod-prefix empirecraft-calendar- --replace-mod-prefix chippedexttras- --replace-mod-prefix empirecraft-tfc-integration- --replace-mod-prefix TownyRecruits --replace-mod-prefix empirecraft-towny-journeymap- > launcher/kitchen-runtime.log 2>&1 || result=$?
+          xvfb-run -a -s '-screen 0 1600x1000x24' python launcher/tools/runtime_smoke.py --boot-pack --profile balanced --seed-pack-cache . --gameplay-probe launcher/kitchen-captures --official-cache launcher/.official-kitchen-runtime --overlay /tmp/empirecraft-kitchen-overlay --replace-mod-prefix knockedback- --replace-mod-prefix empirecraft-launcher-client- --replace-mod-prefix TerraFirmaCraft- --replace-mod-prefix legendarysurvivaloverhaul- --replace-mod-prefix handson_delight- --replace-mod-prefix diegesis- --replace-mod-prefix farmersrespite- --replace-mod-prefix empirecraft-forging- --replace-mod-prefix hamzabus_ottoman_mod- --replace-mod-prefix chineseweapons- --replace-mod-prefix empirecraft-armory- --replace-mod-prefix siege-machines- --replace-mod-prefix siegeworks- --replace-mod-prefix axiomata- --replace-mod-prefix recruits- --replace-mod-prefix table_top_craft- --replace-mod-prefix blockandboard- --replace-mod-prefix empirecraft-menu-art- --replace-mod-prefix empirecraft-calendar- --replace-mod-prefix chippedexttras- --replace-mod-prefix empirecraft-tfc-integration- --replace-mod-prefix TownyRecruits --replace-mod-prefix empirecraft-towny-journeymap- > launcher/kitchen-runtime.log 2>&1 || result=$?
           python - <<'PYTRACE'
           from pathlib import Path
           for p in Path('launcher/kitchen-captures/crash-reports').glob('*.txt'):
@@ -78,7 +78,7 @@ jobs:
           python - <<'PYCHECK'
           from pathlib import Path
           text=Path("launcher/kitchen-captures/logs/latest.log").read_text(errors="replace")
-          assert "KITCHEN_CLIENT_PASS knocked=true" in text, "KnockedBack-specific probe did not pass"
+          assert "KITCHEN_CLIENT_PASS menuEquipment=true" in text, "Menu equipment probe did not pass"
           PYCHECK
           exit "$result"
       - uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
