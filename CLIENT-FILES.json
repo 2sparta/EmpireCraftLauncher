@@ -1,8 +1,8 @@
 {
-  "source_commit": "1faaa7a7e4baf01378fa73db058575eaac3c4757",
+  "source_commit": "3fcc62f6cf991a4690915a46be531aa2d348ea97",
   "server_parity": {
     "server_snapshot_present": true,
-    "shared_mod_count": 118,
+    "shared_mod_count": 119,
     "shared_mods": {
       "accuratehitboxes": {
         "file": "accuratehitboxes-neoforge-2.4.2-empirecraft.1-1.20.1.jar",
@@ -70,9 +70,9 @@
         "version": "${file.jarVersion}"
       },
       "chineseweapons": {
-        "file": "chineseweapons-forge-1.20.1-1.2.1.6-empirecraft.1.jar",
-        "sha256": "32c10e46935400cc10d4a408089fba1e80986e8505d225b3e7b0f680bb0bca14",
-        "version": "1.2.1.6-empirecraft.1"
+        "file": "chineseweapons-forge-1.20.1-1.2.1.6-empirecraft.2.jar",
+        "sha256": "6b6ee78bdb8fd65672f2d6ee6c82d5d6570159afac73e39466e02ab1cb3e8d17",
+        "version": "1.2.1.6-empirecraft.2"
       },
       "chipped": {
         "file": "chipped-forge-1.20.1-3.0.7-empirecraft.3.jar",
@@ -175,9 +175,9 @@
         "version": "1.0.4"
       },
       "empirecraft_armory": {
-        "file": "empirecraft-armory-1.2.0.jar",
-        "sha256": "4aee51183c7b8e80714bbb11a9e525eab73ef281f18da469b1e54f477bb4e3c1",
-        "version": "1.2.0"
+        "file": "empirecraft-armory-1.2.1.jar",
+        "sha256": "d19489e13b7d8296a747980d3509d68b94c8159830c6dd13b4985002a01e8ad6",
+        "version": "1.2.1"
       },
       "empirecraft_calendar": {
         "file": "empirecraft-calendar-1.2.4.jar",
@@ -205,9 +205,9 @@
         "version": "1.0.0"
       },
       "empirecraft_forging": {
-        "file": "empirecraft-forging-1.1.5.jar",
-        "sha256": "d9f15019e1254aeb9ba90a0e8447ca924756b4a590706d5e430b29aab357e6f4",
-        "version": "1.1.5"
+        "file": "empirecraft-forging-1.1.6.jar",
+        "sha256": "45b4dc15207e8188ebe4306a2899bdf9b969c451d661f99bf9a27327a4f93fbe",
+        "version": "1.1.6"
       },
       "empirecraft_guidebook": {
         "file": "empirecraft-handbook-1.0.5.jar",
@@ -245,9 +245,9 @@
         "version": "1.2.2"
       },
       "empirecraft_tfc": {
-        "file": "empirecraft-tfc-integration-1.0.6.jar",
-        "sha256": "6d14fe9ba0232779e13878f91311a2e9239c93973b55c65c333c6d55492c851f",
-        "version": "1.0.6"
+        "file": "empirecraft-tfc-integration-1.0.7.jar",
+        "sha256": "192b8e56c9bf1c10217fe8fb32a38eed2d18d7162c49ace752b8cbd8bd3fe600",
+        "version": "1.0.7"
       },
       "empirecraft_titles": {
         "file": "empirecraft-titles-resources-1.0.0.jar",
@@ -263,6 +263,11 @@
         "file": "empirecraft-wildlife-1.0.1.jar",
         "sha256": "86505ac8d5282f5ec077ea89d24847e74a949dd8903158691b4717e19fccc837",
         "version": "1.0.1"
+      },
+      "empirecraft_workshop": {
+        "file": "empirecraft-workshop-1.0.0.jar",
+        "sha256": "643e79c1b055f1d9b903a28903d51287a0a9034fd739eb998b0335a44e157229",
+        "version": "1.0.0"
       },
       "epic_knights__japanese_armory": {
         "file": "epic-knights-all-in-one-1_20_1-forge-empirecraft.1.jar",
@@ -560,9 +565,9 @@
         "version": "0.19.0"
       },
       "trmt": {
-        "file": "trmt-0.5.1b-1.20.1-forge.jar",
-        "sha256": "f93ce88322cfe4e1636d83e2a536ec9acd032f217b5ed9a3312acbe6ae804d5c",
-        "version": "0.5.1b-1.20.1-forge"
+        "file": "trmt-0.5.1b-1.20.1-forge-empirecraft.1.jar",
+        "sha256": "21a6a52d128bfab6c30a8dadf715ecd2c4dd2deae87b61d314ed03439e9874df",
+        "version": "0.5.1b-1.20.1-forge-empirecraft.1"
       },
       "valkyrienskies": {
         "file": "valkyrienskies-120-2.4.11-empirecraft.1.jar",
@@ -646,6 +651,16 @@
       "path": "config/valkyrienskies/valkyrienskies-client.toml",
       "size": 133,
       "sha256": "6fcb83837c24fa50308f3884c53c2ef5f7776bd122f63c19833502ae82777075"
+    },
+    {
+      "path": "defaultconfigs/locks-server.toml",
+      "size": 1485,
+      "sha256": "bee5de33b27432abf0cf5213055402c949098da12fbd5defa74b9c798e673df4"
+    },
+    {
+      "path": "defaultconfigs/recruits-server.toml",
+      "size": 215,
+      "sha256": "de105df4f73ef562af2638439307686fc0ce5f945ecb8b56dadf8f4f49c20461"
     },
     {
       "path": "defaultconfigs/valkyrienskies/vs-core-server.toml",
@@ -1909,8 +1924,8 @@
     },
     {
       "path": "kubejs/server_scripts/zzzzzzzzzzzzz_empirecraft_gunsmith.js",
-      "size": 3185,
-      "sha256": "96ac752c6c902b95d8d8bd82c74ded6d35b0b502b2aaba3863da7749332f50ed"
+      "size": 4092,
+      "sha256": "860febb4e2ae261462d1ac658a857d835404402ee91b14079c3cc7a248c07614"
     },
     {
       "path": "kubejs/server_scripts/zzzzzzzzzzzzz_empirecraft_kitchen.js",
@@ -2078,9 +2093,9 @@
       "sha256": "31246074de9ad48284c5c1f1236662a0c9ca00b31ba43828eee11673cf633a47"
     },
     {
-      "path": "mods/chineseweapons-forge-1.20.1-1.2.1.6-empirecraft.1.jar",
-      "size": 1924959,
-      "sha256": "32c10e46935400cc10d4a408089fba1e80986e8505d225b3e7b0f680bb0bca14"
+      "path": "mods/chineseweapons-forge-1.20.1-1.2.1.6-empirecraft.2.jar",
+      "size": 1920550,
+      "sha256": "6b6ee78bdb8fd65672f2d6ee6c82d5d6570159afac73e39466e02ab1cb3e8d17"
     },
     {
       "path": "mods/chipped-forge-1.20.1-3.0.7-empirecraft.3.jar",
@@ -2163,9 +2178,9 @@
       "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"
     },
     {
-      "path": "mods/empirecraft-armory-1.2.0.jar",
-      "size": 381275,
-      "sha256": "4aee51183c7b8e80714bbb11a9e525eab73ef281f18da469b1e54f477bb4e3c1"
+      "path": "mods/empirecraft-armory-1.2.1.jar",
+      "size": 381403,
+      "sha256": "d19489e13b7d8296a747980d3509d68b94c8159830c6dd13b4985002a01e8ad6"
     },
     {
       "path": "mods/empirecraft-calendar-1.2.4.jar",
@@ -2193,9 +2208,9 @@
       "sha256": "8ac5e54319e82a7e2227b03527e3bdf05d12f76818b3fd3a47456640d52e5238"
     },
     {
-      "path": "mods/empirecraft-forging-1.1.5.jar",
-      "size": 94214,
-      "sha256": "d9f15019e1254aeb9ba90a0e8447ca924756b4a590706d5e430b29aab357e6f4"
+      "path": "mods/empirecraft-forging-1.1.6.jar",
+      "size": 94606,
+      "sha256": "45b4dc15207e8188ebe4306a2899bdf9b969c451d661f99bf9a27327a4f93fbe"
     },
     {
       "path": "mods/empirecraft-handbook-1.0.5.jar",
@@ -2208,9 +2223,9 @@
       "sha256": "f6e237fdd6a0495c41796ca257c89460be56e2fa6e8cc0532fb2750f92d65f89"
     },
     {
-      "path": "mods/empirecraft-launcher-client-0.2.0.jar",
-      "size": 1944624,
-      "sha256": "1ec494b5a81cfc66e59a50bfab4c12c13f36cc317d569e85a89497d01d64a4ed"
+      "path": "mods/empirecraft-launcher-client-0.3.0.jar",
+      "size": 1960403,
+      "sha256": "2f604e4060f65c5243e171a4a52794f2d994082ded0ba8a37be25e144a8cc38b"
     },
     {
       "path": "mods/empirecraft-layered-armor-1.0.4.jar",
@@ -2248,9 +2263,9 @@
       "sha256": "6ffb4825e245a581f61f5248cdd80580343161df441622cea63fe45b28e312c6"
     },
     {
-      "path": "mods/empirecraft-tfc-integration-1.0.6.jar",
-      "size": 221363,
-      "sha256": "6d14fe9ba0232779e13878f91311a2e9239c93973b55c65c333c6d55492c851f"
+      "path": "mods/empirecraft-tfc-integration-1.0.7.jar",
+      "size": 270023,
+      "sha256": "192b8e56c9bf1c10217fe8fb32a38eed2d18d7162c49ace752b8cbd8bd3fe600"
     },
     {
       "path": "mods/empirecraft-titles-resources-1.0.0.jar",
@@ -2266,6 +2281,11 @@
       "path": "mods/empirecraft-wildlife-1.0.1.jar",
       "size": 33237,
       "sha256": "86505ac8d5282f5ec077ea89d24847e74a949dd8903158691b4717e19fccc837"
+    },
+    {
+      "path": "mods/empirecraft-workshop-1.0.0.jar",
+      "size": 27495,
+      "sha256": "643e79c1b055f1d9b903a28903d51287a0a9034fd739eb998b0335a44e157229"
     },
     {
       "path": "mods/entityculling-forge-1.11.3-mc1.20.1.jar",
@@ -2538,9 +2558,9 @@
       "sha256": "102565d4dc1e1d2a027ea0d904fdfe3faa05802fa5be154aac06868cad1c275a"
     },
     {
-      "path": "mods/trmt-0.5.1b-1.20.1-forge.jar",
-      "size": 133648,
-      "sha256": "f93ce88322cfe4e1636d83e2a536ec9acd032f217b5ed9a3312acbe6ae804d5c"
+      "path": "mods/trmt-0.5.1b-1.20.1-forge-empirecraft.1.jar",
+      "size": 128814,
+      "sha256": "21a6a52d128bfab6c30a8dadf715ecd2c4dd2deae87b61d314ed03439e9874df"
     },
     {
       "path": "mods/valkyrienskies-120-2.4.11-empirecraft.1.jar",
