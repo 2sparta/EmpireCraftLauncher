@@ -51,7 +51,12 @@ import journeymap.client.ui.fullscreen.Fullscreen;
  void tick(TickEvent.ClientTickEvent e){if(e.phase!=TickEvent.Phase.END||done)return;try{var mc=Minecraft.getInstance();if(failure!=null)throw new AssertionError("Server scene",failure);if(++total>2600)throw new AssertionError("Timed out phase="+phase+" focus="+ShipReconClient.focus()+" live="+ShipMapLayer.view().size());
   if(phase==0){if(mc.screen==null||mc.getOverlay()!=null||++ticks<60)return;mc.createWorldOpenFlows().loadLevel(mc.screen,"KITCHEN-TEST");next(1);return;}
   if(mc.level==null&&(mc.screen instanceof ConfirmScreen||mc.screen instanceof BackupConfirmScreen))for(var w:mc.screen.children())if(w instanceof net.minecraft.client.gui.components.Button b){b.onPress();break;}
-  if(mc.level==null||mc.player==null)return;ticks++;
+  if(mc.level==null||mc.player==null)return;
+  if(mc.screen!=null&&mc.screen.getClass().getName().equals("journeymap.client.ui.dialog.about.AboutScreen")){
+   boolean clicked=false;for(var child:mc.screen.children())if(child instanceof net.minecraft.client.gui.components.Button button){String label=button.getMessage().getString();if(label.equals(net.minecraft.network.chat.CommonComponents.GUI_DONE.getString())||label.equals(net.minecraft.network.chat.CommonComponents.GUI_BACK.getString())){System.out.println("SHIP_MAP_DISMISS_ABOUT "+label);button.onPress();clicked=true;break;}}
+   if(!clicked)mc.screen.onClose();if(phase==3||phase==9)openMap();ticks=0;return;
+  }
+  ticks++;
   if(phase==1){if(ticks<100)return;mc.options.hideGui=false;mc.options.pauseOnLostFocus=false;mc.getToasts().clear();setup(mc);next(2);return;}
   if(phase==2){if(!sceneReady||ticks<120)return;
    var rows=ShipMapLayer.view();if(ticks%80==0){System.out.println("SHIP_MAP_DIAG pos="+mc.player.position()+" render="+mc.options.getEffectiveRenderDistance()+" expected="+first+","+second+" rows="+rows);var uuid=mc.player.getUUID();mc.getSingleplayerServer().execute(()->{try{var server=mc.getSingleplayerServer();var player=server.getPlayerList().getPlayer(uuid);var m=StrategyNetwork.class.getDeclaredMethod("present",net.minecraft.server.level.ServerPlayer.class);m.setAccessible(true);System.out.println("SHIP_MAP_SERVER_DIAG present="+m.invoke(null,player)+" pos="+player.position()+" view="+server.getPlayerList().getViewDistance()+" effective="+ShipViewDistance.blocks(player));for(var ship:VSGameUtilsKt.getShipObjectWorld(player.serverLevel()).getLoadedShips())System.out.println("SHIP_MAP_HULL_DIAG id="+ship.getId()+" bounds="+ship.getWorldAABB()+" dimension="+ship.getChunkClaimDimension());}catch(Exception ex){ex.printStackTrace();}});}
