@@ -1,5 +1,5 @@
 {
-  "source_commit": "bbc73bbdd98c87a339c89e2ee5324a51e943a0ea",
+  "source_commit": "b0d8ca80493435e76a392388c69066e2b0b2a5d6",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 120,
@@ -571,7 +571,7 @@
       },
       "trmt": {
         "file": "trmt-0.5.1b-1.20.1-forge-empirecraft.2.jar",
-        "sha256": "64bac88f08785aa68bf9bdb0b65f0ab6c9a5b454e9af307c6e83c018a631e434",
+        "sha256": "67634c600ddb296e38f02bd1d329ab997571e81279f6dbec44726ddd287fa6f1",
         "version": "0.5.1b-1.20.1-forge-empirecraft.2"
       },
       "valkyrienskies": {
@@ -2564,8 +2564,8 @@
     },
     {
       "path": "mods/trmt-0.5.1b-1.20.1-forge-empirecraft.2.jar",
-      "size": 238400,
-      "sha256": "64bac88f08785aa68bf9bdb0b65f0ab6c9a5b454e9af307c6e83c018a631e434"
+      "size": 474646,
+      "sha256": "67634c600ddb296e38f02bd1d329ab997571e81279f6dbec44726ddd287fa6f1"
     },
     {
       "path": "mods/valkyrienskies-120-2.4.11-empirecraft.1.jar",
