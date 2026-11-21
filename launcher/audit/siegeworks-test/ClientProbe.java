@@ -23,12 +23,13 @@ import net.minecraftforge.fml.common.Mod;
   if(mc.level==null&&(mc.screen instanceof ConfirmScreen||mc.screen instanceof BackupConfirmScreen)){for(var w:mc.screen.children())if(w instanceof Button b){b.onPress();break;}}
   if(mc.level==null||mc.player==null||++ticks<80)return;
   if(phase==1){
+   mc.options.hideGui=true;mc.getToasts().clear();
    var key=new ResourceLocation("tfc","patchouli_books/field_guide/en_us/entries/mechanics/anvils.json");
    var r=mc.getResourceManager().getResource(key).orElseThrow();String text=new String(r.open().readAllBytes(),java.nio.charset.StandardCharsets.UTF_8);
    check(text.contains("Overgeared"),"TFC native guide uses pack override in actual client resource manager");
    entry("tfc:field_guide","tfc:mechanics/anvils");phase=2;ticks=0;return;
   }
-  if(phase==2){check(mc.screen!=null&&mc.screen.getClass().getName().contains("patchouli"),"Native TFC guide opens");capture("01-current-tfc-forging-guide");entry("empirecraft_guidebook:handbook","empirecraft_guidebook:army/militia");phase=3;ticks=0;return;}
+  if(phase==2){check(mc.screen!=null&&mc.screen.getClass().getName().contains("patchouli"),"Native TFC guide opens");mc.getToasts().clear();capture("01-current-tfc-forging-guide");entry("empirecraft_guidebook:handbook","empirecraft_guidebook:army/militia");phase=3;ticks=0;return;}
   check(mc.screen!=null&&mc.screen.getClass().getName().contains("patchouli"),"Updated manpower handbook opens");capture("02-population-militia-guide");done=true;System.out.println("KITCHEN_CLIENT_PASS waterSettlements=true tfcGuideOverride=true guideScreens=true");
  }catch(Throwable t){done=true;System.out.println("KITCHEN_CLIENT_FAIL "+t);t.printStackTrace();}}
 }
