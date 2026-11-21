@@ -1,8 +1,8 @@
 {
-  "source_commit": "e3e530e686ae44fc5462840f80bc609bdd062544",
+  "source_commit": "b0d8ca80493435e76a392388c69066e2b0b2a5d6",
   "server_parity": {
     "server_snapshot_present": true,
-    "shared_mod_count": 119,
+    "shared_mod_count": 120,
     "shared_mods": {
       "accuratehitboxes": {
         "file": "accuratehitboxes-neoforge-2.4.2-empirecraft.1-1.20.1.jar",
@@ -218,6 +218,11 @@
         "file": "empirecraft-interactions-1.2.0.jar",
         "sha256": "f6e237fdd6a0495c41796ca257c89460be56e2fa6e8cc0532fb2750f92d65f89",
         "version": "1.2.0"
+      },
+      "empirecraft_menu_art": {
+        "file": "empirecraft-menu-art-1.1.0.jar",
+        "sha256": "7c8b22351e0dfcddd76273446b3881bef28543ac1e55b9e4475ee94c1da53ae5",
+        "version": "1.1.0"
       },
       "empirecraft_no_end": {
         "file": "empirecraft-no-end-1.0.1.jar",
@@ -505,8 +510,8 @@
         "version": "9.1.0.3"
       },
       "siegeworks": {
-        "file": "siegeworks-forge-0.1.0-beta.11-1.20.1-empirecraft.1.jar",
-        "sha256": "52a55c2f2ec5aeed42771ed4151ab0785985f11caaf11c727418ca23ded74500",
+        "file": "siegeworks-forge-0.1.0-beta.11-1.20.1-empirecraft.2.jar",
+        "sha256": "7fb25ac4697cc5372f10e7fa6505046c03ad07fdc3392a23379cfd794b511ddc",
         "version": "0.1.0-beta.11"
       },
       "slavicarmory": {
@@ -566,7 +571,7 @@
       },
       "trmt": {
         "file": "trmt-0.5.1b-1.20.1-forge-empirecraft.2.jar",
-        "sha256": "64bac88f08785aa68bf9bdb0b65f0ab6c9a5b454e9af307c6e83c018a631e434",
+        "sha256": "67634c600ddb296e38f02bd1d329ab997571e81279f6dbec44726ddd287fa6f1",
         "version": "0.5.1b-1.20.1-forge-empirecraft.2"
       },
       "valkyrienskies": {
@@ -2233,6 +2238,11 @@
       "sha256": "c88216333b8f173c474c22dbf16116d27150c54b50f1a8fb2c205b4909dea747"
     },
     {
+      "path": "mods/empirecraft-menu-art-1.1.0.jar",
+      "size": 92052,
+      "sha256": "7c8b22351e0dfcddd76273446b3881bef28543ac1e55b9e4475ee94c1da53ae5"
+    },
+    {
       "path": "mods/empirecraft-no-end-1.0.1.jar",
       "size": 202606,
       "sha256": "1ca441c6a8d65403adff7c01156edbb67bd7b55eec0f1bf2485680a05a589b25"
@@ -2518,9 +2528,9 @@
       "sha256": "71c026910d3e7a2987840bcd78c83241d884616a2fc43664a92d30ec74d1584c"
     },
     {
-      "path": "mods/siegeworks-forge-0.1.0-beta.11-1.20.1-empirecraft.1.jar",
-      "size": 3448721,
-      "sha256": "52a55c2f2ec5aeed42771ed4151ab0785985f11caaf11c727418ca23ded74500"
+      "path": "mods/siegeworks-forge-0.1.0-beta.11-1.20.1-empirecraft.2.jar",
+      "size": 3470654,
+      "sha256": "7fb25ac4697cc5372f10e7fa6505046c03ad07fdc3392a23379cfd794b511ddc"
     },
     {
       "path": "mods/sound-physics-remastered-forge-1.20.1-1.5.1.jar",
@@ -2554,8 +2564,8 @@
     },
     {
       "path": "mods/trmt-0.5.1b-1.20.1-forge-empirecraft.2.jar",
-      "size": 238400,
-      "sha256": "64bac88f08785aa68bf9bdb0b65f0ab6c9a5b454e9af307c6e83c018a631e434"
+      "size": 474646,
+      "sha256": "67634c600ddb296e38f02bd1d329ab997571e81279f6dbec44726ddd287fa6f1"
     },
     {
       "path": "mods/valkyrienskies-120-2.4.11-empirecraft.1.jar",
