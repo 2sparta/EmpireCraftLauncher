@@ -1,8 +1,8 @@
 {
-  "source_commit": "90a669e882dc30be5dca0d6440c62a103ce003ad",
-  "run_id": "44795943967",
+  "source_commit": "777bb08b103bfbcee40730ed2d56018ccbbea6f1",
+  "run_id": "44885618063",
   "files": [
-    "01-town-vanilla-mod-icons.png",
-    "02-remembered-soil-paths.png"
+    "01-current-tfc-forging-guide.png",
+    "02-population-militia-guide.png"
   ]
 }
