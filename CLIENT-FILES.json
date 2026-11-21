@@ -1,5 +1,5 @@
 {
-  "source_commit": "956f4e603c81265ab5f2dd02871004bbd024d95a",
+  "source_commit": "bc489e5eee996a2c0b60b116c5c8b837c21e928d",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 123,
@@ -2224,8 +2224,8 @@
     },
     {
       "path": "kubejs/server_scripts/zzzzzzzzzzzz_thirtyyearswar.js",
-      "size": 46057,
-      "sha256": "360cbf4646c6a3bc3a39073bd576d9a5680e1f364dfff87fa48329b444ac994f"
+      "size": 46500,
+      "sha256": "c6128160d3f78b0d2d1c10ec2c68a15c5157912e0c3a9c2ee488886c151290b2"
     },
     {
       "path": "kubejs/server_scripts/zzzzzzzzzzzzz_empirecraft_gunsmith.js",
