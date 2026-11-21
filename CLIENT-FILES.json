@@ -1,5 +1,5 @@
 {
-  "source_commit": "b9ef44d5f8c9d0bf82581109beb82798c70a1929",
+  "source_commit": "e3e530e686ae44fc5462840f80bc609bdd062544",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 119,
@@ -210,9 +210,9 @@
         "version": "1.1.6"
       },
       "empirecraft_guidebook": {
-        "file": "empirecraft-handbook-1.0.5.jar",
-        "sha256": "474fda7e05c7ceabee99ec4e46381839edc68912bd74300c57dc052b6080d3f1",
-        "version": "1.0.5"
+        "file": "empirecraft-handbook-1.0.6.jar",
+        "sha256": "d5facd33238bc20c241e1e35ab5a05f7e2ef903e4a0566bd84e71c7130febfc5",
+        "version": "1.0.6"
       },
       "empirecraft_interactions": {
         "file": "empirecraft-interactions-1.2.0.jar",
@@ -535,8 +535,8 @@
         "version": "7.0.1"
       },
       "tfc": {
-        "file": "TerraFirmaCraft-Forge-1.20.1-3.2.30-empirecraft.3.jar",
-        "sha256": "a1f82645ecbad06c5ae70b9db2b4c5e39375d63ee9485e31ae04df273e279c04",
+        "file": "TerraFirmaCraft-Forge-1.20.1-3.2.30-empirecraft.4.jar",
+        "sha256": "8ea7f8a31a94c01f7f596c8be4be8126d7e5aa2dbc4457b834d8d427a45a6873",
         "version": "3.2.30"
       },
       "tfc_muskets": {
@@ -556,8 +556,8 @@
       },
       "townyrecruits": {
         "file": "TownyRecruits.jar",
-        "sha256": "f2c2729d7ec0495cf707696bc8922a096e0a09998802d7a98a180be1a39ff30e",
-        "version": "2.0.3"
+        "sha256": "68dc998d62bfd778e33bde437ba2decc1d035ca7e810c02765afb6984fe846f1",
+        "version": "2.0.4"
       },
       "treechop": {
         "file": "TreeChop-1.20.1-forge-0.19.0-fixed.jar",
@@ -590,9 +590,9 @@
         "version": "2.6.20"
       },
       "vs_sails": {
-        "file": "vs_sails-1.20.1-0.3.2-empirecraft.19.3-forge.jar",
-        "sha256": "611a8a438bac6a56cf9771e230a1250f6ca19e95f368f7f8f22395081cbc43a2",
-        "version": "0.3.2-empirecraft.19.3"
+        "file": "vs_sails-1.20.1-0.3.2-empirecraft.19.4-forge.jar",
+        "sha256": "ce5270fb1261e088dcf4714465b53b0ac4d3e84139098e96631f3ab86a5ea508",
+        "version": "0.3.2-empirecraft.19.4"
       },
       "wonderoussea": {
         "file": "wonderoussea-1.0.4-empirecraft.2-forge-1.20.1.jar",
@@ -2013,14 +2013,14 @@
       "sha256": "57c99eb15acce34bc768279faa3f1d5fbb29715fa507a7bd50944dc1b0d9e315"
     },
     {
-      "path": "mods/TerraFirmaCraft-Forge-1.20.1-3.2.30-empirecraft.3.jar",
-      "size": 45985324,
-      "sha256": "a1f82645ecbad06c5ae70b9db2b4c5e39375d63ee9485e31ae04df273e279c04"
+      "path": "mods/TerraFirmaCraft-Forge-1.20.1-3.2.30-empirecraft.4.jar",
+      "size": 45736853,
+      "sha256": "8ea7f8a31a94c01f7f596c8be4be8126d7e5aa2dbc4457b834d8d427a45a6873"
     },
     {
       "path": "mods/TownyRecruits.jar",
-      "size": 694308,
-      "sha256": "f2c2729d7ec0495cf707696bc8922a096e0a09998802d7a98a180be1a39ff30e"
+      "size": 701405,
+      "sha256": "68dc998d62bfd778e33bde437ba2decc1d035ca7e810c02765afb6984fe846f1"
     },
     {
       "path": "mods/TreeChop-1.20.1-forge-0.19.0-fixed.jar",
@@ -2213,9 +2213,9 @@
       "sha256": "45b4dc15207e8188ebe4306a2899bdf9b969c451d661f99bf9a27327a4f93fbe"
     },
     {
-      "path": "mods/empirecraft-handbook-1.0.5.jar",
-      "size": 661052,
-      "sha256": "474fda7e05c7ceabee99ec4e46381839edc68912bd74300c57dc052b6080d3f1"
+      "path": "mods/empirecraft-handbook-1.0.6.jar",
+      "size": 636983,
+      "sha256": "d5facd33238bc20c241e1e35ab5a05f7e2ef903e4a0566bd84e71c7130febfc5"
     },
     {
       "path": "mods/empirecraft-interactions-1.2.0.jar",
@@ -2568,9 +2568,9 @@
       "sha256": "727d31c11905be6af05686c619dd62a1ed4e451c47670cf5e9804c1ac8871386"
     },
     {
-      "path": "mods/vs_sails-1.20.1-0.3.2-empirecraft.19.3-forge.jar",
-      "size": 1411055,
-      "sha256": "611a8a438bac6a56cf9771e230a1250f6ca19e95f368f7f8f22395081cbc43a2"
+      "path": "mods/vs_sails-1.20.1-0.3.2-empirecraft.19.4-forge.jar",
+      "size": 1412147,
+      "sha256": "ce5270fb1261e088dcf4714465b53b0ac4d3e84139098e96631f3ab86a5ea508"
     },
     {
       "path": "mods/wonderoussea-1.0.4-empirecraft.2-forge-1.20.1.jar",
