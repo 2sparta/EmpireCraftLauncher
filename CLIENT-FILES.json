@@ -1,5 +1,5 @@
 {
-  "source_commit": "b0d8ca80493435e76a392388c69066e2b0b2a5d6",
+  "source_commit": "6b623a5a80557f9dd8567f6b4a9a094cbfc06805",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 120,
@@ -210,9 +210,9 @@
         "version": "1.1.6"
       },
       "empirecraft_guidebook": {
-        "file": "empirecraft-handbook-1.0.6.jar",
-        "sha256": "d5facd33238bc20c241e1e35ab5a05f7e2ef903e4a0566bd84e71c7130febfc5",
-        "version": "1.0.6"
+        "file": "empirecraft-handbook-1.0.7.jar",
+        "sha256": "ab4bcd703fc148cecf557e6f0bd382cb274f930707d5e95baef41e8599a27040",
+        "version": "1.0.7"
       },
       "empirecraft_interactions": {
         "file": "empirecraft-interactions-1.2.0.jar",
@@ -260,9 +260,9 @@
         "version": "1.0.0"
       },
       "empirecraft_townymap": {
-        "file": "empirecraft-towny-journeymap-1.14.0.jar",
-        "sha256": "7b7e92e4c8c313c22416ab361d9f2679b487b582b5fe3f624268ed72332bbe67",
-        "version": "1.14.0"
+        "file": "empirecraft-towny-journeymap-1.14.1.jar",
+        "sha256": "71deb99fa5da9981959559fe825d08bbc4fa9bb7214749a2801cc6e983ab38c6",
+        "version": "1.14.1"
       },
       "empirecraft_wildlife": {
         "file": "empirecraft-wildlife-1.0.1.jar",
@@ -2218,9 +2218,9 @@
       "sha256": "45b4dc15207e8188ebe4306a2899bdf9b969c451d661f99bf9a27327a4f93fbe"
     },
     {
-      "path": "mods/empirecraft-handbook-1.0.6.jar",
-      "size": 636983,
-      "sha256": "d5facd33238bc20c241e1e35ab5a05f7e2ef903e4a0566bd84e71c7130febfc5"
+      "path": "mods/empirecraft-handbook-1.0.7.jar",
+      "size": 640036,
+      "sha256": "ab4bcd703fc148cecf557e6f0bd382cb274f930707d5e95baef41e8599a27040"
     },
     {
       "path": "mods/empirecraft-interactions-1.2.0.jar",
@@ -2278,9 +2278,9 @@
       "sha256": "01a95c3182872e92d89fb46f2f84253aad1991ea7fab4b9be89c6d65fa1ac904"
     },
     {
-      "path": "mods/empirecraft-towny-journeymap-1.14.0.jar",
-      "size": 317068,
-      "sha256": "7b7e92e4c8c313c22416ab361d9f2679b487b582b5fe3f624268ed72332bbe67"
+      "path": "mods/empirecraft-towny-journeymap-1.14.1.jar",
+      "size": 360893,
+      "sha256": "71deb99fa5da9981959559fe825d08bbc4fa9bb7214749a2801cc6e983ab38c6"
     },
     {
       "path": "mods/empirecraft-wildlife-1.0.1.jar",
