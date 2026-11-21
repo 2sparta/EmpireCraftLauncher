@@ -1,8 +1,9 @@
 {
-  "source_commit": "8b7717811ea1ac62f8ef25910a40164f116bf2b0",
-  "run_id": "44932953727",
+  "source_commit": "fb68754652e1fda27d2189e8fdd3c9465b45f5bf",
+  "run_id": "44933497406",
   "files": [
     "01-live-ship-portraits.png",
-    "07-ship-map-failure-4.png"
+    "02-spyglass-save-hint.png",
+    "03-saved-ship-outside-range.png"
   ]
 }
