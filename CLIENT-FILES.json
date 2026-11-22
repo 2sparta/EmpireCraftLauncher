@@ -1,5 +1,5 @@
 {
-  "source_commit": "9f6f53945d3f9687da18d602a052a3a951e7b9bb",
+  "source_commit": "12d941ebed9a075b50780ceada0a0e17b0dee677",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 123,
@@ -175,9 +175,9 @@
         "version": "1.0.4"
       },
       "empirecraft_armory": {
-        "file": "empirecraft-armory-1.2.2.jar",
-        "sha256": "80b61fe6fcf0408fd36133e7a39bf7dd40a1beca11993a3a5cc1d4ff2843db16",
-        "version": "1.2.2"
+        "file": "empirecraft-armory-1.3.0.jar",
+        "sha256": "3e274ccb4ee4635deac6686c1ebe45045a7fdd8d6d73a192153bd9791f05e4f4",
+        "version": "1.3.0"
       },
       "empirecraft_calendar": {
         "file": "empirecraft-calendar-1.2.4.jar",
@@ -185,9 +185,9 @@
         "version": "1.2.4"
       },
       "empirecraft_casting": {
-        "file": "empirecraft-casting-1.3.2.jar",
-        "sha256": "ec12480c7644cff1c38465c58a6cc8191a5497d7d14f8f1b2f5b5a1854519f69",
-        "version": "1.3.2"
+        "file": "empirecraft-casting-1.4.0.jar",
+        "sha256": "eb569bb7b65c7c5aeb47cfe30f8526dc4d0a4a543cdf5fa1792518fbd13ffd92",
+        "version": "1.4.0"
       },
       "empirecraft_earth": {
         "file": "empirecraft-earth-0.1.1.jar",
@@ -205,14 +205,14 @@
         "version": "1.0.0"
       },
       "empirecraft_forging": {
-        "file": "empirecraft-forging-1.1.6.jar",
-        "sha256": "45b4dc15207e8188ebe4306a2899bdf9b969c451d661f99bf9a27327a4f93fbe",
-        "version": "1.1.6"
+        "file": "empirecraft-forging-1.2.0.jar",
+        "sha256": "91d39ecf047610faf5c80fe4c989c53d6c498f8cd7d55a18cd6a862a6039113b",
+        "version": "1.2.0"
       },
       "empirecraft_guidebook": {
-        "file": "empirecraft-handbook-1.0.8.jar",
-        "sha256": "06e20ff62849ec35257e9e6147e1e2458ca97ac75135bb25de5ebf91d9e91854",
-        "version": "1.0.8"
+        "file": "empirecraft-handbook-1.0.9.jar",
+        "sha256": "af90896ae358c2dcaa6119220b480deacb970226bc9a47b2d03175ae876faec7",
+        "version": "1.0.9"
       },
       "empirecraft_immersive": {
         "file": "empirecraft-immersive-crafts-1.0.0.jar",
@@ -220,9 +220,9 @@
         "version": "1.0.0"
       },
       "empirecraft_interactions": {
-        "file": "empirecraft-interactions-1.2.0.jar",
-        "sha256": "f6e237fdd6a0495c41796ca257c89460be56e2fa6e8cc0532fb2750f92d65f89",
-        "version": "1.2.0"
+        "file": "empirecraft-interactions-1.2.1.jar",
+        "sha256": "e26f7c0a6a627b4194bc03b6eb094cb4d309afe60d450675220d3fde81c250f4",
+        "version": "1.2.1"
       },
       "empirecraft_menu_art": {
         "file": "empirecraft-menu-art-1.1.0.jar",
@@ -230,9 +230,9 @@
         "version": "1.1.0"
       },
       "empirecraft_no_end": {
-        "file": "empirecraft-no-end-1.0.1.jar",
-        "sha256": "1ca441c6a8d65403adff7c01156edbb67bd7b55eec0f1bf2485680a05a589b25",
-        "version": "1.0.1"
+        "file": "empirecraft-no-end-1.0.2.jar",
+        "sha256": "1696b902e87bbb03b28a21c183b0e162d2640e4bf5c46f59a4a60ebbb7d625c1",
+        "version": "1.0.2"
       },
       "empirecraft_pack_fixes": {
         "file": "empirecraft-pack-fixes-1.0.2.jar",
@@ -255,9 +255,9 @@
         "version": "1.2.3"
       },
       "empirecraft_tfc": {
-        "file": "empirecraft-tfc-integration-1.0.7.jar",
-        "sha256": "192b8e56c9bf1c10217fe8fb32a38eed2d18d7162c49ace752b8cbd8bd3fe600",
-        "version": "1.0.7"
+        "file": "empirecraft-tfc-integration-1.0.8.jar",
+        "sha256": "37ae10bde6aa3dce8958aa1f7113685d180bc367158129163ca16054304a12c7",
+        "version": "1.0.8"
       },
       "empirecraft_titles": {
         "file": "empirecraft-titles-resources-1.0.0.jar",
@@ -330,8 +330,8 @@
         "version": "0.0.1.1"
       },
       "hamzabus_ottoman_mod": {
-        "file": "hamzabus_ottoman_mod-1.0.4-forge-empirecraft.1.jar",
-        "sha256": "91dda468b7f50fa5a3a68bed59d45080070a0eac7b927a70102a8b35d72493f1",
+        "file": "hamzabus_ottoman_mod-1.0.4-forge-empirecraft.2.jar",
+        "sha256": "d16f17a1fd850150992dfc56318ba128a0fbbebcea0c9db7e8102a24e9b2c113",
         "version": "1.0.4-empirecraft.1"
       },
       "handcrafted": {
@@ -363,6 +363,11 @@
         "file": "immersive_paintings-0.6.13+1.20.1-forge.jar",
         "sha256": "069d5dffa4060d965899e607fad725c4d80a8086cef64f1d7563259b0a070633",
         "version": "0.6.13+1.20.1"
+      },
+      "immersive_smithing": {
+        "file": "immersive-smithing-1.3.1.jar",
+        "sha256": "766bec4e5706dcf78d70d7f2a2f4432cdb954ed52e9878a7d0406f8cd0c06cf1",
+        "version": "1.3.1"
       },
       "immersive_tanning": {
         "file": "immersive_tanning_1.3.0.jar",
@@ -464,11 +469,6 @@
         "sha256": "c57dbccc22d0505ef623d5e52e644d9cadd3d52b495b2386f14a02db06fe1935",
         "version": "0.2.4.1"
       },
-      "overgeared": {
-        "file": "overgeared-forge-1.20.1-1.6.36-empirecraft.1.jar",
-        "sha256": "ed5ddf454a1b3f84dddbf9acc48f4ab4a892bc6ce41899336ad4af22d548e65d",
-        "version": "1.20.1-1.6.36"
-      },
       "packetfixer": {
         "file": "packetfixer-3.3.2-1.18-1.20.4-merged.jar",
         "sha256": "12f96ecb8e61e0b3d3f0ca5701f479904904501dd251aa7bb60205afdf6bc2ce",
@@ -525,8 +525,8 @@
         "version": "9.1.0.3"
       },
       "siegeworks": {
-        "file": "siegeworks-forge-0.1.0-beta.11-1.20.1-empirecraft.2.jar",
-        "sha256": "7fb25ac4697cc5372f10e7fa6505046c03ad07fdc3392a23379cfd794b511ddc",
+        "file": "siegeworks-forge-0.1.0-beta.11-1.20.1-empirecraft.3.jar",
+        "sha256": "bfcbcc1ca4935385bab56be8bfad8380e9a968074f814a5acb1d3e573e5a3ab7",
         "version": "0.1.0-beta.11"
       },
       "slavicarmory": {
@@ -653,11 +653,6 @@
       "sha256": "3e99459983638558ad9dbe13c3b0cc65d662c0f145a3aee6830bd809dba38dfa"
     },
     {
-      "path": "config/overgeared-common.toml",
-      "size": 11170,
-      "sha256": "aa39e882014a7ad375875d2c2c8691744989876d35266b6d8415a6d4cd37d982"
-    },
-    {
       "path": "config/sereneseasons/fertility.toml",
       "size": 470,
       "sha256": "7e8e4dffb69e493670121cb6937f33cb59f1743f9d11d65d83770244453948cf"
@@ -671,6 +666,11 @@
       "path": "config/valkyrienskies/valkyrienskies-client.toml",
       "size": 133,
       "sha256": "6fcb83837c24fa50308f3884c53c2ef5f7776bd122f63c19833502ae82777075"
+    },
+    {
+      "path": "defaultconfigs/immersive_smithing-server.toml",
+      "size": 107,
+      "sha256": "008cd3e7e207ca79bf45ad7c47982cf86fbc4bdc564bc6254626416d15242fc9"
     },
     {
       "path": "defaultconfigs/locks-server.toml",
@@ -779,8 +779,8 @@
     },
     {
       "path": "kubejs/client_scripts/empirecraft_content.js",
-      "size": 484,
-      "sha256": "9cd4046aeeb068661e77679e97c53d10e0c3b10b97c030e6981ae9f24f0e5bb7"
+      "size": 81,
+      "sha256": "618c51dce110c4d6db47c98cc4c381d101d440c1ad2abdf2dc2d8a85da49ab1c"
     },
     {
       "path": "kubejs/client_scripts/empirecraft_immersive_legacy.js",
@@ -794,13 +794,13 @@
     },
     {
       "path": "kubejs/client_scripts/empirecraft_metallurgy.js",
-      "size": 884,
-      "sha256": "bbedd44d64554b01bab03dfdac7a4374f63cb70fd9c1382c39ba6db7c6c0e63c"
+      "size": 650,
+      "sha256": "c06f0ecd1f186299a658146e8bff86038f50461c6bc592510fd408dc1ff507be"
     },
     {
       "path": "kubejs/client_scripts/empirecraft_metals.js",
-      "size": 565,
-      "sha256": "b7d6719ed7f2e64c85d823f8bb94024fc89d26989468eb4035422217044968a3"
+      "size": 182,
+      "sha256": "51714ab4b1c0d74969563155cebd76aa920569dea979dfa8e4b120e847b221e3"
     },
     {
       "path": "kubejs/client_scripts/empirecraft_no_end.js",
@@ -809,8 +809,8 @@
     },
     {
       "path": "kubejs/client_scripts/empirecraft_progression.js",
-      "size": 2156,
-      "sha256": "3c910833d304e66b2b6a05b967167cebbc6bc0ab5445ad7b84bbc19d3eaff020"
+      "size": 2128,
+      "sha256": "e3150b52f7cf0e09070b69d3f89eb6309fb9b487d4aed95c97343cea56d584b7"
     },
     {
       "path": "kubejs/data/antiquelegacy/recipes/black_celtic_pants.json",
@@ -854,13 +854,88 @@
     },
     {
       "path": "kubejs/data/axiomata/tags/items/construction_hammers.json",
-      "size": 140,
-      "sha256": "277580faca916ff2d9bc2fe9ccbc5b0debc73dc8a0a3a39f552a8a57d8f57e44"
+      "size": 153,
+      "sha256": "e3b7d35fdc94c9fd7035628673fe7dac6255c949b0d9e6cfbb2b642cb01791b3"
     },
     {
       "path": "kubejs/data/c/tags/items/ropes.json",
       "size": 113,
       "sha256": "cd03a5f7b75645fb381872506a5069b16c71d03f82879f12362d756566817f0e"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/golden_dagger_axe.json",
+      "size": 632,
+      "sha256": "c424804b963524f76b5263ce3789db92fb9cfecbf79799460b7def2ad2b52d00"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/golden_glaive.json",
+      "size": 894,
+      "sha256": "f82dc6362cbcc26ef78a5dcb3a95c14d423f83a4f0a22b162bdc57d1da2f102f"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/golden_guduo.json",
+      "size": 630,
+      "sha256": "783887617c5c52cec2f358e903cff18283fc460b386f14ad9a886d224eb9dbbf"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/golden_sky_piercing_halberd.json",
+      "size": 1049,
+      "sha256": "5bd96936696ecf6005f58bd7c4f5e50c93dd4f5fb5af84acc0b7300e7747a0d9"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/golden_song_javelin.json",
+      "size": 638,
+      "sha256": "c5062d71a6d1bad01b8f476a0f71333d0459a1066f998ff34a6b95a4c5d84a97"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/golden_tang_dynasty_heng_saber.json",
+      "size": 648,
+      "sha256": "01fe4e523d483f903a718cb93b4e71c3a4e2aee48c32c103c5f6a3bd02db9b12"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/green_loong_glaive.json",
+      "size": 639,
+      "sha256": "678fb93b7ac01598daa1ef04deebed36910fbf0a137378d0a73ac9ad5a710dce"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/iron_dagger_axe.json",
+      "size": 350,
+      "sha256": "f482ee87cba66b0a27f98b193eb6bbcce7f99e89453b73a5dad5c8eeaca9a45c"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/iron_glaive.json",
+      "size": 766,
+      "sha256": "e4419f61bf765ccb2a4c0c033abd85aefebf268da423a1b55379ecb55ab044ca"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/iron_guduo.json",
+      "size": 348,
+      "sha256": "dc049f0d850b57ef37edb6d1fb1b5ea4169e1f7eee9c4e5ddc02bfb773ead7db"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/iron_sky_piercing_halberd.json",
+      "size": 928,
+      "sha256": "6a97df55ca86decf8256032767b81ee49159a6dc204db6fab3f600028d592be2"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/iron_song_javelin.json",
+      "size": 356,
+      "sha256": "1fb81a6771e35245c32875a3a0f7a40cba86010f7c831be9ebcec12187126b11"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/iron_tang_dynasty_heng_saber.json",
+      "size": 366,
+      "sha256": "753b1e6d2713c7f874627af8d5d846d35e3186372d2c4ac089389e584fe96c56"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/song_standing_shield.json",
+      "size": 499,
+      "sha256": "5bb5711014783a11d0c8cb248c981a636ef8f8e4313eec54d4f7e6a9c2dacc94"
+    },
+    {
+      "path": "kubejs/data/chineseweapons/recipes/tang_dynasty_shield.json",
+      "size": 498,
+      "sha256": "6395b8bbc1aac4a6b631366f313f5aa5d7c7e538b80c105158f1f8fcba636dac"
     },
     {
       "path": "kubejs/data/createbigcannons/munition_properties/projectiles/shot.json",
@@ -881,6 +956,16 @@
       "path": "kubejs/data/darkagesarmory/recipes/black_tunic_boots.json",
       "size": 395,
       "sha256": "40b52e3473016c67a03e0e54a1b35776f3f7406c9b6ca42a8e617a8b7e9a56e4"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/boar_decoration.json",
+      "size": 307,
+      "sha256": "6f6a3e75790b8970771ee01923c7c41affa36ab7cbc62dd486190d0e3f85edf9"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/broa_helmet.json",
+      "size": 345,
+      "sha256": "e033e0b0775708ba6dfd3b3dfb90b0a64714ec5ebebcd4db8b6a163ef3d5db5d"
     },
     {
       "path": "kubejs/data/darkagesarmory/recipes/brown_birka_tunic_boots.json",
@@ -913,6 +998,11 @@
       "sha256": "f4be4e2717e26b378e69938f0015a7d1a857d33641a599613c5b0d9c8a68a6d9"
     },
     {
+      "path": "kubejs/data/darkagesarmory/recipes/gjermundbu_helmet.json",
+      "size": 299,
+      "sha256": "8c12572782ee423a770680967303db2e98e7c409f5285d173a8736b65b7ce1ed"
+    },
+    {
       "path": "kubejs/data/darkagesarmory/recipes/green_birka_tunic_boots.json",
       "size": 401,
       "sha256": "d61a229a8f21a8ba77acdd4d16353a7d1fdf0b1b8bd83dad2b81f55de509229d"
@@ -926,6 +1016,11 @@
       "path": "kubejs/data/darkagesarmory/recipes/green_tunic_boots.json",
       "size": 395,
       "sha256": "fab454cd6cb058bee65d04077d7df9a9f02a8db40318975350da20342403f694"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/pillbox_cap.json",
+      "size": 293,
+      "sha256": "f977eb4c52e0c3372d26d1b7d0f9c34ab6948d8ddeed50890f52e0f2454e0858"
     },
     {
       "path": "kubejs/data/darkagesarmory/recipes/red_birka_tunic_boots.json",
@@ -943,6 +1038,11 @@
       "sha256": "4e6154fc9ccb99dd4af452e07f60fc52340a1bed7682f96a4c3eaa13903aef5f"
     },
     {
+      "path": "kubejs/data/darkagesarmory/recipes/somme_helmet.json",
+      "size": 294,
+      "sha256": "2dd5727ca8f2c17c2148b21949a9d94b36235640855ef05c9c52ec1752cb6680"
+    },
+    {
       "path": "kubejs/data/darkagesarmory/recipes/white_birka_tunic_boots.json",
       "size": 401,
       "sha256": "06350b8c2673b8444fb45446b41cb822bd177a52ed805fb5127474f7dde5a79a"
@@ -956,6 +1056,11 @@
       "path": "kubejs/data/darkagesarmory/recipes/white_tunic_boots.json",
       "size": 395,
       "sha256": "9bfb334c7abf70f59f1ed3d2dce2cfc31fb4dd51e13673d3cca4adf3b28d4945"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/yarm_helmet.json",
+      "size": 293,
+      "sha256": "bc0b57aaca06b8044a3b4528b372a2a3f7335745010a6f7a549f7d2e829154f8"
     },
     {
       "path": "kubejs/data/darkagesarmory/recipes/yellow_birka_tunic_boots.json",
@@ -1104,8 +1209,8 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/filled_barrel.json",
-      "size": 513,
-      "sha256": "b4fd5270e123f53b7ae5c92a7c9e08732c6788153976df3e6b4490dc8520c89b"
+      "size": 576,
+      "sha256": "bb7dec4f003531bf75809bbcb77e5b40a07668ed9a7e0a0e8e40a17b25a76c80"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/filled_crate.json",
@@ -1209,13 +1314,13 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/steel.json",
-      "size": 2766,
-      "sha256": "aba376c31b0bbba78940b7810042a59b6307dc9fbd58c0fcab568f0ea1f3db8a"
+      "size": 3073,
+      "sha256": "bfb103f6f24511b05f016728e36445bd1e9279b8a884977c1f2af78e2abbb9b7"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/stone.json",
-      "size": 151897,
-      "sha256": "7c72de6392a6b2eba41c971bb085ab360a538d794153ecd0f3906003566d4095"
+      "size": 151781,
+      "sha256": "cdea1c0f8ef18278d7e8708075dfdf5394dd22a735e227d20eb938fd120e105f"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/stone_glass.json",
@@ -1244,8 +1349,8 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/wood.json",
-      "size": 86109,
-      "sha256": "f608d41a78d712aefb8d16e713fe1a8dc4f67eb70c0dbe74101beaeae7949c4a"
+      "size": 86054,
+      "sha256": "cf3cf5b92e8d30a0a6802f0c1bf3644f94812e19bf4a78d0c06b103696a046e5"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/wood_container.json",
@@ -1254,8 +1359,8 @@
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/wood_furniture.json",
-      "size": 22248,
-      "sha256": "5407f97b3bcbd3624d6e59ba9672d8f089b5bfc564a5d5e9ef30b9fe40f51ea5"
+      "size": 22188,
+      "sha256": "544f7737337320c3d58c492cb73ad1efc181102c1635a21e91e6a8ed002f13e4"
     },
     {
       "path": "kubejs/data/empirecraft_mass/tags/blocks/wool.json",
@@ -1331,6 +1436,16 @@
       "path": "kubejs/data/forge/tags/items/cooked_eggs.json",
       "size": 128,
       "sha256": "3f4caf64acea54fca07b9a1fc0c60be630f22d2493feeb76cad51e0629808398"
+    },
+    {
+      "path": "kubejs/data/forge/tags/items/ingots/steel.json",
+      "size": 70,
+      "sha256": "875eb469606ef160a4e951a57da41a32f04fe16d19d56c66849e3ed4de88b703"
+    },
+    {
+      "path": "kubejs/data/forge/tags/items/nuggets/steel.json",
+      "size": 80,
+      "sha256": "cd4b372a2ef57094ccc8c8079e4b9817e77edb173d1b1d300440e1cfb88e6685"
     },
     {
       "path": "kubejs/data/forge/tags/items/tools/knives.json",
@@ -1478,6 +1593,11 @@
       "sha256": "ae1a5c2e224bc4ecba45db798c3af324c17df3e6f93ca0dfd904f717d342503e"
     },
     {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/burgundian_kettlehat.json",
+      "size": 368,
+      "sha256": "69d3b7e1331ec4c424265dc3cdb9c48d159838ca32bf55e2edd761fadbcb6c5b"
+    },
+    {
       "path": "kubejs/data/magistuarmoryaddon/recipes/puff_and_slash_boots.json",
       "size": 295,
       "sha256": "0db452126da8d74c2c22b06c42d858a5472180f117c66195a03f26f85683af30"
@@ -1486,6 +1606,91 @@
       "path": "kubejs/data/magistuarmoryaddon/recipes/shoes.json",
       "size": 179,
       "sha256": "a081d64477fb64ffa25650a1f9830265d802b8bd05efb6051dd64107f5aa8d05"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_arming_sword_type_xiii.json",
+      "size": 337,
+      "sha256": "918b3f1705838bf899293d023a2b08edb8166de67388d44ae09db1c52c3dbd86"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_arming_sword_type_xiv.json",
+      "size": 336,
+      "sha256": "259caa4da1d59a5ebb4bca97980a6d37f6f74be740143593f8916dfbe58f4c9e"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_arming_sword_type_xv.json",
+      "size": 335,
+      "sha256": "ee0a4a2cf9c2789d63ff78cb1dfea4b39841bb6556e343aec043629b7a37f852"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_battleaxe.json",
+      "size": 353,
+      "sha256": "9510996735e988750195fce87c6fa7e50025325bc4c4c9e9b62b1aaf84a50f3e"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_dagger.json",
+      "size": 286,
+      "sha256": "baf49a61cb98f45660f34319a7872832b387433017fb3ac391641f3bc52bbdda"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_executioners_sword.json",
+      "size": 389,
+      "sha256": "f88075cc0f9435bda218e025f7b01f155075dd95cc4358b528d3cf0cfea44e69"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_falchion.json",
+      "size": 379,
+      "sha256": "7266fddd94ba2bb310eef2cddb680fe4d7b9c06265ac7ffe1297eebc6652cb0a"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_longsword.json",
+      "size": 433,
+      "sha256": "694f74b0708ab4825c79f282fdada8a13e529171552419c0b37103123eb2f3a4"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_messer_sword.json",
+      "size": 372,
+      "sha256": "e261cdbb7f38ea036083c99b7d94501f6a457cc60bdb163a864da42404547452"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_partisan.json",
+      "size": 418,
+      "sha256": "17a79ca5511200c0b6567e96dc7aa174162354109a34edc30b3e2b64db1ba0c2"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_puff_and_slash_boots.json",
+      "size": 374,
+      "sha256": "8f5c5ad21872384d87f9a3eb8ba9e2053e042c9c6ee58c9f086f944fe62ba80f"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_puff_and_slash_chestplate.json",
+      "size": 396,
+      "sha256": "a2a749b3c5b8ff27c25755fae47f6b1c9206a104ec8576bbda93729caf43c22c"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_rapier.json",
+      "size": 373,
+      "sha256": "15f0d5fe18288aab86df72544043e8ed889cbd8ea3e0407672c7d7a8a110ec03"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_sabre.json",
+      "size": 376,
+      "sha256": "fb3e36e0e8765f2940b58656511893ff1b1646e45052220030d322ce7f614476"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_scimitar.json",
+      "size": 367,
+      "sha256": "f585183bc01b1b7d6053893f25605ada787bf11ef6d1796d57117655473ab2bd"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_sickle.json",
+      "size": 365,
+      "sha256": "0b74509970cfa6cb811ee29b48151a66b4b9d536f80b6c644de4780bdaa31589"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/steel_sidesword.json",
+      "size": 376,
+      "sha256": "a6383a4c476ea4a6055a7ad1184ef49a92dd99d1ebb385ec06cc02a7d48e59ae"
     },
     {
       "path": "kubejs/data/magistuarmoryaddon/recipes/tunic.json",
@@ -1554,8 +1759,8 @@
     },
     {
       "path": "kubejs/data/minecraft/tags/blocks/mineable/pickaxe.json",
-      "size": 110705,
-      "sha256": "0a71c3785a047fd17760006cfb9a95204852cea04556f307546a2f174b6eae8d"
+      "size": 110558,
+      "sha256": "82abbdd082d10e1d276441d4430f00e634647e0f78cb5728f304c8d482364a92"
     },
     {
       "path": "kubejs/data/minecraft/tags/blocks/portals.json",
@@ -1669,8 +1874,8 @@
     },
     {
       "path": "kubejs/data/minecraft/tags/items/tools.json",
-      "size": 660,
-      "sha256": "e5e85d2c58bd612b5af8d7051d55f0f55ad995e87269043ef1968b26bc6eaab1"
+      "size": 620,
+      "sha256": "98712f1ecfeb12c872df194aab6720246d9caff8df7588666c3201622b3a3b1e"
     },
     {
       "path": "kubejs/data/minecraft/tags/items/walls.json",
@@ -1743,6 +1948,26 @@
       "sha256": "eef9e3afc735a8801c86f9e0b209cc5038e9b70eba72ff36d48b4b643f7f77a1"
     },
     {
+      "path": "kubejs/data/slavicarmory/recipes/steel_winged_rogatina.json",
+      "size": 364,
+      "sha256": "d2a4b88cacc1307092f2486a4967e9f2e327844cae31e780ae4f2405ce9a8350"
+    },
+    {
+      "path": "kubejs/data/tfc/advancements/story/steel_age.json",
+      "size": 755,
+      "sha256": "2cc5c10c7c4a5e7ef03dbf02ceb9931e45f34407883a5e60a8ccfc2b9455ec56"
+    },
+    {
+      "path": "kubejs/data/tfc/recipes/casting/steel_fire_ingot.json",
+      "size": 239,
+      "sha256": "e0dc239149326c9d23a3600df7a2737813ae71926d6300b2a33b668858524a89"
+    },
+    {
+      "path": "kubejs/data/tfc/recipes/casting/steel_ingot.json",
+      "size": 233,
+      "sha256": "d9ffa5dbe05d9efdf3ea992ef9aff8f134506b333854c8bdd6e392f75f9ce10c"
+    },
+    {
       "path": "kubejs/data/tfc/recipes/crafting/parchment.json",
       "size": 599,
       "sha256": "175a42056c2b361737caad8942faaca7443764280ad6626d19d17b922dd5a913"
@@ -1751,6 +1976,11 @@
       "path": "kubejs/data/tfc/recipes/heating/cooked_egg.json",
       "size": 198,
       "sha256": "20b64ae1393bf5a0bc681ee9ba14b415e4e8bd5d5d32b488e720e2b57b5edb79"
+    },
+    {
+      "path": "kubejs/data/tfc/recipes/heating/metal/steel_ingot.json",
+      "size": 185,
+      "sha256": "1cec996a985fd622b8b10076a42117d05f78b2df87b0618deb34c29a2f7d337a"
     },
     {
       "path": "kubejs/data/tfc/tags/items/deals_crushing_damage.json",
@@ -1771,6 +2001,11 @@
       "path": "kubejs/data/tfc/tags/items/leather_knapping.json",
       "size": 38,
       "sha256": "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+    },
+    {
+      "path": "kubejs/data/tfc/tags/items/metal_item/steel.json",
+      "size": 1574,
+      "sha256": "6cfaafec920f79926ead876f9e761d42188383cbe12e40f864d63c484503548e"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/baroque_apron_skirt_boots.json",
@@ -1809,18 +2044,18 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_armour.json",
-      "size": 682,
-      "sha256": "4f2765d80fbe5394a26c7afc1dbb131f9420abac242343160e6c223a8c03fbeb"
+      "size": 287,
+      "sha256": "8a137d33b86d18b637d0b2b9a2d0896112dd1a434eae47032dc0417f38f5473b"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_barred_closed_burgonet.json",
-      "size": 718,
-      "sha256": "62f06cc450deac148a90d00b72d99dd8a26e3ca808606ccd1ddaadffcd50141a"
+      "size": 323,
+      "sha256": "a15d31648a08ddce6044e17a0875be7a164681d45314bd9fbc52f5d335427f55"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_barred_lobstertail_helmet.json",
-      "size": 711,
-      "sha256": "73a3458b5e3ff288afe5bfd44b9d288b756c86f848bace5e16da5318f54d94ca"
+      "size": 316,
+      "sha256": "5f4827396e4a219653fe3c7521b9b4ad04bc8c05e894c8f84fda555b046fe057"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_bodice.json",
@@ -1844,8 +2079,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_cabasset_helmet.json",
-      "size": 855,
-      "sha256": "659c1b87806b53b1dcbc2f6f844e3e3fc723eff5f160b64b8db27f02bb37d13c"
+      "size": 375,
+      "sha256": "c5d2152a6055f66dbbd2bd16ae7637d00b51d7df8788fb49995e2cfbd24267b8"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_cavalier_hat.json",
@@ -1859,8 +2094,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_cavalry_armour_gauntlet.json",
-      "size": 715,
-      "sha256": "cdae82dbac2e49896377f28698c389403e977c0e6dc0dfc1ba20734a0a037d39"
+      "size": 320,
+      "sha256": "73c1b2ff68a0833cbf5409c4f21c799adbdc9fec000f913edaadb331935b3478"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_cloak.json",
@@ -1869,8 +2104,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_closed_helmet.json",
-      "size": 713,
-      "sha256": "573fa88562a159237058e9be6b5d498a58f792e28e9e804671bbcaa804bf99db"
+      "size": 318,
+      "sha256": "e1d56c2d0087e4857b77abd37a838902bb07ffa786c0cfc1dd4b051f0ada476f"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_coat.json",
@@ -1879,18 +2114,18 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_cuirass.json",
-      "size": 612,
-      "sha256": "55f32e399afc0d1cf02ff8f7731e57b0f8e2b97f7530e4179994f34a49eca5d0"
+      "size": 245,
+      "sha256": "df8e8edc731c939a1029f4a7abff36aee108ec79032daf8a3281cbd6f3ef1591"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_cuirassier_armour.json",
-      "size": 961,
-      "sha256": "14632fa6ee4f31d3e62bdff84a0aa8f4ebdbe0d07bda20dfcaa4f18557f8b2e5"
+      "size": 453,
+      "sha256": "c6a5be0a9335dd2610c8e74d58bcb426e007ff4a112ed74a3dafd56c6d66e686"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_cuphilt_rapier.json",
-      "size": 709,
-      "sha256": "428229e3bfa5f0f24c88131ecbf2dc50a7b4e6adcae42016d70a470bcea90a53"
+      "size": 409,
+      "sha256": "863085ec1f13a3f28b3a9a1d563d9ca712807375e0e993c70ecfa74b2daef83e"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_dark_barred_closed_burgonet.json",
@@ -1979,8 +2214,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_death_helmet.json",
-      "size": 696,
-      "sha256": "4eb4408b4ec52090c0584086c2d949e769686d7a215aa659a7cbb1ac3d6d3258"
+      "size": 310,
+      "sha256": "8b4898362a211f05d97d1aac275476825ed6f26c55d097401c96d8504e695bec"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_doublet.json",
@@ -1999,23 +2234,23 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_grilled_closed_burgonet.json",
-      "size": 723,
-      "sha256": "32171a65799cf582236a49b51d0ae32a275e39f6314d95748370f2207ca2bdfa"
+      "size": 328,
+      "sha256": "726c19352a019808afef79317abe8ebb1a5e93b96028341b9e1df85dfb78e1bd"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_halberd.json",
-      "size": 722,
-      "sha256": "06c96ac372e4da8e09891a65a5b7de5465901d93eb6fadea1a6e8492f1ece998"
+      "size": 721,
+      "sha256": "19e77a83f95f470e128cb82d814ddf4ffb94d8c0105175e3b109b26aaa4eba95"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_lobstertail_helmet.json",
-      "size": 707,
-      "sha256": "10e21f4a58b2db767b1e3d3b10a79cacc0e45a23f037d618b9cee17d9020c97c"
+      "size": 312,
+      "sha256": "3f3311a3d0b4b1c2a44a4a088438182d5dfc94be061586e036677cd6d53d5fff"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_matchlock_musket.json",
-      "size": 944,
-      "sha256": "f37b7e9d564f4548945f915975d935dc56cd84689a58c0b50459ea3193cc7891"
+      "size": 675,
+      "sha256": "2fcfad5357e814b597d20280333c8612726019fcd949bf549024624469bb0f74"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_monmouth_cap.json",
@@ -2034,8 +2269,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_open_burgonet.json",
-      "size": 853,
-      "sha256": "fd3cc82f7ae88256f3989c4ec8c0000eb603fba2bae4b414e6c61476c750efd8"
+      "size": 373,
+      "sha256": "de016e939009f8d2f15fcb590caa48f8588df3d97d622f8c81714b1b9dba4703"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_open_cloak.json",
@@ -2044,8 +2279,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_open_closed_burgonet.json",
-      "size": 713,
-      "sha256": "9a95fb3a8fba66c4bc1000efefceee2449e808f46948b52b7d002bb1a8a645a2"
+      "size": 318,
+      "sha256": "96ea5cebf15a9cbb20d1d231b86846b50c758fb1bde820f57998e3b4c0481a6b"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_panel_cloak.json",
@@ -2054,13 +2289,13 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_partisan.json",
-      "size": 722,
-      "sha256": "3938acea4100ae7c1afeafd44c5b7dbf59c821e5af7dd48c32f282657cd9b06a"
+      "size": 729,
+      "sha256": "bacf96d6839e39855e162efbf8a5cbf60f6c67b488a388123b2b6c29faa542b3"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_pike.json",
-      "size": 661,
-      "sha256": "fc376d7fd67bdbc88fd64db2de2a9c73bcde5b49c715781edb3f7dbce5ae8536"
+      "size": 669,
+      "sha256": "2089aa0ceceba8b68c2f71ea17109214af6e7106a752c6821b068e35e7e8d3c1"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_pikeman_armour.json",
@@ -2074,18 +2309,18 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_pikeman_pot_helmet.json",
-      "size": 858,
-      "sha256": "9fb49da94081a47d6687bfaf317a6e76d627e023a24f29bc70dc61c8edf93303"
+      "size": 378,
+      "sha256": "d1e948cf2fd54634ac8af0cd0007a49d44f8e2d3af36bfab583210880b374372"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_pollax.json",
-      "size": 720,
-      "sha256": "1502ec6fdf7fa6980e7fa1e1bc4ab796999a326b4d367191686789f37578c477"
+      "size": 719,
+      "sha256": "0955419f1ffc2557f863cd65a6c47fd073901cb4e3edd3eb92175d917636a258"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_rapier.json",
-      "size": 846,
-      "sha256": "0706768dc80a2d123eae407099a64826c1473da5720e022017d329eebd6d83cd"
+      "size": 405,
+      "sha256": "606a30073f568125b60b065a6dc696ca57293c1734aa5cf0e625a0ff02b200e5"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_riders_breeches.json",
@@ -2094,8 +2329,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_savoyard_helmet.json",
-      "size": 726,
-      "sha256": "5be850a87acb159e5fd37ecc323f1c798e69c1c8e260042167cd15992ab5b709"
+      "size": 331,
+      "sha256": "7e27fc9f488bf6a34e8ccd8f89a60d32ed9be5a1644cd57783b3c7e321e6a569"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_shirt.json",
@@ -2109,8 +2344,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_sidesword.json",
-      "size": 814,
-      "sha256": "364c2ab96f4d658668a74a25dbb92bcd7d0108845fe986c6ab948c6608804888"
+      "size": 388,
+      "sha256": "688441060cc742c273c5944af9212a0f02bd56cd9388876001b27037e756ae64"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_skirt.json",
@@ -2119,8 +2354,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_skull_cap.json",
-      "size": 808,
-      "sha256": "6e66e845788d343c87aff0366d1813c1a64ed2722e0e91dc4ce48e8697796f95"
+      "size": 355,
+      "sha256": "8371b1762cab2bbcda247b49ded34ba3cc0e55e7cb7afda46d488d3ec2d51070"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_slouch_hat.json",
@@ -2129,8 +2364,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_swepthilt_rapier.json",
-      "size": 701,
-      "sha256": "96b596f083a3eafecdc1119aa95c34aabea2efae2f625c8b7e3a30cc785a1547"
+      "size": 411,
+      "sha256": "43cb93f73c445dcad77f1d4fad2a26e9e84701d68c3b11e2d657f5b6317236ac"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_waist_sash.json",
@@ -2144,13 +2379,13 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_walloon_sword.json",
-      "size": 818,
-      "sha256": "01866dc322264f6637e63e4835e930c22954296b6e9357acaef41fe9cad91173"
+      "size": 392,
+      "sha256": "001db067d88366de01c67042a72c2340ec5fe2dff62d12f232d4f9ef06487051"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_wheellock_pistol.json",
-      "size": 791,
-      "sha256": "bbf865156d002201a69a63c104a49c671fdab5f7babf9d9be56546134a13d0b4"
+      "size": 675,
+      "sha256": "1446c92e163d140788aee6b77d61f92f97a2939b17d0961a7553f9d310b2f0dc"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_felt_fabric.json",
@@ -2224,13 +2459,13 @@
     },
     {
       "path": "kubejs/server_scripts/zzzzzzzzzzzz_thirtyyearswar.js",
-      "size": 46500,
-      "sha256": "c6128160d3f78b0d2d1c10ec2c68a15c5157912e0c3a9c2ee488886c151290b2"
+      "size": 36650,
+      "sha256": "2cde60d3e904f7f08d0ba31eca491cdc52cf1389b38f52293428fb26275d5ec8"
     },
     {
       "path": "kubejs/server_scripts/zzzzzzzzzzzzz_empirecraft_gunsmith.js",
-      "size": 4092,
-      "sha256": "860febb4e2ae261462d1ac658a857d835404402ee91b14079c3cc7a248c07614"
+      "size": 3680,
+      "sha256": "db1213cee4c977710d3a314c029d9277d5e6e643a31af63aa8fbeb12662cb59e"
     },
     {
       "path": "kubejs/server_scripts/zzzzzzzzzzzzz_empirecraft_kitchen.js",
@@ -2249,8 +2484,8 @@
     },
     {
       "path": "kubejs/startup_scripts/empirecraft_progression_tabs.js",
-      "size": 2636,
-      "sha256": "767160aaccb6e6981f3096e28a251715a7a43fa956f6f4309871fc1162f4f7bc"
+      "size": 2544,
+      "sha256": "bff94faebc59a692a42cfea26be88e9eb077c773d53ca86a9236dee938352be0"
     },
     {
       "path": "mods/AnvilRepairing-Forge-1.20.1-4.0.10.jar",
@@ -2488,9 +2723,9 @@
       "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"
     },
     {
-      "path": "mods/empirecraft-armory-1.2.2.jar",
-      "size": 381517,
-      "sha256": "80b61fe6fcf0408fd36133e7a39bf7dd40a1beca11993a3a5cc1d4ff2843db16"
+      "path": "mods/empirecraft-armory-1.3.0.jar",
+      "size": 367838,
+      "sha256": "3e274ccb4ee4635deac6686c1ebe45045a7fdd8d6d73a192153bd9791f05e4f4"
     },
     {
       "path": "mods/empirecraft-calendar-1.2.4.jar",
@@ -2498,9 +2733,9 @@
       "sha256": "7835943a15d8d587c1fc111d3833aa213a13bdfb165a4f325bb03888b7f60542"
     },
     {
-      "path": "mods/empirecraft-casting-1.3.2.jar",
-      "size": 205113,
-      "sha256": "ec12480c7644cff1c38465c58a6cc8191a5497d7d14f8f1b2f5b5a1854519f69"
+      "path": "mods/empirecraft-casting-1.4.0.jar",
+      "size": 192028,
+      "sha256": "eb569bb7b65c7c5aeb47cfe30f8526dc4d0a4a543cdf5fa1792518fbd13ffd92"
     },
     {
       "path": "mods/empirecraft-earth-0.1.1.jar",
@@ -2518,14 +2753,14 @@
       "sha256": "8ac5e54319e82a7e2227b03527e3bdf05d12f76818b3fd3a47456640d52e5238"
     },
     {
-      "path": "mods/empirecraft-forging-1.1.6.jar",
-      "size": 94606,
-      "sha256": "45b4dc15207e8188ebe4306a2899bdf9b969c451d661f99bf9a27327a4f93fbe"
+      "path": "mods/empirecraft-forging-1.2.0.jar",
+      "size": 73846,
+      "sha256": "91d39ecf047610faf5c80fe4c989c53d6c498f8cd7d55a18cd6a862a6039113b"
     },
     {
-      "path": "mods/empirecraft-handbook-1.0.8.jar",
-      "size": 752800,
-      "sha256": "06e20ff62849ec35257e9e6147e1e2458ca97ac75135bb25de5ebf91d9e91854"
+      "path": "mods/empirecraft-handbook-1.0.9.jar",
+      "size": 754045,
+      "sha256": "af90896ae358c2dcaa6119220b480deacb970226bc9a47b2d03175ae876faec7"
     },
     {
       "path": "mods/empirecraft-immersive-crafts-1.0.0.jar",
@@ -2533,9 +2768,9 @@
       "sha256": "1efc9ba5de99cf90d444998042d6aedb9a169cfdba6f880ccd49bdc243cf925e"
     },
     {
-      "path": "mods/empirecraft-interactions-1.2.0.jar",
-      "size": 59690,
-      "sha256": "f6e237fdd6a0495c41796ca257c89460be56e2fa6e8cc0532fb2750f92d65f89"
+      "path": "mods/empirecraft-interactions-1.2.1.jar",
+      "size": 59677,
+      "sha256": "e26f7c0a6a627b4194bc03b6eb094cb4d309afe60d450675220d3fde81c250f4"
     },
     {
       "path": "mods/empirecraft-launcher-client-0.3.0.jar",
@@ -2553,9 +2788,9 @@
       "sha256": "7c8b22351e0dfcddd76273446b3881bef28543ac1e55b9e4475ee94c1da53ae5"
     },
     {
-      "path": "mods/empirecraft-no-end-1.0.1.jar",
-      "size": 202606,
-      "sha256": "1ca441c6a8d65403adff7c01156edbb67bd7b55eec0f1bf2485680a05a589b25"
+      "path": "mods/empirecraft-no-end-1.0.2.jar",
+      "size": 202629,
+      "sha256": "1696b902e87bbb03b28a21c183b0e162d2640e4bf5c46f59a4a60ebbb7d625c1"
     },
     {
       "path": "mods/empirecraft-pack-fixes-1.0.2.jar",
@@ -2578,9 +2813,9 @@
       "sha256": "8846d2efe0ce5e5ab8a03b476885d21ba4d2e8dabd9bba55ffcee492789efb5d"
     },
     {
-      "path": "mods/empirecraft-tfc-integration-1.0.7.jar",
-      "size": 270023,
-      "sha256": "192b8e56c9bf1c10217fe8fb32a38eed2d18d7162c49ace752b8cbd8bd3fe600"
+      "path": "mods/empirecraft-tfc-integration-1.0.8.jar",
+      "size": 276205,
+      "sha256": "37ae10bde6aa3dce8958aa1f7113685d180bc367158129163ca16054304a12c7"
     },
     {
       "path": "mods/empirecraft-titles-resources-1.0.0.jar",
@@ -2658,9 +2893,9 @@
       "sha256": "b026fa16597144ae68867c4dd8f6fbe030f884088ab34b3fcf67f4e3d9d8db61"
     },
     {
-      "path": "mods/hamzabus_ottoman_mod-1.0.4-forge-empirecraft.1.jar",
-      "size": 6419898,
-      "sha256": "91dda468b7f50fa5a3a68bed59d45080070a0eac7b927a70102a8b35d72493f1"
+      "path": "mods/hamzabus_ottoman_mod-1.0.4-forge-empirecraft.2.jar",
+      "size": 6419548,
+      "sha256": "d16f17a1fd850150992dfc56318ba128a0fbbebcea0c9db7e8102a24e9b2c113"
     },
     {
       "path": "mods/handcrafted-forge-1.20.1-3.0.6.jar",
@@ -2676,6 +2911,11 @@
       "path": "mods/hearth_and_home-forge-1.20.1-2.0.3.jar",
       "size": 936576,
       "sha256": "5749723c247a93a2dbe41d8cb46cb1809b2ddcfc2a924ddd4daeaaffea63e4ae"
+    },
+    {
+      "path": "mods/immersive-smithing-1.3.1.jar",
+      "size": 2102263,
+      "sha256": "766bec4e5706dcf78d70d7f2a2f4432cdb954ed52e9878a7d0406f8cd0c06cf1"
     },
     {
       "path": "mods/immersive_jewelry_1.3.1.jar",
@@ -2798,11 +3038,6 @@
       "sha256": "b07bfb5673832577789b6c2ab160b5d80e0ef73ef229717ebbcea174fbdc36a7"
     },
     {
-      "path": "mods/overgeared-forge-1.20.1-1.6.36-empirecraft.1.jar",
-      "size": 1582118,
-      "sha256": "ed5ddf454a1b3f84dddbf9acc48f4ab4a892bc6ce41899336ad4af22d548e65d"
-    },
-    {
       "path": "mods/packetfixer-3.3.2-1.18-1.20.4-merged.jar",
       "size": 188661,
       "sha256": "12f96ecb8e61e0b3d3f0ca5701f479904904501dd251aa7bb60205afdf6bc2ce"
@@ -2848,9 +3083,9 @@
       "sha256": "71c026910d3e7a2987840bcd78c83241d884616a2fc43664a92d30ec74d1584c"
     },
     {
-      "path": "mods/siegeworks-forge-0.1.0-beta.11-1.20.1-empirecraft.2.jar",
-      "size": 3470654,
-      "sha256": "7fb25ac4697cc5372f10e7fa6505046c03ad07fdc3392a23379cfd794b511ddc"
+      "path": "mods/siegeworks-forge-0.1.0-beta.11-1.20.1-empirecraft.3.jar",
+      "size": 3470587,
+      "sha256": "bfcbcc1ca4935385bab56be8bfad8380e9a968074f814a5acb1d3e573e5a3ab7"
     },
     {
       "path": "mods/sound-physics-remastered-forge-1.20.1-1.5.1.jar",
