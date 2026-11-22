@@ -1,8 +1,8 @@
 {
-  "source_commit": "6b623a5a80557f9dd8567f6b4a9a094cbfc06805",
+  "source_commit": "bc489e5eee996a2c0b60b116c5c8b837c21e928d",
   "server_parity": {
     "server_snapshot_present": true,
-    "shared_mod_count": 120,
+    "shared_mod_count": 123,
     "shared_mods": {
       "accuratehitboxes": {
         "file": "accuratehitboxes-neoforge-2.4.2-empirecraft.1-1.20.1.jar",
@@ -175,9 +175,9 @@
         "version": "1.0.4"
       },
       "empirecraft_armory": {
-        "file": "empirecraft-armory-1.2.1.jar",
-        "sha256": "d19489e13b7d8296a747980d3509d68b94c8159830c6dd13b4985002a01e8ad6",
-        "version": "1.2.1"
+        "file": "empirecraft-armory-1.2.2.jar",
+        "sha256": "80b61fe6fcf0408fd36133e7a39bf7dd40a1beca11993a3a5cc1d4ff2843db16",
+        "version": "1.2.2"
       },
       "empirecraft_calendar": {
         "file": "empirecraft-calendar-1.2.4.jar",
@@ -213,6 +213,11 @@
         "file": "empirecraft-handbook-1.0.7.jar",
         "sha256": "ab4bcd703fc148cecf557e6f0bd382cb274f930707d5e95baef41e8599a27040",
         "version": "1.0.7"
+      },
+      "empirecraft_immersive": {
+        "file": "empirecraft-immersive-crafts-1.0.0.jar",
+        "sha256": "1efc9ba5de99cf90d444998042d6aedb9a169cfdba6f880ccd49bdc243cf925e",
+        "version": "1.0.0"
       },
       "empirecraft_interactions": {
         "file": "empirecraft-interactions-1.2.0.jar",
@@ -344,6 +349,11 @@
         "sha256": "5749723c247a93a2dbe41d8cb46cb1809b2ddcfc2a924ddd4daeaaffea63e4ae",
         "version": "1.20.1-2.0.3"
       },
+      "immersive_jewelry": {
+        "file": "immersive_jewelry_1.3.1.jar",
+        "sha256": "e7dbd88e05630dfb390cd0fd8176af24a6b8b71501f8b8a51422df31be925b07",
+        "version": "1.3.1"
+      },
       "immersive_melodies": {
         "file": "immersive_melodies-0.8.0+1.20.1-forge.jar",
         "sha256": "d6d795470c84f428a1aeff2523754f831b5b68c52f01bdab581a7c6014518318",
@@ -353,6 +363,11 @@
         "file": "immersive_paintings-0.6.13+1.20.1-forge.jar",
         "sha256": "069d5dffa4060d965899e607fad725c4d80a8086cef64f1d7563259b0a070633",
         "version": "0.6.13+1.20.1"
+      },
+      "immersive_tanning": {
+        "file": "immersive_tanning_1.3.0.jar",
+        "sha256": "a3922f8a5f0b196a5cb915b35f53b52c9ffb05061b4abeb594e80cfc82fa57f5",
+        "version": "1.3.0"
       },
       "jade": {
         "file": "Jade-1.20.1-Forge-11.13.3.jar",
@@ -570,9 +585,9 @@
         "version": "0.19.0"
       },
       "trmt": {
-        "file": "trmt-0.5.1b-1.20.1-forge-empirecraft.2.jar",
-        "sha256": "67634c600ddb296e38f02bd1d329ab997571e81279f6dbec44726ddd287fa6f1",
-        "version": "0.5.1b-1.20.1-forge-empirecraft.2"
+        "file": "trmt-0.5.1b-1.20.1-forge-empirecraft.3.jar",
+        "sha256": "bdbdc0f813f68d5fec004ee82a464cabeff7ff9026314f258418383d4438465a",
+        "version": "0.5.1b-1.20.1-forge-empirecraft.3"
       },
       "valkyrienskies": {
         "file": "valkyrienskies-120-2.4.11-empirecraft.1.jar",
@@ -733,9 +748,44 @@
       "sha256": "c36e219f50fdf23a774c12e059e88ce1f1a1a48c79915cc9e4630de002b59802"
     },
     {
+      "path": "kubejs/assets/tfc/patchouli_books/field_guide/en_us/entries/mechanics/barrels.json",
+      "size": 5958,
+      "sha256": "281c86c09d5c682cae85c0c8c4c05a6d24bc552ebe1f9ef4a26653a7879e7fe4"
+    },
+    {
+      "path": "kubejs/assets/tfc/patchouli_books/field_guide/en_us/entries/mechanics/gems.json",
+      "size": 784,
+      "sha256": "cce51cfedcdba7127a9caa493c22f2138a2998e8f695829b833961c689fb4d1b"
+    },
+    {
+      "path": "kubejs/assets/tfc/patchouli_books/field_guide/en_us/entries/mechanics/leather_making.json",
+      "size": 864,
+      "sha256": "c3eff5952dd88f12d8706bb452ed796d0d8fefa025d26b1387ba79aa062b7523"
+    },
+    {
+      "path": "kubejs/assets/tfc/patchouli_books/field_guide/uk_ua/entries/mechanics/barrels.json",
+      "size": 8818,
+      "sha256": "448d115e457f3b70c9978626ced1a45e72338ff9066367031260af30da26cbe6"
+    },
+    {
+      "path": "kubejs/assets/tfc/patchouli_books/field_guide/uk_ua/entries/mechanics/gems.json",
+      "size": 1194,
+      "sha256": "3e419f9bf3deb0c90d8b33b6f03a10f8fb64b9a9be530a688a5669b38a6e84a1"
+    },
+    {
+      "path": "kubejs/assets/tfc/patchouli_books/field_guide/uk_ua/entries/mechanics/leather_making.json",
+      "size": 1195,
+      "sha256": "bec1945a6159c39042afbf795861066a5710cd6151a42db8351aa2e8938184cd"
+    },
+    {
       "path": "kubejs/client_scripts/empirecraft_content.js",
       "size": 484,
       "sha256": "9cd4046aeeb068661e77679e97c53d10e0c3b10b97c030e6981ae9f24f0e5bb7"
+    },
+    {
+      "path": "kubejs/client_scripts/empirecraft_immersive_legacy.js",
+      "size": 408,
+      "sha256": "9824000a511a05a4e4c2f0db7e956b13aa8bdbee548a4224037cb36042fa896a"
     },
     {
       "path": "kubejs/client_scripts/empirecraft_kitchen_fixes.js",
@@ -763,6 +813,46 @@
       "sha256": "3c910833d304e66b2b6a05b967167cebbc6bc0ab5445ad7b84bbc19d3eaff020"
     },
     {
+      "path": "kubejs/data/antiquelegacy/recipes/black_celtic_pants.json",
+      "size": 398,
+      "sha256": "f4bf95844ac4e081e84bd1718f570bbb515b1b0e26caa2b764c83704f6f0d4ca"
+    },
+    {
+      "path": "kubejs/data/antiquelegacy/recipes/brown_celtic_pants.json",
+      "size": 398,
+      "sha256": "301ca39dcee4a7f233585afa1ba5d527435ad8bdebd64c013fb0a143a4df0a97"
+    },
+    {
+      "path": "kubejs/data/antiquelegacy/recipes/celtic_pants.json",
+      "size": 293,
+      "sha256": "f03950f064019828d12ad09a5ade13d77f5936121cc037aacace40731beaf617"
+    },
+    {
+      "path": "kubejs/data/antiquelegacy/recipes/celtic_tunic.json",
+      "size": 295,
+      "sha256": "f9a9a025848099fa61c580dfd0c825923e03fb3dabc032d22f12639eea1d3b74"
+    },
+    {
+      "path": "kubejs/data/antiquelegacy/recipes/celtic_tunic_boots.json",
+      "size": 296,
+      "sha256": "e21f7ab521b854279a032f637581d21ffdb472fcac93836d4b9abb538d562f60"
+    },
+    {
+      "path": "kubejs/data/antiquelegacy/recipes/green_celtic_pants.json",
+      "size": 398,
+      "sha256": "0dd1be7c587e3edd4eaad7813b083935de036afbd6c62154716503faf2348ca9"
+    },
+    {
+      "path": "kubejs/data/antiquelegacy/recipes/red_celtic_pants.json",
+      "size": 394,
+      "sha256": "b8d1b2a2b22a9570ab13f052cb12bb9771f93ef427795a321dfa6e5deb46fa53"
+    },
+    {
+      "path": "kubejs/data/antiquelegacy/recipes/sandals.json",
+      "size": 176,
+      "sha256": "786c9cce3f5606f1b522a82291832efdea92e9e8b7abe16298c2915307851a66"
+    },
+    {
       "path": "kubejs/data/axiomata/tags/items/construction_hammers.json",
       "size": 140,
       "sha256": "277580faca916ff2d9bc2fe9ccbc5b0debc73dc8a0a3a39f552a8a57d8f57e44"
@@ -776,6 +866,111 @@
       "path": "kubejs/data/createbigcannons/munition_properties/projectiles/shot.json",
       "size": 401,
       "sha256": "ff4b3d4b80f3295a04b00ac729ee4a62ab2addfdafb8ac17158b75f8a503f7ff"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/black_birka_tunic_boots.json",
+      "size": 401,
+      "sha256": "b75d90a2c4e6c1b214b2046704d626bb9b42e5b3b4c3923b7ae53d6de40eb30b"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/black_oaterned_pillbox_cap.json",
+      "size": 405,
+      "sha256": "d86c0fad510dbb3904034af5a2193762768b95cb1262e12dd298009b701651fa"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/black_tunic_boots.json",
+      "size": 395,
+      "sha256": "40b52e3473016c67a03e0e54a1b35776f3f7406c9b6ca42a8e617a8b7e9a56e4"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/brown_birka_tunic_boots.json",
+      "size": 401,
+      "sha256": "96f25d3fd59504b44eda97bd111557713ca70effb607d1e81969292c42bfa954"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/brown_oaterned_pillbox_cap.json",
+      "size": 405,
+      "sha256": "3467887aae6e32a8dc89988cb9801703cd24d188e67059388da07ca1bc6078fe"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/brown_tunic_boots.json",
+      "size": 395,
+      "sha256": "3df0f4f137d5b671b745567f4b0fb3b1b79ea22f89a723299b62ae1b57dd0485"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/early_tunic_boots.json",
+      "size": 296,
+      "sha256": "07576a6e0d5f2690b0ce351d2a7e884d7a396932b47c284d0cf0fa8c5d373fe3"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/eastern_hat.json",
+      "size": 291,
+      "sha256": "07e2c042870aaf53daf610c09de2a7dc62d2ce7f3a700b45eefdc0b9239648c7"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/fur_pillbox_cap.json",
+      "size": 186,
+      "sha256": "f4be4e2717e26b378e69938f0015a7d1a857d33641a599613c5b0d9c8a68a6d9"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/green_birka_tunic_boots.json",
+      "size": 401,
+      "sha256": "d61a229a8f21a8ba77acdd4d16353a7d1fdf0b1b8bd83dad2b81f55de509229d"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/green_oaterned_pillbox_cap.json",
+      "size": 405,
+      "sha256": "24285ba951d5612151f9b90af429276f45fe3d3033e017913583decbf7ea2ff7"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/green_tunic_boots.json",
+      "size": 395,
+      "sha256": "fab454cd6cb058bee65d04077d7df9a9f02a8db40318975350da20342403f694"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/red_birka_tunic_boots.json",
+      "size": 397,
+      "sha256": "4b922952bacbe9110a3617aee30e327ac4438a0814933db6b3f84c279d3e19a0"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/red_oaterned_pillbox_cap.json",
+      "size": 401,
+      "sha256": "22f53ef73a2170f8ace657cabf0477d7de7335bd7fccad1907cb9f2c3c6acb14"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/red_tunic_boots.json",
+      "size": 391,
+      "sha256": "4e6154fc9ccb99dd4af452e07f60fc52340a1bed7682f96a4c3eaa13903aef5f"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/white_birka_tunic_boots.json",
+      "size": 401,
+      "sha256": "06350b8c2673b8444fb45446b41cb822bd177a52ed805fb5127474f7dde5a79a"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/white_oaterned_pillbox_cap.json",
+      "size": 405,
+      "sha256": "4e8de9d0bd8691a79eb2eb1776fbaacb035e1c8186e4c6bf1200be38b55c641c"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/white_tunic_boots.json",
+      "size": 395,
+      "sha256": "9bfb334c7abf70f59f1ed3d2dce2cfc31fb4dd51e13673d3cca4adf3b28d4945"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/yellow_birka_tunic_boots.json",
+      "size": 403,
+      "sha256": "389ce8223e6dc18a3215633ef15706155dd611139ccdd5727cb21e83e0df49f7"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/yellow_oaterned_pillbox_cap.json",
+      "size": 407,
+      "sha256": "7df3cdfe60d8226b885468fc3a5d2b92859dc1db03b8b6c3f6523153fb8e266b"
+    },
+    {
+      "path": "kubejs/data/darkagesarmory/recipes/yellow_tunic_boots.json",
+      "size": 397,
+      "sha256": "02e90d3d5a11fc180528c3785964d7433743655580a8884659d7c48703764321"
     },
     {
       "path": "kubejs/data/ecologics/worldgen/placed_feature/trees_beach.json",
@@ -811,6 +1006,11 @@
       "path": "kubejs/data/empirecraft_guidebook/advancements/recipes/paper_finishing.json",
       "size": 632,
       "sha256": "2bbb34832d771653c477682689224b6db355fea85d5de036bde61eaf116d6c26"
+    },
+    {
+      "path": "kubejs/data/empirecraft_immersive/tags/items/finished_leather.json",
+      "size": 325,
+      "sha256": "de48a9eef0cd6bc02f52e2eee4444c2e5e24251bca0fe2764e53ee5009fa25d8"
     },
     {
       "path": "kubejs/data/empirecraft_kitchen/tags/items/brewing_coffee.json",
@@ -1073,6 +1273,36 @@
       "sha256": "4f921fc54f443c158c2d87c54df720ad1cbb806319ba46fe24fd1d8d5452887d"
     },
     {
+      "path": "kubejs/data/epic_knights__japanese_armory/recipes/kb.json",
+      "size": 320,
+      "sha256": "03ec6a38d4367ce5f9b71dcfbf17ab8dcb43422568e077e12a145e8badef9026"
+    },
+    {
+      "path": "kubejs/data/epic_knights__japanese_armory/recipes/kc.json",
+      "size": 326,
+      "sha256": "e2db1f501a97ffc865b18654241c8cf8287facaf04bbdf49bd78a0efa6452f6f"
+    },
+    {
+      "path": "kubejs/data/epic_knights__japanese_armory/recipes/kimonoboots.json",
+      "size": 306,
+      "sha256": "b56dfc8790490b6f8ae5aeb06cbc35638e1a3623a618507e3612d44e2ccb00b9"
+    },
+    {
+      "path": "kubejs/data/epic_knights__japanese_armory/recipes/kimonochest.json",
+      "size": 312,
+      "sha256": "b79eb4fd866d4137b7b0d48db0fa3435b6d89de9457c066f4630797f6d74c3c8"
+    },
+    {
+      "path": "kubejs/data/epic_knights__japanese_armory/recipes/kimonosash.json",
+      "size": 316,
+      "sha256": "e296f41494ad20596e2ca588ec4f369ab84225b509c129c35f7a9b8bbe3d29b5"
+    },
+    {
+      "path": "kubejs/data/epic_knights__japanese_armory/recipes/ks.json",
+      "size": 330,
+      "sha256": "6a70a95cfbdb8bac683b0b73279c8dbdc21d792cd5594f862a9329fda8a5b9c7"
+    },
+    {
       "path": "kubejs/data/farmersdelight/recipes/cutting/tag_dough.json",
       "size": 242,
       "sha256": "26a30d8ed26b7805d0df4df78cf0f1a6fff297c3e0c68ff1d2ddac6ca94bb22d"
@@ -1221,6 +1451,51 @@
       "path": "kubejs/data/handson_delight/tags/items/workshop.json",
       "size": 581,
       "sha256": "ac7d18e151e42f1f6bd5d5a759f1992634f4f034c93be7a4d3d8e32aad4eb8a1"
+    },
+    {
+      "path": "kubejs/data/magistuarmory/recipes/chainmail_boots.json",
+      "size": 184,
+      "sha256": "f14c581c634c929cd1abf3d91878195a1ffbc640040fa8c264c96ce704d6f593"
+    },
+    {
+      "path": "kubejs/data/magistuarmory/recipes/cuirassier_boots.json",
+      "size": 185,
+      "sha256": "1a1e501307d26c8b739957ea234e9e9921c704f7a3e7b670ecbc1425cf7a6d85"
+    },
+    {
+      "path": "kubejs/data/magistuarmory/recipes/cuirassier_leggings.json",
+      "size": 300,
+      "sha256": "e699bfb0e526b587ae710bf59a429d3413398604fc5d95ba1ff5b36f2eb97311"
+    },
+    {
+      "path": "kubejs/data/magistuarmory/recipes/gambeson_boots.json",
+      "size": 292,
+      "sha256": "47eab6e1b1c0c3fee99f68cb327d92dfec00c8d7bb07d3c8535eb8b47cf55132"
+    },
+    {
+      "path": "kubejs/data/magistuarmory/recipes/pantyhose.json",
+      "size": 302,
+      "sha256": "ae1a5c2e224bc4ecba45db798c3af324c17df3e6f93ca0dfd904f717d342503e"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/puff_and_slash_boots.json",
+      "size": 295,
+      "sha256": "0db452126da8d74c2c22b06c42d858a5472180f117c66195a03f26f85683af30"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/shoes.json",
+      "size": 179,
+      "sha256": "a081d64477fb64ffa25650a1f9830265d802b8bd05efb6051dd64107f5aa8d05"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/tunic.json",
+      "size": 293,
+      "sha256": "7bdcca2cbd6e9f9741c458ba205ee4d6f436ceffaf807a77bbc2e90d35bf0d14"
+    },
+    {
+      "path": "kubejs/data/magistuarmoryaddon/recipes/tunic_boots.json",
+      "size": 294,
+      "sha256": "e8bd34d64ff3fa7c075a33a2b173f023fdbb122f2c9ef8cffd884180ba9c76e3"
     },
     {
       "path": "kubejs/data/mctabletop/recipes/go_fish_board.json",
@@ -1453,6 +1728,26 @@
       "sha256": "7fe8acb74a1790c9d174ee2b1e4e65fdc5e0b1e69a75d5ba24b4952a6dde80bc"
     },
     {
+      "path": "kubejs/data/slavicarmory/recipes/kaftan_boots.json",
+      "size": 289,
+      "sha256": "fa7a05fa62a4a413fbba8cd633cad9a56545980d241f5a93625c9a98bf68d434"
+    },
+    {
+      "path": "kubejs/data/slavicarmory/recipes/rus_gambeson.json",
+      "size": 294,
+      "sha256": "5d6706b0ba100bea51432aea09c5c2982da81ff696cbfea1ac2f54470fb9505e"
+    },
+    {
+      "path": "kubejs/data/slavicarmory/recipes/rus_gambeson_boots.json",
+      "size": 295,
+      "sha256": "eef9e3afc735a8801c86f9e0b209cc5038e9b70eba72ff36d48b4b643f7f77a1"
+    },
+    {
+      "path": "kubejs/data/tfc/recipes/crafting/parchment.json",
+      "size": 599,
+      "sha256": "175a42056c2b361737caad8942faaca7443764280ad6626d19d17b922dd5a913"
+    },
+    {
       "path": "kubejs/data/tfc/recipes/heating/cooked_egg.json",
       "size": 198,
       "sha256": "20b64ae1393bf5a0bc681ee9ba14b415e4e8bd5d5d32b488e720e2b57b5edb79"
@@ -1473,24 +1768,29 @@
       "sha256": "9d82a903798f2ec73eccbfc3859fddf316457c597b450a0d63bdde221efe5235"
     },
     {
+      "path": "kubejs/data/tfc/tags/items/leather_knapping.json",
+      "size": 38,
+      "sha256": "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+    },
+    {
       "path": "kubejs/data/thirtyyearswar/recipes/baroque_apron_skirt_boots.json",
-      "size": 370,
-      "sha256": "4e48deaa1a2879064968ec5233df74c4954373bed57b5655bc5a2648f71a9182"
+      "size": 311,
+      "sha256": "09796cdcc085a2088c286c34e113ec9788a6c87007fb85f7658a6fbbb1a2b16b"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/baroque_breeches_boots.json",
-      "size": 364,
-      "sha256": "8caf2f1dfe075f8e09eba99eaa90d839149b516d416ed6def97c50df76564a8c"
+      "size": 305,
+      "sha256": "19c52371a86157e7edc412e1d42fe559420e331e121bbba9db0b6fb2c8e055a0"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/baroque_riders_breeches_boots.json",
-      "size": 378,
-      "sha256": "1f5dfbe381d7400b45f2ac31c29360b450f040fc095fa72c75cc30911e3c1225"
+      "size": 319,
+      "sha256": "d69623bfb6cdd841469362c4af40434924786f6da59421666773321f0dbadf35"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/baroque_skirt_boots.json",
-      "size": 358,
-      "sha256": "d9e6bfd58d23f23355681c5f39d1d640781bf6ba791683826a212f2e91c0ec2b"
+      "size": 299,
+      "sha256": "3a215aedbd254cbbfd6bf9f36df23ad6f36571f76e3f06cf8b553d1f00063f28"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/court_robe_decoration.json",
@@ -1504,8 +1804,8 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_apron_skirt.json",
-      "size": 391,
-      "sha256": "e9f0adcec63ea31049a683707e9f7b774bd1f79280e08609fd34febc5f4f84e8"
+      "size": 408,
+      "sha256": "bfdc67632b90c0172439bbbecf35f46938e4af257eaea3a97db60e95285b85e7"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_armour.json",
@@ -1534,13 +1834,13 @@
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_buff_coat.json",
-      "size": 336,
-      "sha256": "0191e91fdf77f1d3b7a43086feff1b4021e0e0f656df41fe2621592524f84252"
+      "size": 301,
+      "sha256": "e6859748b5576cb95dc3c1cbe586531fae006566c55a9b05a6771e9ab32bef8c"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_buff_waistcoat.json",
-      "size": 341,
-      "sha256": "fd989f1bb0338b73b30f5593b9daa4335670a39e56944189f29060d1dbedbc5b"
+      "size": 306,
+      "sha256": "62b78b996135fb91a06f225076c800c16b662b0a80064e061a7e2a55c467c9c0"
     },
     {
       "path": "kubejs/data/thirtyyearswar/recipes/knights_baroque_cabasset_helmet.json",
@@ -1924,8 +2224,8 @@
     },
     {
       "path": "kubejs/server_scripts/zzzzzzzzzzzz_thirtyyearswar.js",
-      "size": 46057,
-      "sha256": "360cbf4646c6a3bc3a39073bd576d9a5680e1f364dfff87fa48329b444ac994f"
+      "size": 46500,
+      "sha256": "c6128160d3f78b0d2d1c10ec2c68a15c5157912e0c3a9c2ee488886c151290b2"
     },
     {
       "path": "kubejs/server_scripts/zzzzzzzzzzzzz_empirecraft_gunsmith.js",
@@ -1936,6 +2236,11 @@
       "path": "kubejs/server_scripts/zzzzzzzzzzzzz_empirecraft_kitchen.js",
       "size": 3378,
       "sha256": "1ed2ce5179e209c8dc4081ad9bedbd18daad1b79163042b978e0adb20a0d6d8f"
+    },
+    {
+      "path": "kubejs/server_scripts/zzzzzzzzzzzzzz_empirecraft_immersive.js",
+      "size": 1202,
+      "sha256": "480065c14e02c3770093dfe836b5daec6fba0b6e6f13ad32fef02cf85eec10a6"
     },
     {
       "path": "kubejs/server_scripts/zzzzzzzzzzzzzz_empirecraft_kitchen_fixes.js",
@@ -2183,9 +2488,9 @@
       "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"
     },
     {
-      "path": "mods/empirecraft-armory-1.2.1.jar",
-      "size": 381403,
-      "sha256": "d19489e13b7d8296a747980d3509d68b94c8159830c6dd13b4985002a01e8ad6"
+      "path": "mods/empirecraft-armory-1.2.2.jar",
+      "size": 381517,
+      "sha256": "80b61fe6fcf0408fd36133e7a39bf7dd40a1beca11993a3a5cc1d4ff2843db16"
     },
     {
       "path": "mods/empirecraft-calendar-1.2.4.jar",
@@ -2221,6 +2526,11 @@
       "path": "mods/empirecraft-handbook-1.0.7.jar",
       "size": 640036,
       "sha256": "ab4bcd703fc148cecf557e6f0bd382cb274f930707d5e95baef41e8599a27040"
+    },
+    {
+      "path": "mods/empirecraft-immersive-crafts-1.0.0.jar",
+      "size": 11820,
+      "sha256": "1efc9ba5de99cf90d444998042d6aedb9a169cfdba6f880ccd49bdc243cf925e"
     },
     {
       "path": "mods/empirecraft-interactions-1.2.0.jar",
@@ -2368,6 +2678,11 @@
       "sha256": "5749723c247a93a2dbe41d8cb46cb1809b2ddcfc2a924ddd4daeaaffea63e4ae"
     },
     {
+      "path": "mods/immersive_jewelry_1.3.1.jar",
+      "size": 1818579,
+      "sha256": "e7dbd88e05630dfb390cd0fd8176af24a6b8b71501f8b8a51422df31be925b07"
+    },
+    {
       "path": "mods/immersive_melodies-0.8.0+1.20.1-forge.jar",
       "size": 5557511,
       "sha256": "d6d795470c84f428a1aeff2523754f831b5b68c52f01bdab581a7c6014518318"
@@ -2376,6 +2691,11 @@
       "path": "mods/immersive_paintings-0.6.13+1.20.1-forge.jar",
       "size": 4856103,
       "sha256": "069d5dffa4060d965899e607fad725c4d80a8086cef64f1d7563259b0a070633"
+    },
+    {
+      "path": "mods/immersive_tanning_1.3.0.jar",
+      "size": 1011356,
+      "sha256": "a3922f8a5f0b196a5cb915b35f53b52c9ffb05061b4abeb594e80cfc82fa57f5"
     },
     {
       "path": "mods/jei-1.20.1-forge-15.56.0.205.jar",
@@ -2563,9 +2883,9 @@
       "sha256": "102565d4dc1e1d2a027ea0d904fdfe3faa05802fa5be154aac06868cad1c275a"
     },
     {
-      "path": "mods/trmt-0.5.1b-1.20.1-forge-empirecraft.2.jar",
-      "size": 474646,
-      "sha256": "67634c600ddb296e38f02bd1d329ab997571e81279f6dbec44726ddd287fa6f1"
+      "path": "mods/trmt-0.5.1b-1.20.1-forge-empirecraft.3.jar",
+      "size": 473787,
+      "sha256": "bdbdc0f813f68d5fec004ee82a464cabeff7ff9026314f258418383d4438465a"
     },
     {
       "path": "mods/valkyrienskies-120-2.4.11-empirecraft.1.jar",
