@@ -1,5 +1,5 @@
 {
-  "source_commit": "12d941ebed9a075b50780ceada0a0e17b0dee677",
+  "source_commit": "2e4414ebd5674270fe0572f82d397f498fec17dd",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 123,
@@ -190,9 +190,9 @@
         "version": "1.4.0"
       },
       "empirecraft_earth": {
-        "file": "empirecraft-earth-0.1.1.jar",
-        "sha256": "c44b09699857b7c72c7dfb3b2248dec8ed342a86532fd34652740349389659cf",
-        "version": "0.1.1"
+        "file": "empirecraft-earth-0.1.2.jar",
+        "sha256": "b8ac737f8f0c4aa883201d670a687545c2dd8bb926634fe363d922b845e1c8a2",
+        "version": "0.1.2"
       },
       "empirecraft_engagement": {
         "file": "empirecraft-engagement-1.1.2.jar",
@@ -255,9 +255,9 @@
         "version": "1.2.3"
       },
       "empirecraft_tfc": {
-        "file": "empirecraft-tfc-integration-1.0.8.jar",
-        "sha256": "37ae10bde6aa3dce8958aa1f7113685d180bc367158129163ca16054304a12c7",
-        "version": "1.0.8"
+        "file": "empirecraft-tfc-integration-1.0.9.jar",
+        "sha256": "15fe82446c4eb504ea33da6b5d993e4ef82b77cc5625b8ad0adadb3126b474b3",
+        "version": "1.0.9"
       },
       "empirecraft_titles": {
         "file": "empirecraft-titles-resources-1.0.0.jar",
@@ -2738,9 +2738,9 @@
       "sha256": "eb569bb7b65c7c5aeb47cfe30f8526dc4d0a4a543cdf5fa1792518fbd13ffd92"
     },
     {
-      "path": "mods/empirecraft-earth-0.1.1.jar",
-      "size": 55698,
-      "sha256": "c44b09699857b7c72c7dfb3b2248dec8ed342a86532fd34652740349389659cf"
+      "path": "mods/empirecraft-earth-0.1.2.jar",
+      "size": 57661,
+      "sha256": "b8ac737f8f0c4aa883201d670a687545c2dd8bb926634fe363d922b845e1c8a2"
     },
     {
       "path": "mods/empirecraft-engagement-1.1.2.jar",
@@ -2813,9 +2813,9 @@
       "sha256": "8846d2efe0ce5e5ab8a03b476885d21ba4d2e8dabd9bba55ffcee492789efb5d"
     },
     {
-      "path": "mods/empirecraft-tfc-integration-1.0.8.jar",
-      "size": 276205,
-      "sha256": "37ae10bde6aa3dce8958aa1f7113685d180bc367158129163ca16054304a12c7"
+      "path": "mods/empirecraft-tfc-integration-1.0.9.jar",
+      "size": 278279,
+      "sha256": "15fe82446c4eb504ea33da6b5d993e4ef82b77cc5625b8ad0adadb3126b474b3"
     },
     {
       "path": "mods/empirecraft-titles-resources-1.0.0.jar",
