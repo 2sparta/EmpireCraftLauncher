@@ -1,5 +1,5 @@
 {
-  "source_commit": "2e4414ebd5674270fe0572f82d397f498fec17dd",
+  "source_commit": "3ccd7541e8b650a7c153a2a3458be21361328355",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 123,
@@ -256,7 +256,7 @@
       },
       "empirecraft_tfc": {
         "file": "empirecraft-tfc-integration-1.0.9.jar",
-        "sha256": "15fe82446c4eb504ea33da6b5d993e4ef82b77cc5625b8ad0adadb3126b474b3",
+        "sha256": "5e6fc804e70e39c0686ede61bbd19475250021acc3c7ebce4db5f6487b0b6f44",
         "version": "1.0.9"
       },
       "empirecraft_titles": {
@@ -2814,8 +2814,8 @@
     },
     {
       "path": "mods/empirecraft-tfc-integration-1.0.9.jar",
-      "size": 278279,
-      "sha256": "15fe82446c4eb504ea33da6b5d993e4ef82b77cc5625b8ad0adadb3126b474b3"
+      "size": 278278,
+      "sha256": "5e6fc804e70e39c0686ede61bbd19475250021acc3c7ebce4db5f6487b0b6f44"
     },
     {
       "path": "mods/empirecraft-titles-resources-1.0.0.jar",
