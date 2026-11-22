@@ -1,5 +1,5 @@
 {
-  "source_commit": "bc489e5eee996a2c0b60b116c5c8b837c21e928d",
+  "source_commit": "9f6f53945d3f9687da18d602a052a3a951e7b9bb",
   "server_parity": {
     "server_snapshot_present": true,
     "shared_mod_count": 123,
@@ -210,9 +210,9 @@
         "version": "1.1.6"
       },
       "empirecraft_guidebook": {
-        "file": "empirecraft-handbook-1.0.7.jar",
-        "sha256": "ab4bcd703fc148cecf557e6f0bd382cb274f930707d5e95baef41e8599a27040",
-        "version": "1.0.7"
+        "file": "empirecraft-handbook-1.0.8.jar",
+        "sha256": "06e20ff62849ec35257e9e6147e1e2458ca97ac75135bb25de5ebf91d9e91854",
+        "version": "1.0.8"
       },
       "empirecraft_immersive": {
         "file": "empirecraft-immersive-crafts-1.0.0.jar",
@@ -2523,9 +2523,9 @@
       "sha256": "45b4dc15207e8188ebe4306a2899bdf9b969c451d661f99bf9a27327a4f93fbe"
     },
     {
-      "path": "mods/empirecraft-handbook-1.0.7.jar",
-      "size": 640036,
-      "sha256": "ab4bcd703fc148cecf557e6f0bd382cb274f930707d5e95baef41e8599a27040"
+      "path": "mods/empirecraft-handbook-1.0.8.jar",
+      "size": 752800,
+      "sha256": "06e20ff62849ec35257e9e6147e1e2458ca97ac75135bb25de5ebf91d9e91854"
     },
     {
       "path": "mods/empirecraft-immersive-crafts-1.0.0.jar",
