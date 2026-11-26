@@ -99,17 +99,36 @@ def make_command(root: Path, game: Path, java: str, name: str, profile: str, ram
     if not re.fullmatch(r"[A-Za-z0-9_]{3,16}", name):
         raise ValueError("Нік: 3–16 латинських літер, цифр або _")
     total = psutil.virtual_memory().total // 1024**2
-    if total < 6144:
+    if total < 6144 and profile != "potato":
         raise RuntimeError("Для цієї збірки потрібно щонайменше 6 ГБ фізичної RAM; бажано 8 ГБ або більше.")
-    ram = max(2048, min(int(ram), int(total - 2048), 12288))
+    ram = max(1536 if profile == "potato" else 2048, min(int(ram), int(total - 1536 if profile == "potato" and total < 6144 else total - 2048), 12288))
     logs = game / "logs"
     logs.mkdir(exist_ok=True)
     gc = "logs/gc.log"
+    jvm = ["-Xms512M", f"-Xmx{ram}M", "-XX:+UseG1GC", "-XX:+ParallelRefProcEnabled", f"-Xlog:gc*,safepoint:file={gc}:time,uptime,level,tags:filecount=3,filesize=8M", f"-Dempirecraft.launcher.profile={profile}"]
+    if profile == "potato":
+        # Low-end CPU plan: smaller heap regions and short pauses, one GC thread,
+        # lean JIT, no class sharing or verification at launch, NIO-based overlay
+        # filesystem and tick-time budget for the render thread.
+        jvm += [
+            "-XX:G1NewSizePercent=20", "-XX:G1NewSizePercentMax=40",
+            "-XX:G1HeapRegionSize=8M", "-XX:MaxGCPauseMillis=40",
+            "-XX:G1ConcRefinementThreads=1", "-XX:ConcGCThreads=1",
+            "-XX:+UseStringDeduplication", "-XX:MaxMetaspaceSize=512M",
+            "-XX:TieredStopAtLevel=1", "-Xss1M",
+            "-XX:+DisableExplicitGC", "-XX:+PerfDisableSharedMem",
+            "-Djava.net.preferIPv4Stack=true", "-Dsun.rmi.dgc.server.gcInterval=2147483646",
+            "-Dfabric.systemLibraries=", "-Dterminal.jline=false", "-Dterminal.ansi=false",
+            "-Dfml.earlyprogresswindow=false", "-Dfml.queryResult=confirm",
+            "-Dforge.logging.console.enabled=false", "-Dforge.logging.markers=",
+            "-Dclient.side-thread.render.enabled=true", "-Dclient.tick-time=25",
+            "-Dorg.joml.noadmin=true", "-Dio.netty.tryReflectionSetAccessible=false",
+        ]
     options = {
         "username": name, "uuid": offline_uuid(name), "token": "0",
         "gameDirectory": str(game), "executablePath": java,
         "launcherName": "Empirecraft", "launcherVersion": __version__,
-        "jvmArguments": ["-Xms512M", f"-Xmx{ram}M", "-XX:+UseG1GC", "-XX:+ParallelRefProcEnabled", f"-Xlog:gc*,safepoint:file={gc}:time,uptime,level,tags:filecount=3,filesize=8M", f"-Dempirecraft.launcher.profile={profile}"],
+        "jvmArguments": jvm,
     }
     command = mll.command.get_minecraft_command(VERSION, root / "runtime", options)
     return command
