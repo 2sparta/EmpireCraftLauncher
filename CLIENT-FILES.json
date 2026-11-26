@@ -2,7 +2,7 @@
   "source_commit": "3ccd7541e8b650a7c153a2a3458be21361328355",
   "server_parity": {
     "server_snapshot_present": true,
-    "shared_mod_count": 123,
+    "shared_mod_count": 122,
     "shared_mods": {
       "accuratehitboxes": {
         "file": "accuratehitboxes-neoforge-2.4.2-empirecraft.1-1.20.1.jar",
@@ -271,7 +271,7 @@
       },
       "empirecraft_wildlife": {
         "file": "empirecraft-wildlife-1.0.1.jar",
-        "sha256": "86505ac8d5282f5ec077ea89d24847e74a949dd8903158691b4717e19fccc837",
+        "sha256": "b5f54e566540dbb45cdf429fa3c7f0a3aead3e61d8b57443454172fd2cebe39d",
         "version": "1.0.1"
       },
       "empirecraft_workshop": {
@@ -386,7 +386,7 @@
       },
       "knockedback": {
         "file": "knockedback-1.6.2-empirecraft.2.jar",
-        "sha256": "b306cc58187edf03d941b644b757e12117bafc51705d6c897de5aa0ffc7d1195",
+        "sha256": "885cd3a7e7b67266e6adea9d3a0e011a2d75d139ef563640f9bb0a6e21d368ef",
         "version": "1.6.2-empirecraft.2"
       },
       "kubejs": {
@@ -428,11 +428,6 @@
         "file": "medieval_boomsticks-no_stars (8).jar",
         "sha256": "40b5d936f24a9a485ac94523fdbe79887c1d5c9d050e89a0ecfe36a315d6fe1c",
         "version": "1.0"
-      },
-      "medieval_deco": {
-        "file": "Medieval Decoration v.1.2 1.20.1.jar",
-        "sha256": "f8ceec57e9b5630b360056120b59fac239fd9e488a022f905e563404c543e30f",
-        "version": "1.2"
       },
       "medieval_paintings": {
         "file": "medieval_paintings-1.20-7.0.jar",
@@ -2533,11 +2528,6 @@
       "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4"
     },
     {
-      "path": "mods/Medieval Decoration v.1.2 1.20.1.jar",
-      "size": 263637,
-      "sha256": "f8ceec57e9b5630b360056120b59fac239fd9e488a022f905e563404c543e30f"
-    },
-    {
       "path": "mods/OELib-forge-1.20.1-0.2.4.1.jar",
       "size": 873384,
       "sha256": "c57dbccc22d0505ef623d5e52e644d9cadd3d52b495b2386f14a02db06fe1935"
@@ -2829,8 +2819,8 @@
     },
     {
       "path": "mods/empirecraft-wildlife-1.0.1.jar",
-      "size": 33237,
-      "sha256": "86505ac8d5282f5ec077ea89d24847e74a949dd8903158691b4717e19fccc837"
+      "size": 37988,
+      "sha256": "b5f54e566540dbb45cdf429fa3c7f0a3aead3e61d8b57443454172fd2cebe39d"
     },
     {
       "path": "mods/empirecraft-workshop-1.0.0.jar",
@@ -2949,8 +2939,8 @@
     },
     {
       "path": "mods/knockedback-1.6.2-empirecraft.2.jar",
-      "size": 111820,
-      "sha256": "b306cc58187edf03d941b644b757e12117bafc51705d6c897de5aa0ffc7d1195"
+      "size": 112540,
+      "sha256": "885cd3a7e7b67266e6adea9d3a0e011a2d75d139ef563640f9bb0a6e21d368ef"
     },
     {
       "path": "mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
