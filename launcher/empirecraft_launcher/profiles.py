@@ -6,7 +6,7 @@ import psutil
 from .security import atomic_write
 
 PROFILES = {
-    "potato": dict(title="Potato", description="Слабкий ноутбук · мінімум ефектів", distance=5, simulation=4, entities=0.5, particles=2, graphics=0, mipmap=0, blend=0, ao=False, shadows=False, clouds="false", fps=60, reduced=True),
+    "potato": dict(title="Potato", description="Дуже слабкий ПК · максимум FPS", distance=3, simulation=3, entities=0.2, particles=0, graphics=0, mipmap=0, blend=0, ao=False, shadows=False, clouds="false", fps=30, reduced=True),
     "balanced": dict(title="Balanced", description="Чіткий світ · помірне навантаження", distance=8, simulation=5, entities=0.75, particles=1, graphics=1, mipmap=2, blend=2, ao=True, shadows=True, clouds="fast", fps=90, reduced=False),
     "high": dict(title="High", description="Більше деталей · Oculus для шейдерів", distance=12, simulation=6, entities=1.0, particles=0, graphics=1, mipmap=4, blend=3, ao=True, shadows=True, clouds="true", fps=120, reduced=False),
 }
@@ -50,7 +50,7 @@ def apply_options(game: Path, profile: str, overrides: dict):
     distance = max(3, min(20, int(overrides.get("distance", p["distance"]))))
     fps = max(30, min(240, int(overrides.get("fps", p["fps"]))))
     reduced = bool(overrides.get("reduced", p["reduced"]))
-    values = dict(renderDistance=distance, simulationDistance=p["simulation"], entityDistanceScaling=p["entities"], particles=p["particles"], graphicsMode=p["graphics"], mipmapLevels=p["mipmap"], biomeBlendRadius=p["blend"], ao=p["ao"], entityShadows=p["shadows"], renderClouds=p["clouds"], maxFps=fps, enableVsync=False)
+    values = dict(renderDistance=distance, simulationDistance=p["simulation"], entityDistanceScaling=p["entities"], particles=p["particles"], graphicsMode=p["graphics"], mipmapLevels=p["mipmap"], biomeBlendRadius=p["blend"], ao=p["ao"], entityShadows=p["shadows"], renderClouds=p["clouds"], maxFps=fps, enableVsync=False, fullscreen=False, priority=False, soundDevice=None, gamma=1.0, guiScale=0, prioritizeChunkUpdates=3, entityCulling=True, directionalBias=p["distance"]) if profile != "potato" else dict(renderDistance=distance, simulationDistance=p["simulation"], entityDistanceScaling=p["entities"], particles=p["particles"], graphicsMode=p["graphics"], mipmapLevels=p["mipmap"], biomeBlendRadius=p["blend"], ao=p["ao"], entityShadows=p["shadows"], renderClouds=p["clouds"], maxFps=fps, enableVsync=False, fullscreen=False, gamma=1.0, guiScale=0, prioritizeChunkUpdates=3, screenEffectScale=0.0, fovEffectScale=0.0, darknessEffectScale=0.0, ambientVibrations=False, entityCulling=True, tooltipBackgroundOpacity=1.0)
     path = game / "options.txt"
     existing = {}
     if path.is_file():
