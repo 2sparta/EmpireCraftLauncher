@@ -7,7 +7,7 @@ def test_profile_options_keep_controls_and_gameplay_hud(tmp_path):
     (tmp_path / "options.txt").write_text("key_key.forward:key.keyboard.z\nlang:uk_ua\n")
     apply_options(tmp_path, "potato", {})
     text = (tmp_path / "options.txt").read_text()
-    assert "renderDistance:5" in text and "particles:2" in text and "maxFps:60" in text
+    assert "renderDistance:3" in text and "particles:0" in text and "maxFps:30" in text
     assert "key_key.forward:key.keyboard.z" in text and "lang:uk_ua" in text
     config = (tmp_path / "config/legendarysurvivaloverhaul/legendarysurvivaloverhaul-client.toml").read_text()
     assert '"Temperature Display Mode" = "SYMBOL"' in config and '"Heat Temperature Overlay" = false' in config
