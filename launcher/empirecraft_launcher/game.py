@@ -111,7 +111,8 @@ def make_command(root: Path, game: Path, java: str, name: str, profile: str, ram
         # lean JIT, no class sharing or verification at launch, NIO-based overlay
         # filesystem and tick-time budget for the render thread.
         jvm += [
-            "-XX:G1NewSizePercent=20", "-XX:G1NewSizePercentMax=40",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:G1NewSizePercent=20", "-XX:G1MaxNewSizePercent=40",
             "-XX:G1HeapRegionSize=8M", "-XX:MaxGCPauseMillis=40",
             "-XX:G1ConcRefinementThreads=1", "-XX:ConcGCThreads=1",
             "-XX:+UseStringDeduplication", "-XX:MaxMetaspaceSize=512M",
